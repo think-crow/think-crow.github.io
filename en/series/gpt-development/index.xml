@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GPT Development on GuangzhengLi</title><link>https://think-crow.guthub.io/en/series/gpt-development/</link><description>Recent content in GPT Development on GuangzhengLi</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>iguangzhengli@gmail.com (Guangzheng Li)</managingEditor><webMaster>iguangzhengli@gmail.com (Guangzheng Li)</webMaster><copyright>2024 GuangzhengLi All rights reserved</copyright><lastBuildDate>Mon, 31 Jul 2023 20:10:00 +0800</lastBuildDate><atom:link href="https://think-crow.guthub.io/en/series/gpt-development/index.xml" rel="self" type="application/rss+xml"/><item><title>GPT Application Development and Reflections</title><link>https://think-crow.guthub.io/en/blog/en/gpt-embeddings/</link><pubDate>Mon, 31 Jul 2023 20:10:00 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://think-crow.guthub.io/en/blog/en/gpt-embeddings/</guid><description>&lt;p>In the past few months, it seems like we are in the midst of an AI revolution. Besides the well-known OpenAI ChatGPT, many novel, interesting, and practical AI applications have emerged, and using these applications has indeed boosted my productivity.&lt;/p>
+&lt;p>However, there seems to be a lack of comprehensive resources on GPT application development and its pathways. Therefore, I decided to compile some of my experiences and thoughts into a series, hoping to help others.&lt;/p>
+&lt;p>This article mainly introduces thoughts on GPT-related application development. In April this year, while developing the open-source project &lt;a href="https://github.com/guangzhengli/ChatFiles">ChatFiles&lt;/a>, I learned about GPT-related technologies. Due to limited time and energy, I hadn&amp;rsquo;t had the chance to organize these insights into an article until recently. With new ideas, I open-sourced another project, &lt;a href="https://github.com/guangzhengli/vectorhub">VectorHub&lt;/a>, which is also based on GPT Prompt and Embeddings technology. This deepened my understanding of GPT and Embeddings, leading to this sharing.&lt;/p>
+&lt;h2 id="starting-with-prompts">Starting with Prompts&lt;/h2>
+&lt;p>AI application development has attracted many developers recently. Besides the well-known ChatGPT, many valuable AI applications have emerged, such as AI-based translation applications like &lt;a href="https://github.com/openai-translator/openai-translator">openai-translator&lt;/a> and &lt;a href="https://immersivetranslate.com/">immersivetranslate&lt;/a>, writing tools like &lt;a href="https://www.notion.so/product/ai">Notion AI&lt;/a>, and coding assistants like &lt;a href="https://github.com/features/copilot">GitHub Copilot&lt;/a> and &lt;a href="https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat?tool=vscode">GitHub Copilot Chat&lt;/a>.&lt;/p>
+&lt;p>Some of these applications optimize existing experiences, like the GPT-based translator &lt;a href="https://github.com/openai-translator/openai-translator">openai-translator&lt;/a>, which offers superior translation quality and reading experience compared to previous machine translations. Others provide previously unattainable functionalities, like &lt;a href="https://github.com/features/copilot">GitHub Copilot&lt;/a> for code completion and generation, and &lt;a href="https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat?tool=vscode">GitHub Copilot Chat&lt;/a> for answering coding-related questions, explaining code, generating unit tests, and suggesting fixes for erroneous code. These functionalities were unimaginable before.&lt;/p>
+&lt;p>Although these applications differ in functionality, they all primarily rely on GPT&amp;rsquo;s Prompt (instructions). A Prompt is the text or instruction provided to the model to guide it in generating natural language output (Completion). It provides context to the model and is crucial for the output.&lt;/p>
+&lt;p>We know that GPT (Generative Pre-trained Transformer) is an inference model based on two stages: pre-training and fine-tuning.&lt;/p>
+&lt;p>In the pre-training stage, a large corpus is used for foundational training, such as Wikipedia, news articles, novels, etc. After training, when given a sentence, it predicts the next word based on the learned knowledge, generating a sequence of words through repeated predictions. This is why it&amp;rsquo;s called a generative AI.&lt;/p>
+&lt;p>This sentence is what we call a Prompt, the foundation of generative AI&amp;rsquo;s probabilistic generation. This explains why the same Prompt can yield different results each time, as each result is probabilistically generated.&lt;/p>
+&lt;p>Thus, we understand the importance of Prompts in GPT application development. Besides fine-tuning, it&amp;rsquo;s our only way to interact with the GPT model (though we can also adjust the model&amp;rsquo;s temperature and top_p settings to control the diversity or creativity of the output, but this doesn&amp;rsquo;t significantly affect output quality or downstream task handling). Therefore, Prompts are the core of GPT application development and require developers&amp;rsquo; careful consideration and optimization.&lt;/p>
+&lt;p>After pre-training, in the fine-tuning stage, the GPT model is loaded onto specific tasks and trained with task-specific datasets. This allows the model to better understand Prompts and generate task-relevant text. Fine-tuning enables GPT to adapt to different tasks, such as text classification, sentiment analysis, Q&amp;amp;A systems, etc. However, due to high costs and unstable results, fine-tuning isn&amp;rsquo;t a viable option for most GPT developers. Hence, most GPT application developers rely on Prompts for development.&lt;/p>
+&lt;h2 id="learning-path-for-prompts">Learning Path for Prompts&lt;/h2>
+&lt;p>For basic knowledge of Prompts, you can start with Andrew Ng&amp;rsquo;s &lt;a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/">ChatGPT Prompt Engineering&lt;/a>. In less than two hours, you can quickly grasp the usage and charm of Prompts.&lt;/p>
+&lt;p>After gaining a preliminary understanding, I recommend the &lt;a href="https://www.promptingguide.ai/">Prompt Engineering Guide&lt;/a>. This document contains extensive foundational knowledge and future directions for Prompts. Besides learning the basics, GPT application developers can gain insights into the engineering and academic perspectives on Prompt development, which are invaluable for AI application development.&lt;/p>
+&lt;p>Lastly, I highly recommend checking out OpenAI&amp;rsquo;s official &lt;a href="https://platform.openai.com/docs/guides/gpt-best-practices">GPT Best Practices&lt;/a>. This document, provided by OpenAI, includes numerous Prompt examples and usage tips, making it a valuable resource for GPT application developers. It summarizes best practices from various business domains through partnerships and hackathons, offering great inspiration for developers! Below is an excerpt from this document:&lt;/p>
+&lt;h2 id="best-practices-for-writing-prompts">Best Practices for Writing Prompts&lt;/h2>
+&lt;p>For best practices in writing Prompts, the most recommended resource is OpenAI&amp;rsquo;s official &lt;a href="https://platform.openai.com/docs/guides/gpt-best-practices">GPT Best Practices&lt;/a>. However, for GPT application development, I want to share some practices combining these best practices with my own experiences.&lt;/p>
+&lt;h3 id="clarity-and-detail">Clarity and Detail&lt;/h3>
+&lt;p>In reality, most developers use GPT primarily to solve programming problems or ask questions, often bringing their experience with search engines like Google into using and developing GPT.&lt;/p>
+&lt;p>For example, if you want to know how to write a Fibonacci sequence in Python, you might type &lt;code>python fibonacci&lt;/code> in Google. This is sufficient because Google, based on inverted indexing and PageRank algorithms, can provide high-quality web answers with just keywords.&lt;/p>
+&lt;p>This minimal input method is the simplest and most efficient. Even if you type a few more words like &lt;code>how to write python fibonacci&lt;/code>, the output quality on Google doesn&amp;rsquo;t differ much.&lt;/p>
+&lt;p>However, using GPT, an input like &lt;code>python fibonacci&lt;/code> is unfriendly because it can&amp;rsquo;t clearly understand your intent, possibly giving irrelevant results (varying slightly with different model qualities).&lt;/p>
+&lt;p>But if you input &lt;code>Write a Python function to efficiently calculate the Fibonacci sequence. Comment on each line of code to explain its purpose and why it's written that way&lt;/code>, this is clear and detailed for GPT. It can understand your intent, providing more accurate results, &lt;strong>ensuring a minimum quality threshold while improving the upper limit of output quality!&lt;/strong>&lt;/p>
+&lt;p>This differs from developers&amp;rsquo; experience with search engines like Google and is often overlooked by GPT developers and users. Early this year, while developing the &lt;a href="https://github.com/guangzhengli/ChatFiles">ChatFiles&lt;/a> project, I anonymously collected user Prompts and found that over 95% of users used very simple Prompts, sometimes as brief as a few words.&lt;/p>
+&lt;p>Therefore, when developing GPT applications, developers must ensure Prompts are clear and detailed. Try multiple times to choose a Prompt with stable output quality and consistent format, which is key to ensuring GPT application quality.&lt;/p>
+&lt;h3 id="handling-more-complex-tasks">Handling More Complex Tasks&lt;/h3>
+&lt;p>Most developers can design good Prompts and achieve decent output quality for simple tasks by spending some time adjusting Prompts. However, for complex tasks, improving GPT&amp;rsquo;s output quality requires two crucial techniques: &lt;strong>making GPT reason instead of answer, and breaking down tasks for guidance&lt;/strong>.&lt;/p>
+&lt;h4 id="reasoning-instead-of-answering">Reasoning Instead of Answering&lt;/h4>
+&lt;p>Reasoning instead of answering means instructing the GPT model not to immediately judge correctness or provide an answer but to guide it into deeper thinking. You can ask it to list various views on the problem, break down the task, explain each step&amp;rsquo;s reasoning, and then conclude. Adding step-by-step reasoning requirements in the Prompt makes the language model spend more time on logical thinking, resulting in more reliable and accurate outputs.&lt;/p>
+&lt;p>For example, if you need GPT to evaluate a student&amp;rsquo;s solution, a Prompt like &lt;code>Evaluate if the student's solution is correct&lt;/code> might lead to incorrect answers for complex problems because GPT doesn&amp;rsquo;t reason like humans. It immediately judges, often leading to errors (similar to humans struggling with complex math in a short time).&lt;/p>
+&lt;p>But if the Prompt is &lt;code>First solve the problem yourself, then compare your solution with the student's and evaluate if the student's solution is correct. Do not determine the correctness of the student's solution before solving the problem yourself&lt;/code>, this clear guidance makes the GPT model spend more time deriving the answer, resulting in more accurate outcomes.&lt;/p>
+&lt;h4 id="breaking-down-tasks">Breaking Down Tasks&lt;/h4>
+&lt;p>Breaking down tasks for guidance means splitting a complex task into multiple subtasks, guiding the GPT model through each, and then integrating the results. This approach helps the GPT model focus on each subtask, improving output quality.&lt;/p>
+&lt;p>For instance, summarizing a book directly might not yield good results. Instead, you can summarize each part through a series of subtasks and then compile the summaries.&lt;/p>
+&lt;p>However, breaking down tasks introduces new challenges, such as the quality of individual task outputs affecting the overall result. Additionally, with current token costs, breaking down tasks incurs extra costs. Nevertheless, designing and breaking down complex tasks is crucial for GPT applications, maintaining their competitive edge, and is a core design point for large model AI frameworks like LangChain. This topic deserves a separate article for discussion.&lt;/p>
+&lt;h3 id="usage-tips">Usage Tips&lt;/h3>
+&lt;p>Besides the important practices mentioned above, some small tips can be very helpful for application development. Here are some summarized tips:&lt;/p>
+&lt;ul>
+&lt;li>Provide a few examples (Few-Shot Prompting): Give the model one or two expected input-output examples to help it understand our requirements and expected output format.&lt;/li>
+&lt;li>Request structured output in the Prompt: Output in JSON format for easier subsequent code processing.&lt;/li>
+&lt;li>Separators: Use separators like &lt;code>&amp;quot;&amp;quot;&amp;quot;&lt;/code> to isolate different instructions and contexts, preventing conflicts between system and user Prompts.&lt;/li>
+&lt;/ul>
+&lt;h2 id="gpt-embedding-application-development">GPT Embedding Application Development&lt;/h2>
+&lt;p>Above, we mainly discussed developing AI applications based on Prompts. However, sometimes we encounter new problems. For instance, large models&amp;rsquo; training data is often months or even years old. When we need GPT applications to provide the latest data, like answering questions based on recent news or private documents, the large model hasn&amp;rsquo;t been trained on these materials and can&amp;rsquo;t solve such problems.&lt;/p>
+&lt;p>In such cases, we can have the model use reference texts to answer questions. For example, our Prompt can be:&lt;/p>
+&lt;pre tabindex="0">&lt;code>You will receive a document separated by triple quotes and a question.
+Your task is to answer the question using the provided document and cite the text used to answer the question.
+If the document does not contain the information needed to answer the question, simply write: &amp;#34;Insufficient information.&amp;#34;
+If providing an answer, include citation notes.
+Use the following format to cite relevant paragraphs ({&amp;#34;citation&amp;#34;: …}).
+&lt;/code>&lt;/pre>&lt;p>This approach allows GPT to answer questions based on the provided reference text. For example, if we want to know the latest World Cup champion, we can attach the latest World Cup news as a reference text. GPT will understand the entire news article before answering the question. This way, we can address the issues of timeliness and specific downstream tasks for large models.&lt;/p>
+&lt;p>However, this solution introduces another problem: the length limit of reference texts. GPT Prompts have size limits, like the gpt-3.5-turbo model, which has a 4K token limit (~3000 words). This means users can input a maximum of 3000 words for GPT to understand and infer answers.&lt;/p>
+&lt;p>If the required reference text exceeds 3000 words, we can&amp;rsquo;t get an answer from GPT in one go. Developers need to split the reference text into multiple parts, convert them to GPT Embeddings, and store them in a vector database. For more information on vector databases, refer to my other blog &lt;a href="https://think-crow.guthub.io/en/blog/en/vector-database/">Vector Database&lt;/a>. When querying the reference text, convert the question to a vector, retrieve it from the vector database, and convert the retrieved vectors back to text. This way, we get reference text within GPT&amp;rsquo;s token limit, relevant to the question.&lt;/p>
+&lt;p>We submit the question and the relevant reference text to GPT to get the desired answer. This process is the core of GPT Embeddings application development. The core idea is to retrieve the most relevant text segments through vector retrieval, bypassing GPT&amp;rsquo;s token limit.&lt;/p>
+&lt;p>&lt;img alt="Embedding" src="https://storage.guangzhengli.com/images/Embedding.png">&lt;/p>
+&lt;p>The overall development process is as shown in the image above:&lt;/p>
+&lt;ol>
+&lt;li>Load the document and obtain the target text information. For example, in the mainstream LLM framework LangChain, there are two text acquisition methods: File Loader and Web Loader.
+&lt;ol>
+&lt;li>File Loader based on the file system, such as loading PDF files, Word files, etc.&lt;/li>
+&lt;li>Web Loader based on the web, such as a webpage, AWS S3, etc.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Split the target text into multiple paragraphs, mainly based on two methods.
+&lt;ol>
+&lt;li>One is the text quantity-based splitting method, such as 1000 words per segment. This method is simple but may split a paragraph into multiple segments, reducing coherence and potentially lowering answer quality due to missing context.&lt;/li>
+&lt;li>The other is the punctuation-based splitting method, such as using line breaks as separators. This method maintains coherence but results in varying segment sizes, potentially triggering GPT&amp;rsquo;s token limit.&lt;/li>
+&lt;li>The last method is the GPT token limit-based splitting method, such as grouping 2000 tokens and searching for the two most relevant segments during the query. This way, the combined segments stay within the 4096 token limit.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Store the split text blocks uniformly in the &lt;a href="https://think-crow.guthub.io/en/blog/en/vector-database/">vector database&lt;/a>.&lt;/li>
+&lt;li>Convert the user&amp;rsquo;s question to a vector, retrieve the most relevant text segments from the vector database (note that this retrieval is not traditional database fuzzy matching or inverted indexing but semantic search, so the retrieved text can answer the user&amp;rsquo;s question. For details, see another blog &lt;a href="https://think-crow.guthub.io/en/blog/en/vector-database/">Vector Database&lt;/a>).&lt;/li>
+&lt;li>Combine the retrieved relevant text information, user question, and system Prompt into a Prompt for the Embeddings scenario, clearly stating to answer the question using the reference text, not GPT itself.&lt;/li>
+&lt;li>GPT answers the final Prompt, providing the desired answer.&lt;/li>
+&lt;/ol>
+&lt;p>If you&amp;rsquo;re interested in the specific implementation code, check out the &lt;a href="https://js.langchain.com/docs/modules/data_connection/">Retrieval chapter&lt;/a> in LangChain.&lt;/p>
+&lt;p>GPT Embeddings applications can solve problems that GPT alone can&amp;rsquo;t answer, which is their biggest advantage. Without training or fine-tuning, simply converting text to vectors and retrieving them can make certain business scenarios possible at a low cost.&lt;/p>
+&lt;p>However, this solution also introduces new problems, such as the quality of text splitting and retrieval significantly affecting the final result. Balancing query range, quality, and time, and handling cases where the retrieved reference text can&amp;rsquo;t answer the user&amp;rsquo;s question are all issues developers need to carefully consider for business needs and scenarios.&lt;/p>
+&lt;p>Looking further ahead, all documents in human history have been written for humans, not optimized for vector retrieval. Will there be texts specifically written for AI and retrieval in the future, making AI better understand and align with database retrieval? These questions require long-term thinking and validation, which we won&amp;rsquo;t expand on here.&lt;/p>
+&lt;h2 id="gpt-agents-application-development">GPT Agents Application Development&lt;/h2>
+&lt;p>Beyond the business needs that can be addressed by the aforementioned prompt and embeddings solutions, there is another very common requirement in GPT application development: how to integrate with existing systems or APIs.&lt;/p>
+&lt;p>The software industry has been evolving for many years, and many companies have their own systems and APIs. These APIs can significantly extend the capabilities of GPT applications. If a GPT application is to be implemented in real-life scenarios, it inevitably needs to integrate with existing systems.&lt;/p>
+&lt;p>For instance, if you want to ask GPT a simple question like, &amp;ldquo;What&amp;rsquo;s the weather in Beijing today?&amp;rdquo; From the previous sections, we know that GPT cannot answer such questions on its own. However, if GPT can call a weather API, development becomes much more convenient.&lt;/p>
+&lt;p>To achieve the requirement of GPT calling a weather API, we face two problems: one is to make the GPT application understand the function of a particular API and call it when appropriate; the other is that the input and output must be structured to ensure system stability.&lt;/p>
+&lt;h3 id="understanding-and-calling-existing-apis">Understanding and Calling Existing APIs&lt;/h3>
+&lt;p>To make GPT understand the function of an API, the best way is for developers to manually add names and specific descriptions to the API, including the structure of input and output values and what each field represents. This can greatly influence GPT&amp;rsquo;s judgment and ultimately decide whether to call the API.&lt;/p>
+&lt;p>For example, the description of calling a weather API on the &lt;a href="https://openai.com/blog/function-calling-and-other-api-updates">OpenAI official website&lt;/a> is as follows:&lt;/p>
+&lt;pre tabindex="0">&lt;code>function_descriptions = [
+{
+&amp;#34;name&amp;#34;: &amp;#34;get_current_weather&amp;#34;,
+&amp;#34;description&amp;#34;: &amp;#34;Get the current weather in a given location&amp;#34;,
+&amp;#34;parameters&amp;#34;: {
+&amp;#34;type&amp;#34;: &amp;#34;object&amp;#34;,
+&amp;#34;properties&amp;#34;: {
+&amp;#34;location&amp;#34;: {
+&amp;#34;type&amp;#34;: &amp;#34;string&amp;#34;,
+&amp;#34;description&amp;#34;: &amp;#34;The city and state, e.g. San Francisco, CA&amp;#34;,
+},
+&amp;#34;unit&amp;#34;: {
+&amp;#34;type&amp;#34;: &amp;#34;string&amp;#34;,
+&amp;#34;description&amp;#34;: &amp;#34;The temperature unit to use. Infer this from the users location.&amp;#34;,
+&amp;#34;enum&amp;#34;: [&amp;#34;celsius&amp;#34;, &amp;#34;fahrenheit&amp;#34;]
+},
+},
+&amp;#34;required&amp;#34;: [&amp;#34;location&amp;#34;],
+},
+}
+]
+&lt;/code>&lt;/pre>&lt;p>The above method describes in detail that to call this function, at least the current location information must be provided, and the temperature unit can be optionally provided. GPT will decide whether to call this function based on whether the question is related to the function&amp;rsquo;s description. The specific code details can be written in another article, so we won&amp;rsquo;t expand on it here.&lt;/p>
+&lt;p>By providing a large number of API documentation, we can help LLMs understand and learn the functions, usage, and combination methods of these APIs. Ultimately, this allows the overall requirements to be broken down into multiple sub-tasks, with each sub-task interacting with a specific API, achieving automation and AI goals.&lt;/p>
+&lt;p>The existing APIs we describe here are not limited to HTTP requests. They can include converting to SQL queries to databases, calling SDKs to achieve complex functions, and even in the future, extending to calling physical world switches, robotic arms, etc. Personally, I believe that based on the current capabilities and development trends of GPT, the way humans interact with machines will undergo significant changes.&lt;/p>
+&lt;h3 id="structured-output">Structured Output&lt;/h3>
+&lt;p>In addition to making GPT understand and call existing APIs, we also need to ensure that the results output by GPT can be understood by existing systems. This requires the output to be structured, such as data in JSON format.&lt;/p>
+&lt;p>You might immediately think, can&amp;rsquo;t we achieve this through prompts? In most cases, yes, but in some rare cases, prompts are not as stable as function calling. Traditional systems have very high requirements for stability. For example:&lt;/p>
+&lt;pre tabindex="0">&lt;code>student_description=Wang is a sophomore majoring in computer science at Peking University, with a GPA of 3.8. He is very skilled in programming and an active member of the university&amp;#39;s robotics club. He hopes to pursue a career in artificial intelligence after graduation.
+&lt;/code>&lt;/pre>&lt;p>In this passage, we can use a prompt to require the output to be in JSON format, such as:&lt;/p>
+&lt;pre tabindex="0">&lt;code>Please extract the following information from the given text and return it as a JSON object:
+name
+major
+school
+grades
+club
+This is the body of text to extract the information from:
+{student_1_description}
+&lt;/code>&lt;/pre>&lt;p>However, the difficult part is that we cannot ensure whether GPT will output &lt;code>3.8&lt;/code> or &lt;code>3.8 GPA&lt;/code> for grades. For humans, there is no difference between these two outputs, but for computers, they are completely different. The former is a floating-point number, and the latter is a string. For some languages, conversion will directly result in an error.&lt;/p>
+&lt;p>We can certainly reduce such problems by adding more descriptions to the prompt, but the reality is more complex. It is difficult to fully describe the requirements through natural language, and it is hard to ensure that GPT&amp;rsquo;s answers will always maintain the same output. Therefore, for such problems, using the function calling method provided by OpenAI can solve the interaction problem between natural language and machine language to a certain extent.&lt;/p>
+&lt;p>For example, the above problem can be described as a function, where we describe the grades field as an integer to avoid such issues. This structured capability is crucial for developing a stable system.&lt;/p>
+&lt;pre tabindex="0">&lt;code>student_custom_functions = [
+{
+&amp;#39;name&amp;#39;: &amp;#39;extract_student_info&amp;#39;,
+&amp;#39;description&amp;#39;: &amp;#39;Get the student information from the body of the input text&amp;#39;,
+&amp;#39;parameters&amp;#39;: {
+&amp;#39;type&amp;#39;: &amp;#39;object&amp;#39;,
+&amp;#39;properties&amp;#39;: {
+&amp;#39;name&amp;#39;: {
+&amp;#39;type&amp;#39;: &amp;#39;string&amp;#39;,
+&amp;#39;description&amp;#39;: &amp;#39;Name of the person&amp;#39;
+},
+&amp;#39;major&amp;#39;: {
+&amp;#39;type&amp;#39;: &amp;#39;string&amp;#39;,
+&amp;#39;description&amp;#39;: &amp;#39;Major subject.&amp;#39;
+},
+&amp;#39;school&amp;#39;: {
+&amp;#39;type&amp;#39;: &amp;#39;string&amp;#39;,
+&amp;#39;description&amp;#39;: &amp;#39;The university name.&amp;#39;
+},
+&amp;#39;grades&amp;#39;: {
+&amp;#39;type&amp;#39;: &amp;#39;integer&amp;#39;,
+&amp;#39;description&amp;#39;: &amp;#39;GPA of the student.&amp;#39;
+},
+&amp;#39;club&amp;#39;: {
+&amp;#39;type&amp;#39;: &amp;#39;string&amp;#39;,
+&amp;#39;description&amp;#39;: &amp;#39;School club for extracurricular activities. &amp;#39;
+}
+}
+}
+}
+]
+&lt;/code>&lt;/pre>&lt;p>For the complete debugging process, you can check out this &lt;a href="https://www.datacamp.com/tutorial/open-ai-function-calling-tutorial">OpenAI function calling example&lt;/a>.&lt;/p>
+&lt;h2 id="gpt-application-requirements-analysis">GPT Application Requirements Analysis&lt;/h2>
+&lt;p>The above mainly discusses some techniques for developing GPT applications, but if we want to create a product, we still need to start from business needs and think about what kind of business value we can create to meet the current potential users&amp;rsquo; needs.&lt;/p>
+&lt;blockquote>
+&lt;p>Update on 2023/09/06: The official LangChain documentation has been updated, dividing the documentation into RAG (Retrieval Augmented Generation) and Agents sections. This indicates that since the explosion of GPT a few months ago, the industry currently believes that RAG and Agents are the two directions for business needs to land. RAG is mainly the GPT Embeddings part we discussed above, and we will also give examples from these two directions later. I think anchoring to leading frameworks like LangChain is very valuable for developers because they summarize some best practices and experiences in the process of business implementation, which is very helpful for developers to understand business needs.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="content-generation">Content Generation&lt;/h3>
+&lt;p>Content generation is currently the most mainstream demand and the direction with the highest traffic statistics in current AI applications. Besides well-known products like ChatGPT, there are also high-traffic AI companion (role-playing) applications like &lt;a href="https://beta.character.ai/">Character AI&lt;/a> mainly developed based on prompts.&lt;/p>
+&lt;p>In the broader content generation category, there are image generation fields like &lt;a href="https://www.midjourney.com/">Midjourney&lt;/a>, voice generation fields like &lt;a href="https://elevenlabs.io">ElevenLabs&lt;/a>, text creativity fields like &lt;a href="https://www.copy.ai/">copy ai&lt;/a>, and some niche text content generation fields like novel generation assistance &lt;a href="https://ai-novel.com/">AI-Novel&lt;/a>, etc.&lt;/p>
+&lt;p>Content generation is currently the AI demand field with the highest internet traffic and the easiest to implement because its application scenarios are very broad. Content generation assistance can often directly improve productivity, so the willingness to pay is often not low. The competition in this field is often the most intense.&lt;/p>
+&lt;h3 id="gpt-embeddings-demand">GPT Embeddings Demand&lt;/h3>
+&lt;p>GPT Embeddings is a direction I think has great potential value. When &lt;a href="https://github.com/guangzhengli/ChatFiles">ChatFiles&lt;/a> was just open-sourced, I received some inquiries asking if it could optimize existing scenarios and businesses in customer service, sales, operation manuals, knowledge bases, etc. My personal answer is that GPT Embeddings has great prospects in these scenarios.&lt;/p>
+&lt;p>In this field, we can currently see startups like &lt;a href="https://www.mendable.ai">mendable ai&lt;/a> that have already occupied a certain market share, supporting document Q&amp;amp;A functions for leading GPT frameworks like &lt;a href="https://js.langchain.com/">LangChain&lt;/a>. They are also actively expanding business scenarios such as sales and customer service.&lt;/p>
+&lt;p>In addition, the website with the highest traffic in this field is currently &lt;a href="https://www.chatpdf.com">ChatPDF&lt;/a>, where you can upload PDF files and then ask questions and make requests based on the PDF, such as summarizing. This direction has also derived various niche demands, such as assisting in reading and collaborating on papers like &lt;a href="https://jenni.ai">Jenni AI&lt;/a>.&lt;/p>
+&lt;h3 id="gpt-agents-demand">GPT Agents Demand&lt;/h3>
+&lt;p>The demand for GPT Agents is diverse because it is based on the integration of existing systems. By analyzing the APIs of existing systems, we can determine what kind of business value we can create. For example, many GPT-provided networking functions are achieved by integrating SerpAPI, which is an aggregated query website that integrates major search engines. This allows ChatGPT to answer some search-based questions, such as current weather, stock market, news, etc.&lt;/p>
+&lt;p>Among them, the most famous are naturally the two projects &lt;a href="https://github.com/Significant-Gravitas/Auto-GPT">Auto GPT&lt;/a> and &lt;a href="https://github.com/reworkd/AgentGPT">AgentGPT&lt;/a>. If you are interested in GPT Agents applications, you might want to check out these two projects. In addition, companies like &lt;a href="https://github.com/calcom/cal.com/tree/main/apps/ai">cal.com&lt;/a> that integrate AI agents to enhance functions like scheduling meetings with natural language might give you some different inspirations.&lt;/p>
+&lt;h3 id="unstructured-input-and-structured-output">Unstructured Input and Structured Output&lt;/h3>
+&lt;p>Another point that I think many people overlook is the ability of GPT/LLM to handle unstructured data. In the past, we needed to spend a lot of development time to process some simple texts, such as extracting some key information from SMS, like names, phone numbers, addresses, etc. Due to different SMS templates, this information is unstructured.&lt;/p>
+&lt;p>We cannot convert this content into structured output like JSON format through a simple method, so we often need a set of complex regular expressions or NLP technology to extract this information. However, regular expression development is complex, and for different SMS templates, plus the templates change over time, we need to constantly adjust the regular expressions, which is a very time-consuming process for developers and engineers.&lt;/p>
+&lt;p>NLP technology can only be applied to certain specific scenarios, such as extracting phone numbers, extracting addresses, etc. For different scenarios, we need different NLP technologies. So once the business needs change, such as recognizing license plates, we need to redevelop and adjust.&lt;/p>
+&lt;p>But with a unified API like OpenAI GPT, we only need to provide different prompts to the service, and we can guide GPT to reason through the prompts to get the results we want. This can greatly simplify our development process, shorten development time, and quickly respond to market changes.&lt;/p>
+&lt;p>And due to GPT&amp;rsquo;s strong generalization ability, we only need to think about how to handle unstructured data for different scenarios. This ability to handle unstructured data will change many traditional business development processes and methods in future software development, having a profound impact on the software lifecycle.&lt;/p>
+&lt;h3 id="natural-language-interaction">Natural Language Interaction&lt;/h3>
+&lt;p>Finally, I want to say that GPT&amp;rsquo;s ability to handle natural language will deeply change the way humans interact with machines. In the past, from command lines to graphical interfaces, to touch screens, these are all histories of human-machine interaction revolutions. Most people&amp;rsquo;s interaction with machines actually requires the programmer as a medium. People have various needs, business analysts and developers extract the needs, and programmers generate graphical pages through code. People then interact with the graphical pages to achieve human-machine interaction.&lt;/p>
+&lt;p>This process involves information transmission loss and generates a lot of limitations and costs. If machines can understand natural language, we can interact directly with machines. Then the concepts of software, machines, and intelligence that we are familiar with will undergo tremendous changes, and human-machine interaction will also undergo earth-shaking changes.&lt;/p>
+&lt;p>If you find it hard to understand this uncertain, unreferenced change, you can experience the &lt;a href="https://github.com/KillianLucas/open-interpreter">open interpreter&lt;/a> project. It is a project that generates code based on natural language and executes it directly on the computer. Although it is very primitive and unstable, you can see the revolution in human-machine interaction from it.&lt;/p>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/guangzhengli/ChatFiles">https://github.com/guangzhengli/ChatFiles&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/guangzhengli/vectorhub">https://github.com/guangzhengli/vectorhub&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://js.langchain.com/docs/modules/data_connection">https://js.langchain.com/docs/modules/data_connection&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.datacamp.com/tutorial/open-ai-function-calling-tutorial">https://www.datacamp.com/tutorial/open-ai-function-calling-tutorial&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://openai.com/blog/function-calling-and-other-api-updates">https://openai.com/blog/function-calling-and-other-api-updates&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://openai.com/blog/chatgpt-plugins#code-interpreter">https://openai.com/blog/chatgpt-plugins#code-interpreter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/KillianLucas/open-interpreter">https://github.com/KillianLucas/open-interpreter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.chatpdf.com">https://www.chatpdf.com&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jenni.ai">https://jenni.ai&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/reworkd/AgentGPT">https://github.com/reworkd/AgentGPT&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://a16z.com/how-are-consumers-using-generative-ai">https://a16z.com/how-are-consumers-using-generative-ai&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Vector Databases</title><link>https://think-crow.guthub.io/en/blog/en/vector-database/</link><pubDate>Sat, 15 Jul 2023 15:15:00 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://think-crow.guthub.io/en/blog/en/vector-database/</guid><description>&lt;p>You might have recently heard news like a startup focusing on vector databases securing millions in investment just after finishing their PPT, or an open-source vector database making headlines on Hackernews due to its simplistic code. Over the past few months, the development of AI applications has been booming, driving the entire AI tech stack, with vector databases being one of the hottest topics.&lt;/p>
+&lt;p>Recently, while developing an open-source projects, &lt;a href="https://github.com/guangzhengli/ChatFiles">ChatFiles&lt;/a>, I delved into vector databases. After gaining a general understanding of mainstream vector databases and search algorithms, I decided to compile this knowledge into an article to help others.&lt;/p>
+&lt;h2 id="gpts-limitations">GPT&amp;rsquo;s Limitations&lt;/h2>
+&lt;p>In the past few months, we have been in the midst of an AI revolution, with the most dazzling being the emergence of GPT-3.5/4. While GPT-3.5/4 has brought us immense amazement, its inherent limitations and numerous restrictions have also been a headache for developers. For instance, the input context (tokens) size limitation troubles many developers and consumers. The gpt-3.5-turbo model has a limit of 4K tokens (~3000 words), meaning users can input a maximum of 3000 words for GPT to understand and infer answers.&lt;/p>
+&lt;p>Some might wonder, &amp;ldquo;My ChatGPT has a conversation memory function. Since it can remember chats, the input token limit shouldn&amp;rsquo;t matter. I can just split the text into multiple inputs, and it will naturally remember my previous conversations, thus bypassing the token limit.&amp;rdquo;&lt;/p>
+&lt;p>This idea is not entirely correct. GPT, as an LLM model, does not have a memory function. The so-called memory function is just developers storing conversation records in memory or a database. When you send a message to the GPT model, the program automatically combines the recent few conversation records (based on the 4096 tokens limit) into the final question through a prompt and sends it to ChatGPT. In short, if your conversation memory exceeds 4096 tokens, it will forget the previous conversations. This is a current limitation of GPT in handling more complex tasks.&lt;/p>
+&lt;p>Different models have different token limits. GPT-4 has a limit of 32K tokens, while the largest token limit currently is &lt;a href="https://www.anthropic.com/index/100k-context-windows">Claude&amp;rsquo;s 100K&lt;/a>, meaning you can input about 75,000 words of context to GPT, allowing GPT to directly understand the entire content of a book like &amp;ldquo;Harry Potter&amp;rdquo; and answer related questions.&lt;/p>
+&lt;p>But does this solve all our problems? The answer is no. For instance, Claude&amp;rsquo;s example shows that GPT&amp;rsquo;s response time for 72K tokens of context is 22 seconds. If we have GB-level or larger documents that need GPT&amp;rsquo;s understanding and Q&amp;amp;A, the current computing power is hard to provide a good experience. More critically, the current GPT API charges based on tokens, so the more context you input, the more expensive it gets.&lt;/p>
+&lt;p>This situation is somewhat similar to early developers facing the dilemma of developing applications with only a few MB or even KB of memory. One, &amp;lsquo;memory&amp;rsquo; was expensive, and two, &amp;lsquo;memory&amp;rsquo; was too small. So, until there are revolutionary advancements in GPT models in terms of performance, cost, and attention mechanisms, developers have to face the challenge of bypassing GPT&amp;rsquo;s token limitations.&lt;/p>
+&lt;h2 id="the-rise-of-vector-databases">The Rise of Vector Databases&lt;/h2>
+&lt;p>Under the limitations of GPT models, developers have to look for other solutions, and vector databases are one of them. The core idea of vector databases is to convert text into vectors, then store the vectors in a database. When a user inputs a question, it is converted into a vector, then the database searches for the most similar vectors and context, and finally returns the text to the user.&lt;/p>
+&lt;p>When we have a document that needs GPT processing, such as a customer service training manual or an operation manual, we can first convert all the content of this document into vectors (this process is called Vector Embedding). Then, when a user asks a related question, we convert the user&amp;rsquo;s search content into a vector, search for the most similar vectors in the database, match the most similar contexts, and finally return the context to GPT. This not only greatly reduces GPT&amp;rsquo;s computation, thereby improving response speed, but more importantly, reduces costs and bypasses GPT&amp;rsquo;s token limitations.&lt;/p>
+&lt;p>&lt;img alt="Embedding" src="https://storage.guangzhengli.com/images/Embedding.png">&lt;/p>
+&lt;p>For example, if we have a long conversation with ChatGPT, we can save all the conversations as vectors. When we ask ChatGPT a question, we can convert the question into a vector to semantically search all past chat records, find the &amp;lsquo;memory&amp;rsquo; most related to the current question, and send it to ChatGPT, greatly improving GPT&amp;rsquo;s output quality.&lt;/p>
+&lt;p>The role of vector databases is not limited to text semantic search. In traditional AI and machine learning scenarios, it also includes functions like facial recognition, image search, and voice recognition. However, it is undeniable that the current boom in vector databases is because they greatly help AI in understanding and maintaining long-term memory to perform complex tasks. For example, you can try &lt;a href="https://js.langchain.com/docs/">LangChainJs&amp;rsquo;s document search/Q&amp;amp;A function&lt;/a> to feel its charm, or try my open-source projects &lt;a href="https://github.com/guangzhengli/vectorhub">VectorHub&lt;/a> and &lt;a href="https://github.com/guangzhengli/ChatFiles">ChatFiles&lt;/a>, where you can upload a document or base it on a web document and then ask related questions. These functions are all based on Vector Embedding and vector database products.&lt;/p>
+&lt;h2 id="vector-embeddings">Vector Embeddings&lt;/h2>
+&lt;p>For traditional databases, search functions are implemented based on different indexing methods (B Tree, inverted index, etc.) combined with exact matching and ranking algorithms (BM25, TF-IDF). Essentially, it is based on exact text matching. This indexing and search algorithm is very suitable for keyword search functions but very weak for semantic search functions.&lt;/p>
+&lt;p>For example, if you search for &amp;ldquo;puppy,&amp;rdquo; you can only get results related to the keyword &amp;ldquo;puppy&amp;rdquo; and not &amp;ldquo;Corgi,&amp;rdquo; &amp;ldquo;Golden Retriever,&amp;rdquo; etc., because &amp;ldquo;puppy&amp;rdquo; and &amp;ldquo;Golden Retriever&amp;rdquo; are different words. Traditional databases cannot recognize their semantic relationship, so traditional applications need to manually tag the features between &amp;ldquo;puppy&amp;rdquo; and &amp;ldquo;Golden Retriever&amp;rdquo; to achieve semantic search. This process of generating and selecting features is also known as Feature Engineering, which is the process of transforming raw data into features that better represent the essence of the problem.&lt;/p>
+&lt;p>However, if you need to handle unstructured data, you will find that the number of features of unstructured data will start to expand rapidly. For example, if we are dealing with images, audio, video, etc., this process becomes very difficult. For images, features like color, shape, texture, edges, objects, scenes, etc., can be labeled, but these features are too many and hard to label manually. So, we need an automated way to extract these features, which can be achieved through Vector Embedding.&lt;/p>
+&lt;p>Vector Embedding is generated by AI models (such as large language models LLM). It generates high-dimensional vector data representing different features of the data based on different algorithms. These features represent different dimensions of the data. For example, for text, these features may include vocabulary, grammar, semantics, sentiment, emotion, theme, context, etc. For audio, these features may include pitch, rhythm, pitch, timbre, volume, speech, music, etc.&lt;/p>
+&lt;p>For example, currently, text vectors can be generated through OpenAI&amp;rsquo;s text-embedding-ada-002 model, image vectors can be generated through the clip-vit-base-patch32 model, and audio vectors can be generated through the wav2vec2-base-960h model. These vectors are all generated by AI models, so they all have semantic information.&lt;/p>
+&lt;p>For example, if we use the text-embedding-ada-002 model to embed the sentence &amp;ldquo;Your text string goes here,&amp;rdquo; it will generate a 1536-dimensional vector, and the result will look like this: &lt;code>“-0.006929283495992422, -0.005336422007530928, ... -4547132266452536e-05,-0.024047505110502243”&lt;/code>. This vector contains all the features of the sentence, including vocabulary and grammar, and we can store it in a vector database for subsequent semantic search.&lt;/p>
+&lt;h2 id="features-and-vectors">Features and Vectors&lt;/h2>
+&lt;p>Although the core of vector databases is similarity search, before diving into similarity search, we need to understand the concepts and principles of features and vectors.&lt;/p>
+&lt;p>Let&amp;rsquo;s think about a question: Why do we distinguish different objects and things in life?&lt;/p>
+&lt;p>From a theoretical perspective, this is because we recognize different features of different things to identify categories. For example, to distinguish different types of dogs, we can use features like body size, hair length, and nose length. As shown in the photo below, sorted by body size, you can see that the larger the dog, the closer it is to the right side of the coordinate axis. This way, we get a one-dimensional coordinate of the body size feature and the corresponding value, from 0 to 1, showing the position of each dog in the coordinate system.&lt;/p>
+&lt;p>&lt;img alt="Snipaste_2023-07-15_20-55-09" src="https://storage.guangzhengli.com/images/Snipaste_2023-07-15_20-55-09.png">&lt;/p>
+&lt;p>However, relying on just one feature of body size is not enough. For example, the body sizes of Huskies, Golden Retrievers, and Labradors in the photo are very close, making it hard to distinguish them. So, we continue to observe other features, such as hair length.&lt;/p>
+&lt;p>&lt;img alt="Snipaste_2023-07-15_20-59-13" src="https://storage.guangzhengli.com/images/Snipaste_2023-07-15_20-59-13.png">&lt;/p>
+&lt;p>This way, each dog corresponds to a two-dimensional coordinate point, and we can easily distinguish Huskies, Golden Retrievers, and Labradors. If we still can&amp;rsquo;t distinguish German Shepherds and Rottweilers, we can continue to use other features, like nose length, to get a three-dimensional coordinate system and the position of each dog in the three-dimensional coordinate system.&lt;/p>
+&lt;p>In this case, as long as there are enough features, we can distinguish all dogs, and finally get a high-dimensional coordinate system. Although we can&amp;rsquo;t imagine what a high-dimensional coordinate system looks like, in an array, we just need to keep adding numbers to the array.&lt;/p>
+&lt;p>In fact, as long as there are enough dimensions, we can distinguish all things. Everything in the world can be represented by a multi-dimensional coordinate system, and they all correspond to a coordinate point in a high-dimensional feature space.&lt;/p>
+&lt;p>So, what does this have to do with similarity search? You will find that in the two-dimensional coordinates above, the coordinates of German Shepherds and Rottweilers are very close, which means their features are also very close. We all know that vectors are mathematical structures with magnitude and direction, so we can represent these features with vectors and determine their similarity by calculating the distance between vectors. This is &lt;strong>similarity search&lt;/strong>.&lt;/p>
+&lt;p>The above images and detailed explanations are from &lt;a href="https://www.bilibili.com/video/BV11a4y1c7SW">this video&lt;/a>, which also includes some of the similarity search algorithms introduced below. If you are interested in vector databases, I highly recommend watching this video.&lt;/p>
+&lt;h2 id="similarity-search">Similarity Search&lt;/h2>
+&lt;p>Now that we know we can determine the similarity of vectors by comparing their distances, how do we apply this to real-world scenarios? If we want to find the most similar vector to a given vector in a massive dataset, we need to compare each vector in the database, but this is computationally intensive. So, we need an efficient algorithm to solve this problem.&lt;/p>
+&lt;p>There are many efficient search algorithms, and their main idea is to improve search efficiency in two ways:&lt;/p>
+&lt;ol>
+&lt;li>Reduce vector size—by dimensionality reduction or reducing the length of the representation vector.&lt;/li>
+&lt;li>Narrow the search range—by clustering or organizing vectors into tree or graph structures and limiting the search range to the closest cluster or filtering through the most similar branches.&lt;/li>
+&lt;/ol>
+&lt;p>First, let&amp;rsquo;s introduce the core concept shared by most algorithms, which is clustering.&lt;/p>
+&lt;h3 id="k-means-and-faiss">K-Means and Faiss&lt;/h3>
+&lt;p>After saving the vector data, we can first cluster the vector data. For example, in the two-dimensional coordinate system below, four cluster centers are defined, and each vector is assigned to the nearest cluster center. The clustering algorithm continuously adjusts the cluster center positions, dividing the vector data into four clusters. Each time we search, we only need to determine which cluster the search vector belongs to and then search within that cluster, reducing the search range from four clusters to one, greatly reducing the search range.&lt;/p>
+&lt;p>&lt;img alt="kmeans" src="https://storage.guangzhengli.com/images/kmeans.png">&lt;/p>
+&lt;p>Common clustering algorithms include K-Means, which can divide data into k categories, where k is specified in advance. The basic steps of the k-means algorithm are:&lt;/p>
+&lt;ol>
+&lt;li>Choose k initial cluster centers.&lt;/li>
+&lt;li>Assign each data point to the nearest cluster center.&lt;/li>
+&lt;li>Calculate the new center of each cluster.&lt;/li>
+&lt;li>Repeat steps 2 and 3 until the cluster centers no longer change or the maximum number of iterations is reached.&lt;/li>
+&lt;/ol>
+&lt;p>However, this search method also has some drawbacks. For example, if the search content is right in the middle of two classification areas, it is likely to miss the most similar vector.&lt;/p>
+&lt;p>In reality, the distribution of vectors is not as clear-cut as in the figure. The boundaries of regions are often adjacent, as shown in the &lt;a href="https://github.com/facebookresearch/faiss">Faiss algorithm&lt;/a> below.&lt;/p>
+&lt;p>We can imagine vectors as being contained within Voronoi cells. When a new query vector is introduced, the distance to the centroids is first measured, and the search range is limited to the cell containing the centroid.&lt;/p>
+&lt;p>&lt;img alt="WUjl5M" src="https://storage.guangzhengli.com/images/WUjl5M.jpg">&lt;/p>
+&lt;p>To solve the problem of possible omissions during the search, the search range can be dynamically adjusted. For example, when nprobe = 1, only the nearest cluster center is searched. When nprobe = 2, the nearest two cluster centers are searched. The value of nprobe can be adjusted according to actual business needs.&lt;/p>
+&lt;p>&lt;img alt="FZadSG" src="https://storage.guangzhengli.com/images/FZadSG.jpg">&lt;/p>
+&lt;p>In fact, except for brute-force search, which can perfectly find the nearest neighbor, all search algorithms can only make a trade-off between speed, quality, and memory. These algorithms are also known as Approximate Nearest Neighbor (ANN).&lt;/p>
+&lt;h3 id="product-quantization-pq">Product Quantization (PQ)&lt;/h3>
+&lt;p>In large-scale datasets, the biggest problem with clustering algorithms is the high memory consumption. This is mainly reflected in two aspects. First, because each vector&amp;rsquo;s coordinates need to be saved, and each coordinate is a floating-point number, the memory consumption is already very large. In addition, the cluster centers and the cluster center index of each vector need to be maintained, which also consumes a lot of memory.&lt;/p>
+&lt;p>For the first problem, it can be solved by quantization, which is a common lossy compression method. For example, in memory, each vector in the cluster center can be represented by the cluster center vector, and a codebook of all vectors to the cluster center can be maintained, greatly reducing memory consumption.&lt;/p>
+&lt;p>But this still cannot solve all problems. In the previous example, the cluster centers were defined in a two-dimensional coordinate system. Similarly, in a high-dimensional coordinate system, multiple cluster centers can be defined, continuously adjusted, and iterated until multiple stable and convergent center points are found.&lt;/p>
+&lt;p>However, in high-dimensional coordinate systems, the curse of dimensionality problem will also be encountered. Specifically, as the dimensions increase, the distance between data points will grow exponentially. This means that in high-dimensional coordinate systems, more cluster centers are needed to divide the data points into smaller clusters to improve classification quality. Otherwise, the distance between the vector and its cluster center will be very far, greatly reducing search speed and quality.&lt;/p>
+&lt;p>But if you want to maintain classification and search quality, you need to maintain a large number of cluster centers. This brings another problem: the number of cluster centers will grow exponentially with the increase in dimensions, leading to a rapid increase in the size of the codebook, greatly increasing memory consumption. For example, a 128-dimensional vector needs to maintain 2^64 cluster centers to maintain a good quantization result, but the size of such a codebook has already exceeded the memory size of maintaining the original vector.&lt;/p>
+&lt;p>The solution to this problem is to decompose the vector into multiple sub-vectors and then quantize each sub-vector independently. For example, a 128-dimensional vector can be divided into 8 16-dimensional vectors, and then clustering is performed on the 8 16-dimensional sub-vectors. Since a 16-dimensional sub-vector only needs about 256 cluster centers to achieve a good quantization result, the size of the codebook can be reduced from 2^64 to 8 * 256 = 2048 cluster centers, thereby reducing memory consumption.&lt;/p>
+&lt;p>&lt;img alt="5dAeV5" src="https://storage.guangzhengli.com/images/5dAeV5.jpg">&lt;/p>
+&lt;p>After encoding the vector, 8 encoding values are obtained, which are combined to form the final encoding value of the vector. When used, these 8 encoding values are searched in the 8 sub-codebooks to find the corresponding 16-dimensional vectors, which are then combined using the Cartesian product to form a 128-dimensional vector, obtaining the final search result. This is the principle of Product Quantization (PQ).&lt;/p>
+&lt;p>Using the PQ algorithm can significantly reduce memory consumption and speed up the search. Its only problem is that the search quality will decrease, but as we mentioned earlier, all algorithms make a trade-off between memory, speed, and quality.&lt;/p>
+&lt;h3 id="hierarchical-navigable-small-worlds-hnsw">Hierarchical Navigable Small Worlds (HNSW)&lt;/h3>
+&lt;p>Apart from clustering, approximate nearest neighbor search can also be achieved by constructing trees or graphs. The basic idea is to add vectors to the database by first finding the nearest vector and then connecting them, forming a graph. When searching, you can start from a node in the graph and continuously perform nearest neighbor searches and shortest path calculations until you find the most similar vector.&lt;/p>
+&lt;p>This algorithm ensures search quality, but if all nodes in the graph are connected by the shortest path, as in the bottom layer of the graph, you still need to traverse all nodes during the search.&lt;/p>
+&lt;p>&lt;img alt="GD7ufK" src="https://storage.guangzhengli.com/images/GD7ufK.jpg">&lt;/p>
+&lt;p>To solve this problem, the approach is similar to the common skip list algorithm. As shown in the figure, to search a skip list, you start from the highest level and move right along the longest &amp;ldquo;skip&amp;rdquo; edges. If the current node&amp;rsquo;s value exceeds the target, you move down one level and continue.&lt;/p>
+&lt;p>&lt;img alt="wOu6JL" src="https://storage.guangzhengli.com/images/wOu6JL.jpg">&lt;/p>
+&lt;p>HNSW inherits the same layered format, with longer edges at the top layer for fast searches and shorter edges at the lower layers for accurate searches.&lt;/p>
+&lt;p>Specifically, the graph can be divided into multiple layers, each being a small world where nodes are interconnected. Each layer&amp;rsquo;s nodes connect to the nodes in the layer above. When searching, you start from the top layer, where the distances between nodes are long, reducing search time, and then search layer by layer downwards. The bottom layer ensures search quality by connecting similar nodes, allowing you to find the most similar vector.&lt;/p>
+&lt;p>If you&amp;rsquo;re interested in skip lists and HNSW, check out &lt;a href="https://www.youtube.com/watch?v=QvKMwLjdK-s&amp;t=168s&amp;ab_channel=JamesBriggs">this video&lt;/a>.&lt;/p>
+&lt;p>The HNSW algorithm is a classic space-for-time algorithm, offering high search quality and speed but with significant memory overhead. This is because it needs to store all vectors in memory and maintain a graph structure. Therefore, the choice of this algorithm depends on the actual scenario.&lt;/p>
+&lt;h3 id="locality-sensitive-hashing-lsh">Locality Sensitive Hashing (LSH)&lt;/h3>
+&lt;p>Locality Sensitive Hashing (LSH) is another indexing technique for approximate nearest neighbor search. It is fast and provides approximate, non-exhaustive results. LSH uses a set of hash functions to map similar vectors into &amp;ldquo;buckets,&amp;rdquo; so similar vectors have the same hash value. This allows you to determine vector similarity by comparing hash values.&lt;/p>
+&lt;p>Typically, we design hash algorithms to minimize hash collisions because the search time complexity of hash functions is O(1). However, if a hash collision occurs, meaning two different keys are mapped to the same bucket, data structures like linked lists are used to resolve conflicts, making the search time complexity O(n), where n is the length of the list. To improve the efficiency of hash functions, we usually minimize the probability of collisions.&lt;/p>
+&lt;p>But in vector search, our goal is to find similar vectors, so we can design a hash function that maximizes the probability of collisions for similar vectors. This way, similar vectors are mapped to the same bucket.&lt;/p>
+&lt;p>When searching for a specific vector, the same hash function is used to &amp;ldquo;bucket&amp;rdquo; similar vectors into a hash table. The query vector is hashed into a specific table, and then compared with other vectors in that table to find the closest match. This method is much faster than searching the entire dataset because each hash table bucket contains far fewer vectors than the entire space.&lt;/p>
+&lt;p>How should this hash function be designed? To better understand, let&amp;rsquo;s start with a 2D coordinate system. As shown below, a random line can divide the 2D coordinate system into two regions, allowing us to determine similarity by checking if vectors are on the same side of the line. For example, the figure below shows four randomly generated lines, allowing a vector&amp;rsquo;s position to be represented by four binary numbers, such as A and B being in the same region.&lt;/p>
+&lt;p>&lt;img alt="lsh2" src="https://storage.guangzhengli.com/images/lsh2.png">&lt;/p>
+&lt;p>The principle is simple: if two vectors are close, they are more likely to be on the same side of the line. For example, the probability of a line passing through AC is much higher than passing through AB, so the probability of AB being on the same side is much higher than AC.&lt;/p>
+&lt;p>When searching for a vector, the vector is hashed again, and vectors in the same bucket are found. Then, a brute-force search is used to find the closest vector. As shown below, if a vector is hashed to 10, similar vectors like D in the same bucket are found, greatly reducing search time.&lt;/p>
+&lt;p>&lt;img alt="lsh3" src="https://storage.guangzhengli.com/images/lsh3.png">&lt;/p>
+&lt;p>For more details on the LSH algorithm, refer to &lt;a href="https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing/">this blog&lt;/a>.&lt;/p>
+&lt;h4 id="random-projection-for-lsh">Random Projection for LSH&lt;/h4>
+&lt;p>If a random line can distinguish similarity in a 2D coordinate system, similarly, a random plane can divide a 3D coordinate system into two regions. In a multi-dimensional coordinate system, a random hyperplane can divide the space into two regions to distinguish similarity.&lt;/p>
+&lt;p>However, in high-dimensional space, the distance between data points is often very sparse, and the distance increases exponentially with dimensions. This results in many buckets, with the extreme case being one vector per bucket, making computation very slow. Therefore, in practice, LSH algorithms use random projection to project high-dimensional data points into lower-dimensional space, reducing computation time and improving query quality.&lt;/p>
+&lt;p>The basic idea behind random projection is to use a random projection matrix to project high-dimensional vectors into lower-dimensional space. A matrix of random numbers is created, with the size being the desired target low-dimensional value. Then, the dot product between the input vector and the matrix is calculated, resulting in a projected matrix with fewer dimensions but retaining their similarity.&lt;/p>
+&lt;p>When querying, the same projection matrix is used to project the query vector into lower-dimensional space. The projected query vector is then compared with the projected vectors in the database to find the nearest neighbor. Since the data dimensions are reduced, the search process is much faster than searching the entire high-dimensional space.&lt;/p>
+&lt;p>The basic steps are:&lt;/p>
+&lt;ol>
+&lt;li>Randomly select a hyperplane from the high-dimensional space and project data points onto it.&lt;/li>
+&lt;li>Repeat step 1, selecting multiple hyperplanes and projecting data points onto them.&lt;/li>
+&lt;li>Combine the projection results of multiple hyperplanes into a vector representing the low-dimensional space.&lt;/li>
+&lt;li>Use a hash function to map the vectors in the low-dimensional space into hash buckets.&lt;/li>
+&lt;/ol>
+&lt;p>Similarly, random projection is an approximate method, and the projection quality depends on the projection matrix. Generally, the more random the projection matrix, the better the mapping quality. However, generating truly random projection matrices can be computationally expensive, especially for large datasets. For more details on the RP for LSH algorithm, refer to &lt;a href="https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing-random-projection/">this blog&lt;/a>.&lt;/p>
+&lt;h2 id="similarity-measurement">Similarity Measurement&lt;/h2>
+&lt;p>We have discussed different search algorithms for vector databases, but not how to measure similarity. In similarity search, the distance between two vectors is calculated to determine their similarity.&lt;/p>
+&lt;p>How do we calculate the distance between vectors in high-dimensional space? There are three common vector similarity algorithms: Euclidean distance, cosine similarity, and dot product similarity.&lt;/p>
+&lt;h3 id="euclidean-distance">Euclidean Distance&lt;/h3>
+&lt;p>Euclidean distance refers to the distance between two vectors, calculated as:&lt;/p>
+&lt;p>$$d(\mathbf{A}, \mathbf{B}) = \sqrt{\sum_{i=1}^{n}(A_i - B_i)^2}$$&lt;/p>
+&lt;p>where $\mathbf{A}$ and $\mathbf{B}$ represent two vectors, and $n$ represents the vector&amp;rsquo;s dimensions.&lt;/p>
+&lt;p>&lt;img alt="KPhJ27" src="https://storage.guangzhengli.com/images/KPhJ27.jpg">&lt;/p>
+&lt;p>The advantage of the Euclidean distance algorithm is that it reflects the absolute distance between vectors, suitable for similarity calculations that consider vector length. For example, in recommendation systems, the number of historical user behaviors needs to be considered, not just the similarity of behaviors.&lt;/p>
+&lt;h3 id="cosine-similarity">Cosine Similarity&lt;/h3>
+&lt;p>Cosine similarity refers to the cosine value of the angle between two vectors, calculated as:&lt;/p>
+&lt;p>$$\cos(\theta) = \frac{\mathbf{A} \cdot \mathbf{B}}{|\mathbf{A}| |\mathbf{B}|}$$&lt;/p>
+&lt;p>where $\mathbf{A}$ and $\mathbf{B}$ represent two vectors, $\cdot$ represents the dot product, and $|\mathbf{A}|$ and $|\mathbf{B}|$ represent the magnitudes of the vectors.&lt;/p>
+&lt;p>&lt;img alt="fHLAfz" src="https://storage.guangzhengli.com/images/fHLAfz.jpg">&lt;/p>
+&lt;p>Cosine similarity is insensitive to vector length and only focuses on direction, making it suitable for high-dimensional vector similarity calculations, such as semantic search and document classification.&lt;/p>
+&lt;h3 id="dot-product-similarity">Dot Product Similarity&lt;/h3>
+&lt;p>Dot product similarity refers to the dot product value between two vectors, calculated as:&lt;/p>
+&lt;p>$$\mathbf{A} \cdot \mathbf{B} = \sum_{i=1}^{n}A_i B_i$$&lt;/p>
+&lt;p>where $\mathbf{A}$ and $\mathbf{B}$ represent two vectors, and $n$ represents the vector&amp;rsquo;s dimensions.&lt;/p>
+&lt;p>&lt;img alt="kyA3AN" src="https://storage.guangzhengli.com/images/kyA3AN.jpg">&lt;/p>
+&lt;p>The advantage of the dot product similarity algorithm is its simplicity, fast computation, and consideration of both vector length and direction. It is suitable for many practical scenarios, such as image recognition, semantic search, and document classification. However, the dot product similarity algorithm is sensitive to vector length, which may cause issues when calculating high-dimensional vector similarity.&lt;/p>
+&lt;p>Each similarity measurement algorithm has its advantages and disadvantages, and developers need to choose based on their data characteristics and business scenarios.&lt;/p>
+&lt;h2 id="filtering">Filtering&lt;/h2>
+&lt;p>In practical business scenarios, similarity searches are often not needed across the entire vector database but are filtered by some business fields before querying. Therefore, vectors stored in the database often need to include metadata, such as user ID, document ID, etc. This allows filtering search results based on metadata to get the final result.&lt;/p>
+&lt;p>To achieve this, vector databases typically maintain two indexes: a vector index and a metadata index. Metadata filtering is performed before or after the similarity search itself, but in either case, it can slow down the query process.&lt;/p>
+&lt;p>&lt;img alt="VwZxFW" src="https://storage.guangzhengli.com/images/VwZxFW.jpg">&lt;/p>
+&lt;p>The filtering process can be performed before or after the vector search itself, but each method has its challenges and may affect query performance:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Pre-filtering: Metadata filtering is performed before the vector search. While this can help reduce the search space, it may cause the system to ignore relevant results that do not match the metadata filtering criteria.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Post-filtering: Metadata filtering is performed after the vector search is completed. This ensures that all relevant results are considered, and irrelevant results are filtered out after the search.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>To optimize the filtering process, vector databases use various techniques, such as advanced indexing methods for metadata or parallel processing to speed up filtering tasks. Balancing search performance and filtering accuracy is crucial for providing efficient and relevant vector database query results.&lt;/p>
+&lt;h2 id="choosing-a-vector-database">Choosing a Vector Database&lt;/h2>
+&lt;p>In this article, I have spent a lot of time introducing the principles and implementation of similarity search algorithms in vector databases. While similarity search algorithms are a core and key point of a vector database, other factors need to be considered in practical business scenarios, such as the database&amp;rsquo;s availability, scalability, security, whether the code is open source, and the community&amp;rsquo;s activity.&lt;/p>
+&lt;h3 id="distributed">Distributed&lt;/h3>
+&lt;p>A mature vector database often needs to support distributed deployment to meet the storage and query needs of large-scale data. The more data you have, the more nodes you need, and the more errors and failures you encounter. Therefore, a distributed vector database needs to have high availability and fault tolerance.&lt;/p>
+&lt;p>High availability and fault tolerance in databases often require implementing sharding and replication capabilities. In traditional databases, sharding is often done based on the primary key or business needs. However, in distributed vector databases, sharding needs to consider vector similarity to ensure query quality and speed.&lt;/p>
+&lt;p>Other factors, such as consistency of replicated node data, data security, etc., also need to be considered in distributed vector databases.&lt;/p>
+&lt;h3 id="access-control-and-backup">Access Control and Backup&lt;/h3>
+&lt;p>In addition, whether the access control design is sufficient is another factor to consider. For example, when an organization and business grow rapidly, can new users and permissions be quickly added? Can new nodes be quickly added? Are audit logs complete? These are all factors to consider.&lt;/p>
+&lt;p>Moreover, database monitoring and backup are also important factors. When data fails, being able to quickly locate problems and restore data is a must for a mature vector database.&lt;/p>
+&lt;h3 id="api--sdk">API &amp;amp; SDK&lt;/h3>
+&lt;p>Compared to the above factors, API &amp;amp; SDK may often be overlooked, but in practical business scenarios, API &amp;amp; SDK are often the most concerned factors for developers. The design of API &amp;amp; SDK directly affects the development efficiency and user experience of developers. A well-designed API &amp;amp; SDK can adapt to different needs. Vector databases are a new field, and this point is easily overlooked when most people are not clear about the needs in this area.&lt;/p>
+&lt;h3 id="selection">Selection&lt;/h3>
+&lt;p>As of now, the following are some vector database options:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Vector Database&lt;/th>
+&lt;th>URL&lt;/th>
+&lt;th>GitHub Star&lt;/th>
+&lt;th>Language&lt;/th>
+&lt;th>Cloud&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>chroma&lt;/td>
+&lt;td>&lt;a href="https://github.com/chroma-core/chroma">https://github.com/chroma-core/chroma&lt;/a>&lt;/td>
+&lt;td>7.4K&lt;/td>
+&lt;td>Python&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>milvus&lt;/td>
+&lt;td>&lt;a href="https://github.com/milvus-io/milvus">https://github.com/milvus-io/milvus&lt;/a>&lt;/td>
+&lt;td>21.5K&lt;/td>
+&lt;td>Go/Python/C++&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>pinecone&lt;/td>
+&lt;td>&lt;a href="https://www.pinecone.io/">https://www.pinecone.io/&lt;/a>&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>qdrant&lt;/td>
+&lt;td>&lt;a href="https://github.com/qdrant/qdrant">https://github.com/qdrant/qdrant&lt;/a>&lt;/td>
+&lt;td>11.8K&lt;/td>
+&lt;td>Rust&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>typesense&lt;/td>
+&lt;td>&lt;a href="https://github.com/typesense/typesense">https://github.com/typesense/typesense&lt;/a>&lt;/td>
+&lt;td>12.9K&lt;/td>
+&lt;td>C++&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>weaviate&lt;/td>
+&lt;td>&lt;a href="https://github.com/weaviate/weaviate">https://github.com/weaviate/weaviate&lt;/a>&lt;/td>
+&lt;td>6.9K&lt;/td>
+&lt;td>Go&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="extending-traditional-data">Extending Traditional Data&lt;/h3>
+&lt;p>Besides choosing a specialized vector database, extending traditional databases is also an option. For example, Redis, besides its traditional Key-Value database use, offers Redis Modules, which extend Redis with new features, commands, and data types. For example, the &lt;a href="https://redis.io/docs/interact/search-and-query/">RediSearch&lt;/a> module extends vector search capabilities.&lt;/p>
+&lt;p>Similarly, PostgreSQL extensions can extend database functionality. For example, &lt;a href="https://github.com/pgvector/pgvector">pgvector&lt;/a> enables vector search capabilities. It supports exact and similarity searches, cosine similarity, and other similarity measurement algorithms. Most importantly, it is attached to PostgreSQL, allowing you to leverage all PostgreSQL features, such as ACID transactions, concurrency control, backup, and recovery. It also has all PostgreSQL client libraries, allowing access from any language&amp;rsquo;s PostgreSQL client, reducing developer learning and service maintenance costs.&lt;/p>
+&lt;p>For example, my open-source projects &lt;a href="https://github.com/guangzhengli/ChatFiles">ChatFiles&lt;/a> and &lt;a href="https://github.com/guangzhengli/vectorhub">VectorHub&lt;/a> currently use pgvector to implement vector search for GPT document Q&amp;amp;A, based on &lt;a href="https://supabase.com/blog/openai-embeddings-postgres-vector">Supabase&amp;rsquo;s PostgreSQL + pgvector&lt;/a> service.&lt;/p>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>This article mainly introduces the principles and implementation of vector databases, including basic concepts, similarity search algorithms, similarity measurement algorithms, filtering algorithms, and vector database selection. Vector databases are a new field, and most vector database companies&amp;rsquo; valuations are rapidly growing with the AI and GPT wave. However, in practical business scenarios, the application scenarios of vector databases are still relatively few. Developers and business experts need to explore the application scenarios of vector databases beyond the hype.&lt;/p>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV11a4y1c7SW">https://www.bilibili.com/video/BV11a4y1c7SW&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1BM4y177Dk">https://www.bilibili.com/video/BV1BM4y177Dk&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/learn/vector-database/">https://www.pinecone.io/learn/vector-database/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/guangzhengli/ChatFiles">https://github.com/guangzhengli/ChatFiles&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/guangzhengli/vectorhub">https://github.com/guangzhengli/vectorhub&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.anthropic.com/index/100k-context-windows">https://www.anthropic.com/index/100k-context-windows&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://js.langchain.com/docs/">https://js.langchain.com/docs/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing/">https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/learn/series/faiss/product-quantization/">https://www.pinecone.io/learn/series/faiss/product-quantization/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing-random-projection/">https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing-random-projection/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=QvKMwLjdK-s&amp;t=168s&amp;ab_channel=JamesBriggs">https://www.youtube.com/watch?v=QvKMwLjdK-s&amp;t=168s&amp;ab_channel=JamesBriggs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/learn/series/faiss/faiss-tutorial/">https://www.pinecone.io/learn/series/faiss/faiss-tutorial/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=sKyvsdEv6rk&amp;ab_channel=JamesBriggs">https://www.youtube.com/watch?v=sKyvsdEv6rk&amp;ab_channel=JamesBriggs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/learn/vector-similarity/">https://www.pinecone.io/learn/vector-similarity/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/chroma-core/chroma">https://github.com/chroma-core/chroma&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/milvus-io/milvus">https://github.com/milvus-io/milvus&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/">https://www.pinecone.io/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/qdrant/qdrant">https://github.com/qdrant/qdrant&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/typesense/typesense">https://github.com/typesense/typesense&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/weaviate/weaviate">https://github.com/weaviate/weaviate&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://redis.io/docs/interact/search-and-query/">https://redis.io/docs/interact/search-and-query/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/pgvector/pgvector">https://github.com/pgvector/pgvector&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

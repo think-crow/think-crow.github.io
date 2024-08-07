@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GuangzhengLi</title><link>https://think-crow.guthub.io/en/</link><description>Recent content on GuangzhengLi</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>iguangzhengli@gmail.com (Guangzheng Li)</managingEditor><webMaster>iguangzhengli@gmail.com (Guangzheng Li)</webMaster><copyright>2024 GuangzhengLi All rights reserved</copyright><lastBuildDate>Mon, 25 Mar 2024 22:00:00 +0800</lastBuildDate><atom:link href="https://think-crow.guthub.io/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Independent Development Tech Stack 2024</title><link>https://think-crow.guthub.io/en/blog/en/indie-hacker-tech-stack-2024/</link><pubDate>Mon, 25 Mar 2024 22:00:00 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://think-crow.guthub.io/en/blog/en/indie-hacker-tech-stack-2024/</guid><description>&lt;p>The purpose of writing this article is to celebrate reaching 10K followers on X/Twitter 🎉. Suddenly, I felt the urge to share. In today&amp;rsquo;s world, where the choice of tech stacks and cloud service providers is so rich and diverse, what tech stack should we choose if we need to develop independently?&lt;/p>
+&lt;h2 id="why-independent-development">Why Independent Development?&lt;/h2>
+&lt;p>Why do I limit my technology choices to independent development? Because if we are developing for a company or a client, I feel that the room for technological choices is limited, and the fun is also reduced.&lt;/p>
+&lt;p>First, except for a few startups, most existing companies or projects already have a well-established tech stack and standards. They usually recommend refactoring on the old tech stack or phasing out old microservices and introducing new technologies in new microservices, rather than completely overhauling everything for the sake of a novel tech stack.&lt;/p>
+&lt;p>Even if new tech stacks are introduced into old projects, the priority is given to tech stacks that facilitate team collaboration, such as those that are easy to hire for and conducive to teamwork.&lt;/p>
+&lt;p>So, if you want to satisfy your technical enthusiasm, the best way is to join open-source projects or develop your own independent projects.&lt;/p>
+&lt;p>Alright, let&amp;rsquo;s officially start the recommendations!&lt;/p>
+&lt;h2 id="frontend">Frontend&lt;/h2>
+&lt;h3 id="nextjshttpsnextjsorg">&lt;a href="https://nextjs.org/">Nextjs&lt;/a>&lt;/h3>
+&lt;p>If you are mainly building frontend applications or projects that combine frontend with lightweight backend APIs, the most recommended framework is &lt;a href="https://nextjs.org/">Nextjs&lt;/a>, an open-source framework based on React.&lt;/p>
+&lt;p>Reasons for recommendation:&lt;/p>
+&lt;ul>
+&lt;li>Gentle learning curve with very friendly official tutorials: &lt;a href="https://nextjs.org/learn">https://nextjs.org/learn&lt;/a>&lt;/li>
+&lt;li>Rich ecosystem with many scaffolding options to meet different needs, such as the open-source scaffolding project &lt;a href="https://github.com/t3-oss/create-t3-app">create-t3-app&lt;/a>, which can selectively integrate authentication, ORM, UI, and other functionalities and tech stacks.&lt;/li>
+&lt;li>Simple deployment, as it is developed by the parent company of &lt;a href="https://vercel.com/">Vercel&lt;/a>, making it very smooth to deploy on &lt;a href="https://vercel.com/">Vercel&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>Why recommend &lt;a href="https://nextjs.org/">Nextjs&lt;/a> right off the bat? Firstly, &lt;a href="https://nextjs.org/">Nextjs&lt;/a> itself is a framework that allows for quick creation and deployment, enabling us to get our projects online quickly. Secondly, &lt;a href="https://nextjs.org/">Nextjs&lt;/a> is very friendly and convenient for integrating the tech stacks and platforms we will recommend later.&lt;/p>
+&lt;p>For example, if you want to deploy a static website, such as documentation or tutorials, you can use &lt;a href="https://nextjs.org/">Nextjs&lt;/a>&amp;rsquo;s Static Site Generation (SSG) along with some CDN hosting services. Here, I highly recommend &lt;a href="https://pages.cloudflare.com/">Cloudflare Pages&lt;/a>, the only cloud service provider I give a five-star recommendation. For instance, the &lt;a href="https://nextra.site/">nextra&lt;/a> project is an open-source documentation project based on &lt;a href="https://nextra.site/docs/guide/ssg">Nextjs + SSG&lt;/a>.&lt;/p>
+&lt;p>Of course, you can also deploy some full-stack projects that require lightweight APIs, such as blogs or AI chatbots. You can use &lt;a href="https://nextjs.org/">Nextjs&lt;/a>&amp;rsquo;s Server Side Rendering (SSR) and API Routes, along with cloud functions from cloud service providers like &lt;a href="https://vercel.com/">Vercel&lt;/a>&amp;rsquo;s &lt;a href="https://vercel.com/docs/functions">Serverless Functions&lt;/a> or &lt;a href="https://developers.cloudflare.com/pages/framework-guides/nextjs/deploy-a-nextjs-site/">Cloudflare Worker&lt;/a>, to quickly deploy a full-stack project.&lt;/p>
+&lt;p>For example, the blog of &lt;a href="https://leerob.io/">leerob&lt;/a>, a core member of &lt;a href="https://nextjs.org/">Nextjs&lt;/a> + &lt;a href="https://vercel.com/">Vercel&lt;/a>, is a great example. His personal blog is built with SSR + API Routes, featuring functionalities like comments and subscriptions, and is deployed on &lt;a href="https://vercel.com/">Vercel&lt;/a>.&lt;/p>
+&lt;p>For independent developers, the most important thing is to get our projects online quickly, rather than spending a lot of time reinventing the wheel, deploying, and maintaining. Therefore, &lt;a href="https://nextjs.org/">Nextjs&lt;/a> + &lt;a href="https://vercel.com/">Vercel&lt;/a> is a very good choice. Even if Vercel raises prices or stops being free in the future, it can be replaced with other cloud service providers like Cloudflare.&lt;/p>
+&lt;h3 id="tailwindcss--shadcnui">TailwindCSS + Shadcn/ui&lt;/h3>
+&lt;p>When it comes to choosing a UI styling framework, there are many options. The richness of the frontend developer ecosystem is truly impressive, something unimaginable in other language ecosystems.&lt;/p>
+&lt;p>Here, I only recommend what I personally find comfortable to use: &lt;a href="https://tailwindcss.com/">TailwindCSS&lt;/a> + &lt;a href="https://ui.shadcn.com/">Shadcn/ui&lt;/a>.&lt;/p>
+&lt;p>Reasons for recommending &lt;a href="https://tailwindcss.com/">TailwindCSS&lt;/a>:&lt;/p>
+&lt;ul>
+&lt;li>Compared to traditional CSS, &lt;a href="https://tailwindcss.com/">TailwindCSS&lt;/a> is much more convenient with built-in syntactic sugar.&lt;/li>
+&lt;li>Highly customizable with consistent code standards.&lt;/li>
+&lt;li>Integrates well with modern frontend tools like PostCSS and PurgeCSS.&lt;/li>
+&lt;/ul>
+&lt;p>Another important reason for recommending &lt;a href="https://tailwindcss.com/">TailwindCSS&lt;/a> is that in today&amp;rsquo;s world of code generation tools like GPT and Github Copilot, AI can generate &lt;a href="https://tailwindcss.com/">TailwindCSS&lt;/a> + JSX code very well, making it an AI-friendly coding style.&lt;/p>
+&lt;p>Reasons for recommending &lt;a href="https://ui.shadcn.com/">Shadcn/ui&lt;/a>:&lt;/p>
+&lt;ul>
+&lt;li>Highly flexible UI framework that works well with &lt;a href="https://tailwindcss.com/">TailwindCSS&lt;/a>.&lt;/li>
+&lt;li>Beautifully designed styles with plenty of code samples available, such as those in &lt;a href="https://ui.shadcn.com/blocks">blocks&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>Unlike common component libraries like Ant Design and Chakra, shadcn/ui is a project that uses Tailwind CSS to wrap &lt;a href="https://www.radix-ui.com/">radix-ui&lt;/a> (a headless UI component library). This approach is a double-edged sword: the advantage is high customizability and on-demand usage, but the downside is that installation and updates are not convenient, and future updates may be affected by radix-ui.&lt;/p>
+&lt;p>Another reason for recommending shadcn/ui is related to AI. The author of shadcn/ui has joined &lt;a href="https://vercel.com/">Vercel&lt;/a> to develop &lt;a href="https://v0.dev/">V0&lt;/a>, an AI frontend code generation tool, so I am optimistic about the future of shadcn/ui.&lt;/p>
+&lt;p>Overall, you can choose shadcn/ui as needed. For more details on shadcn/ui, you can read &lt;a href="https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/why-shadcn-ui-is-so-popular-in-2023-0f95e66f3ddc">this article&lt;/a>.&lt;/p>
+&lt;p>Other common UI frameworks worth trying include &lt;a href="https://daisyui.com/">daisyui&lt;/a> and &lt;a href="https://chakra-ui.com/">chakraui&lt;/a>.&lt;/p>
+&lt;h3 id="others">Others&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.prisma.io/">Prisma&lt;/a>: A database ORM that, while not the best in performance, has the best ecosystem with support from various databases and cloud providers. Convenient for switching databases when data volume increases.
+&lt;ul>
+&lt;li>&lt;a href="https://orm.drizzle.team/">Drizzle&lt;/a>: If you choose a Serverless solution, consider using Drizzle ORM, which is optimized for Serverless scenarios and is only 31 KB after packaging.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://next-auth.js.org/">NextAuth.js&lt;/a>: An authentication library for Nextjs. Although the documentation is a bit chaotic, its ecosystem and functionality are the best.&lt;/li>
+&lt;li>&lt;a href="https://swr.vercel.app/">SWR&lt;/a>: An HTTP request library from the Nextjs team that solves component data fetching and caching issues.&lt;/li>
+&lt;li>&lt;a href="https://zod.dev/">zod&lt;/a>: A schema validation library that can be used for frontend and backend data and form validation.&lt;/li>
+&lt;li>&lt;a href="https://zustand.surge.sh/">Zustand&lt;/a> &amp;amp; &lt;a href="https://jotai.org/">jotai&lt;/a>: Zustand is a simple React state management library that can replace Redux. Jotai is an atomic state management library, and you can choose based on your needs.
+&lt;ul>
+&lt;li>For state management library choices, I highly recommend this video: &lt;a href="https://www.youtube.com/watch?v=5-1LM2NySR0">React Query Essentials&lt;/a>. For articles on state management, I recommend this series: &lt;a href="https://tkdodo.eu/blog/practical-react-query">practical-react-query&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://driverjs.com/">driverjs&lt;/a>: A library for guiding user operations, useful for onboarding and operation guides.&lt;/li>
+&lt;li>&lt;a href="https://github.com/wxt-dev/wxt">wxt&lt;/a>: A browser extension development framework similar to Nuxt, useful for developing Chrome, Firefox, and other extensions.&lt;/li>
+&lt;li>&lt;a href="https://oramasearch.com">orama&lt;/a>: A frontend full-text search solution that can replace Algolia. The new Node.js website uses this search engine.&lt;/li>
+&lt;/ul>
+&lt;h2 id="backend">Backend&lt;/h2>
+&lt;p>After discussing frontend libraries and platform choices, let&amp;rsquo;s move on to the backend. In fact, there are fewer pure backend options. Since backend services require CPU, memory, bandwidth, and other resources, which are not cheap, I recommend Serverless solutions. If you prefer familiar backend frameworks, you can use platforms like &lt;a href="https://railway.app/">Railway&lt;/a> or &lt;a href="https://fly.io/">Fly.io&lt;/a> to deploy containers.&lt;/p>
+&lt;h3 id="cloudflare-worker">Cloudflare Worker&lt;/h3>
+&lt;p>Choosing Serverless is the most cost-effective solution because everything is pay-as-you-go. This means you don&amp;rsquo;t have to worry about service costs in the early stages of your independent project. The only thing to be cautious about is cloud service platforms that lure you in with free offers and then charge you heavily once you&amp;rsquo;re deeply invested. Switching Serverless platforms can be quite troublesome. So, if you want to choose a Serverless solution, my only recommendation is &lt;a href="https://workers.cloudflare.com/">Cloudflare Worker&lt;/a>.&lt;/p>
+&lt;p>The &lt;a href="https://developers.cloudflare.com/workers/platform/pricing/#workers">Free Plan&lt;/a> offers 100,000 requests per day, which is sufficient for most projects. The only downside is the 10ms CPU execution time in the Free Plan, which is very short and can cause many computations to time out. However, the $5/month &lt;a href="https://developers.cloudflare.com/workers/platform/pricing/#workers">Standard Plan&lt;/a> is not expensive and increases the CPU execution time to 30s with ample time quotas, which is sufficient for most projects.&lt;/p>
+&lt;p>Moreover, &lt;a href="https://workers.cloudflare.com/">Cloudflare Worker&lt;/a> integrates well with other Cloudflare services we will recommend later, such as KV (key-value database), Pages (static pages), R2 (object storage), D1 (relational database), Queue (MQ queue), etc. Most of these services can be used for free and share the Standard Plan quota.&lt;/p>
+&lt;p>After choosing &lt;a href="https://workers.cloudflare.com/">Cloudflare Worker&lt;/a>, you can use native Node.js because its Worker code is based on the V8 engine, allowing you to write your Worker code in JavaScript, TypeScript, Rust, and other languages.&lt;/p>
+&lt;p>You can also use Serverless frameworks like &lt;a href="https://hono.dev/">hono.dev&lt;/a>, which is a web framework for edge runtime, offering many out-of-the-box features like routing and middleware. It also provides compatibility with different Serverless platforms like &lt;a href="https://vercel.com/">Vercel&lt;/a> and &lt;a href="https://aws.amazon.com/lambda/">AWS Lambda&lt;/a>.&lt;/p>
+&lt;h3 id="railway--flyio">Railway &amp;amp; Fly.io&lt;/h3>
+&lt;p>If your project is not suitable for a Serverless solution, as Serverless has some drawbacks like CPU time, usability, and debugging issues, you can choose your familiar backend language and opt for container deployment.&lt;/p>
+&lt;p>Regarding backend languages and frameworks, I won&amp;rsquo;t make specific recommendations here because the choice depends more on your familiarity. Due to work and open-source projects, I have used various backend frameworks like Java/Spring, C#/.NET, Ruby/Rails, Node.js/Express, Python/FastAPI, and Go/Gin. Each framework has its pros and cons, so I recommend using the one you are most familiar with and has a good open-source ecosystem. Familiar frameworks can improve development efficiency, especially when deployment costs are similar.&lt;/p>
+&lt;p>I recommend using container deployment solutions rather than managing host deployments yourself. For container deployment platforms, I recommend &lt;a href="https://railway.app/">Railway&lt;/a> and &lt;a href="https://fly.io/">Fly.io&lt;/a>. These platforms offer smooth container deployment and management, and you can deploy databases and other services as well. The reason for recommending these platforms is that they have given me a $5 monthly free quota due to my active participation in open-source projects, and I found them quite good after using them.&lt;/p>
+&lt;h2 id="auth">Auth&lt;/h2>
+&lt;p>Regarding Auth-related frameworks and cloud services, my personal experience is that if your business auth requirements are not complex and you are using a tech stack like Nextjs + &lt;a href="https://next-auth.js.org/">NextAuth.js&lt;/a>, then directly using &lt;a href="https://next-auth.js.org/">NextAuth.js&lt;/a> to integrate social logins like Google OAuth, Github OAuth, Azure AD, and JWT authentication is the most convenient.&lt;/p>
+&lt;p>You don&amp;rsquo;t need to manage user passwords or be responsible for login security. Simple configuration and code can achieve this. More importantly, you don&amp;rsquo;t need to integrate other cloud services, reducing complexity and cost.&lt;/p>
+&lt;p>Traditional cloud services like &lt;a href="https://auth0.com/">Auth0&lt;/a> or newer ones like &lt;a href="https://clerk.com/">Clerk&lt;/a> have good functionality and ecosystems, but their free plans are limited, and subsequent charges are very expensive, so I don&amp;rsquo;t recommend using them.&lt;/p>
+&lt;h3 id="supabase-authhttpssupabasecomauth">&lt;a href="https://supabase.com/auth">Supabase Auth&lt;/a>&lt;/h3>
+&lt;p>If your business auth requirements are more complex, such as needing custom login, registration, password recovery, 2FA authentication, etc., I recommend using &lt;a href="https://supabase.com/auth">Supabase Auth&lt;/a>. It supports 50,000 monthly active users, is stable, and user management can be integrated with the database. It also supports social logins, email-password logins, 2FA, and other features.&lt;/p>
+&lt;h3 id="cloudflare-zero-trusthttpsdeveloperscloudflarecomcloudflare-one">&lt;a href="https://developers.cloudflare.com/cloudflare-one/">Cloudflare Zero Trust&lt;/a>&lt;/h3>
+&lt;p>If your user base is very small (less than 50 people) or you need to provide secure access to your project for partners, family, or friends, I highly recommend using &lt;a href="https://www.cloudflare.com/zh-cn/teams/zero-trust/">Cloudflare Zero Trust&lt;/a>. Zero Trust is a security service based on Cloudflare that allows you to restrict access to your project to specified user emails or fixed IPs through simple configuration without modifying a single line of code.&lt;/p>
+&lt;p>The downside of this solution is that your domain must be hosted through Cloudflare, and the free quota of Cloudflare Zero Trust is 50 users, with very high costs beyond that. So, this solution is only suitable for small teams or personal use.&lt;/p>
+&lt;p>However, the advantage is very obvious: no additional code or services are needed, just simple configuration to make your project securely accessible. It is very suitable for private projects, such as setting up GPT projects like &lt;a href="https://github.com/lobehub/lobe-chat">Lobe Chat&lt;/a> or &lt;a href="https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web">ChatGPT-Next-Web&lt;/a> for family and friends. You can even use Cloudflare R2 to set up a private image hosting service, but I won&amp;rsquo;t go into that here.&lt;/p>
+&lt;h2 id="database">Database&lt;/h2>
+&lt;p>Choosing a database is very important and diverse because there are many database options (MySQL, PostgreSQL, MongoDB, SQLite, Redis, etc.), and the competition among cloud service providers adds to the complexity. Here, I only recommend some useful cloud service providers.&lt;/p>
+&lt;h3 id="supabase-database">Supabase Database&lt;/h3>
+&lt;p>For traditional relational databases, I recommend using PostgreSQL. The open-source community of PostgreSQL has always been the best, excelling in functionality, usability, and open-source ecosystem compared to MySQL.&lt;/p>
+&lt;p>The corresponding cloud service provider is &lt;a href="https://supabase.com/">Supabase&lt;/a>, a highly praised database provider. It offers two free database projects with 500MB of storage, supports all Postgres features, and has many plugins and tools, such as Vector &lt;a href="https://guangzhengli.com/blog/zh/vector-database/">vector databases&lt;/a>. Although subsequent charges are not cheap, the free and standard versions are sufficient for independent developers in the early and mid-stages. If it becomes insufficient later, you can consider setting up your own database on Fly.io and migrating.&lt;/p>
+&lt;p>The Supabase team is very active, and the open-source community is excellent. In addition to &lt;a href="https://supabase.com/auth">Supabase Auth&lt;/a> mentioned earlier, they also offer services like &lt;a href="https://supabase.com/storage">Supabase Storage&lt;/a>, &lt;a href="https://supabase.com/realtime">Supabase Realtime&lt;/a>, and &lt;a href="https://supabase.com/functions">Supabase Functions&lt;/a>, all of which are good services.&lt;/p>
+&lt;p>Similar to Supabase Database, Serverless Postgres like &lt;a href="https://neon.tech/">Neon&lt;/a> is also good.&lt;/p>
+&lt;h3 id="cloudflare-d1">Cloudflare D1&lt;/h3>
+&lt;p>If you want a cheaper database that can support stable project operation, I recommend using &lt;a href="https://www.cloudflare.com/zh-cn/products/distributed-sql-database/">Cloudflare D1&lt;/a>, an edge SQLite database. Although SQLite is not as powerful as Postgres, it can be deployed on CDN nodes worldwide, meaning your database can be closer to users, reducing latency and improving speed.&lt;/p>
+&lt;p>Recently, I saw that D1 can integrate with &lt;a href="https://www.prisma.io/">Prisma&lt;/a>, meaning you can use Prisma ORM to operate the D1 database, which is very convenient for full-stack projects. For more details, you can read this &lt;a href="https://blog.cloudflare.com/prisma-orm-and-d1">blog&lt;/a>.&lt;/p>
+&lt;p>The biggest advantage of choosing D1 is its low cost. The free quota is 5GB, and subsequent costs are only $0.75/month. You can also use Cloudflare KV, R2, Queues, and other services, which integrate well with Cloudflare Worker.&lt;/p>
+&lt;h3 id="upstash">Upstash&lt;/h3>
+&lt;p>If your project needs lightweight Redis usage, I recommend using &lt;a href="https://upstash.com/">Upstash&lt;/a>, which can be used to store hot data, cache, etc. This cloud service provider also offers services like Kafka and vector databases. Subsequent charges are also pay-as-you-go, making it a recommended option.&lt;/p>
+&lt;h2 id="payment">Payment&lt;/h2>
+&lt;p>There are not many choices for payment service providers because payment involves security, taxation, financial regulation, and legal issues. It is not recommended to reinvent the wheel or use niche cloud service providers. Here, I only recommend the most suitable ones.&lt;/p>
+&lt;h3 id="stripe">Stripe&lt;/h3>
+&lt;p>&lt;a href="https://stripe.com/">Stripe&lt;/a> is widely recognized as the best payment service provider globally, supporting most currencies and offering reasonable fees. From a development perspective, it has comprehensive documentation and the most complete open-source ecosystem.&lt;/p>
+&lt;p>I don&amp;rsquo;t want to spend too much time on &lt;a href="https://stripe.com/">Stripe&lt;/a>. Its advantages are obvious, but so are its disadvantages. Most people in China find it difficult to register and use Stripe. The most reliable way to register Stripe is to set up a company abroad and register Stripe through the company.&lt;/p>
+&lt;p>However, for independent developers, running a company abroad is not easy. While registering a company through certain channels is relatively easy, dealing with the company&amp;rsquo;s tax and legal issues is more complex. So, I only mention it here. If you have the conditions to register Stripe, I recommend using Stripe.&lt;/p>
+&lt;h2 id="statistics">Statistics&lt;/h2>
+&lt;p>When it comes to data observation, there are generally two types of data analysis: business data analysis and technical data analysis. Business data analysis includes metrics like website traffic, page clicks, and popular features. Technical data analysis involves aspects like website performance and error log analysis. Here are some recommended data analysis tools.&lt;/p>
+&lt;h3 id="website-analysis">Website Analysis&lt;/h3>
+&lt;p>For website analysis, I recommend using &lt;a href="https://umami.is/">Umami&lt;/a>. It&amp;rsquo;s an open-source website analytics tool that can be hosted for free on Vercel + Supabase. By integrating a script, you can collect your own data without worrying about data leaks and privacy issues.&lt;/p>
+&lt;p>Currently, this blog&amp;rsquo;s data analysis is done using &lt;a href="https://umami.is/">Umami&lt;/a>. You can check out the results by clicking on this &lt;a href="https://analytics.guangzhengli.com/share/o3zAba1V/guangzhengli">link&lt;/a>.&lt;/p>
+&lt;p>If you need more powerful data analysis features, such as user behavior recording and website heatmap analysis, I recommend using Microsoft&amp;rsquo;s &lt;a href="https://clarity.microsoft.com/">Clarity&lt;/a>. It claims to be a free website analytics tool forever. Microsoft collects data to feed its AI but does not share it with third parties.&lt;/p>
+&lt;p>Similarly, Google Analytics is also a good choice. If you have the time, consider integrating multiple tools. Having data is essential to extract useful information.&lt;/p>
+&lt;h3 id="analysis-tools">Analysis Tools&lt;/h3>
+&lt;ul>
+&lt;li>Logs: Log Analysis
+&lt;ul>
+&lt;li>&lt;a href="https://newrelic.com/">NewRelic&lt;/a> offers 100GB of usage, which can be used to record logs, APM, analyze error logs, API performance, etc.&lt;/li>
+&lt;li>&lt;a href="https://betterstack.com/logs/pricing">Betterstack&lt;/a> offers 1GB/month and is often used for integrating log analysis in pure frontend projects.&lt;/li>
+&lt;li>&lt;a href="https://www.sumologic.com/pricing/">Sumologic&lt;/a> is a recently discovered log platform that works quite well.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Performance: Performance Analysis
+&lt;ul>
+&lt;li>&lt;a href="https://pagespeed.web.dev/">PageSpeed&lt;/a> by Google, PageSpeed Insights can be used to analyze frontend web performance.&lt;/li>
+&lt;li>&lt;a href="https://developer.chrome.com/docs/lighthouse/overview/">LightHouse&lt;/a> by Google, a tool to improve web quality, including but not limited to analyzing web performance, SEO, accessibility, etc.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>SEO: Search Engine Optimization
+&lt;ul>
+&lt;li>&lt;a href="https://search.google.com/search-console/about">Google Search Console&lt;/a> is Google&amp;rsquo;s official SEO tool that can be used to analyze a website&amp;rsquo;s performance on Google search.&lt;/li>
+&lt;li>&lt;a href="https://chromewebstore.google.com/detail/meta-seo-inspector/ibkclpciafdglkjkcibmohobjkcfkaef">META SEO Inspector&lt;/a> is a Chrome extension that can be used to analyze a webpage&amp;rsquo;s SEO information. SEO might not be well-known among domestic developers, but in many overseas business scenarios, SEO&amp;rsquo;s importance can determine a project&amp;rsquo;s success.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="others-1">Others&lt;/h2>
+&lt;h3 id="iac-infrastructure-as-code">IAC (Infrastructure as Code)&lt;/h3>
+&lt;p>For independent developers, it&amp;rsquo;s common to use various cloud service providers. For example, AWS for sending emails using SES, Azure for some Identity functions, Cloudflare for certain services, and NewRelic for creating corresponding log sets. Each cloud service provider has its own API and CLI tools, but switching between multiple providers can be mentally taxing.&lt;/p>
+&lt;p>Therefore, I recommend using IAC tools to manage everything uniformly. Here, I recommend &lt;a href="https://pulumi.com/">Pulumi&lt;/a>. &lt;a href="https://pulumi.com/">Pulumi&lt;/a> supports managing your cloud services using code. The main reasons for recommending it are its support for mainstream cloud service providers, multiple languages (JS, TS, Python, etc.), and extensive community support.&lt;/p>
+&lt;h3 id="other-development-tools-these-are-the-ones-i-remember-for-now">Other Development Tools (These are the ones I remember for now)&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://buildkite.com/">Buildkite&lt;/a>: An additional pipeline tool. If your chosen cloud service provider does not offer CI/CD services or cannot integrate with GitHub Actions, consider using &lt;a href="https://buildkite.com/">Buildkite&lt;/a>.&lt;/li>
+&lt;li>&lt;a href="https://www.usebruno.com/">Bruno&lt;/a>: A local HTTP request tool similar to Postman, useful for debugging API requests.&lt;/li>
+&lt;li>&lt;a href="https://proxyman.io/">Proxyman&lt;/a>: A proxy capture tool that can be used for debugging, forward proxy, reverse proxy, etc.&lt;/li>
+&lt;/ul>
+&lt;h2 id="postscript">Postscript&lt;/h2>
+&lt;p>Recently, while reading the book &amp;ldquo;Small and Beautiful: The Rules of Sustainable Profitability,&amp;rdquo; I found several interesting points made by the author. The author believes that if you want to be an independent developer and run a product independently, the most important things to focus on are quick delivery, early charging, and not spending money until the last moment.&lt;/p>
+&lt;p>First, quick delivery means rapid product iteration and quick trial and error. Creating a product is a process of gaining experience through fast feedback loops and iterations. If the product can be released to consumers early, their communication and feedback can help individual developers avoid the pitfall of working behind closed doors. Compared to spending a year building an initial version and then releasing a major update every quarter, shortening the product build time to a month and releasing small versions weekly or even daily can help independent developers reduce trial and error costs and quickly find a path to profitability.&lt;/p>
+&lt;p>Secondly, early charging is also crucial. Even if your product charges just $1, it is fundamentally different from being free. Independent developers can offer tiered pricing starting from free, but it should never be completely free. Free products can drag down operating costs and make it difficult to assess the product&amp;rsquo;s actual value. As economist Dan Ariely wrote in &amp;ldquo;Predictably Irrational,&amp;rdquo; &amp;ldquo;People will flock to free things, even if it&amp;rsquo;s not what they want.&amp;rdquo;&lt;/p>
+&lt;p>Once the product starts charging, consumers will seriously consider whether it brings them real value and solves their actual problems. Charging and pricing are good evaluation standards to help independent developers determine if their product has real value. Otherwise, developers should consider whether to shift their focus to other products that can bring more real value.&lt;/p>
+&lt;p>The last suggestion is not to spend money until the last moment, which is also the theme of this article. Although the book advises independent developers not to rely on advertising and burning money to achieve rapid growth, I believe that reducing costs is a crucial consideration for independent developers. Otherwise, high costs can bring heavy growth pressure, leading to a focus on quick profitability rather than creating a good product.&lt;/p>
+&lt;h3 id="energy-is-the-biggest-cost">Energy is the Biggest Cost&lt;/h3>
+&lt;p>For most independent developers, the early stage is a solo effort. From market research to design and development, and finally to operation and promotion, each step is very time-consuming for an individual. Everyone&amp;rsquo;s energy is limited, and for independent developers, energy and time are the biggest costs. My advice is to use GenAI to assist in unfamiliar areas and to use mature SaaS services and various PaaS platforms in the early stages of the product.&lt;/p>
+&lt;p>Apart from pure mobile tool developers who only need to consider publishing applications, most developers need to consider building a website, constructing backend APIs, authentication, authorization, payment, statistics, storage, and a series of other requirements. These needs often require deployment and hosting, so I recommend using cloud service providers to build services.&lt;/p>
+&lt;blockquote>
+&lt;p>In conclusion, I suddenly realized that I don&amp;rsquo;t have much actual success experience. Most of my experience comes from building open-source demos and learning from successful cases on foreign forums, mainly targeting overseas traffic. Therefore, you should make reasonable judgments based on your own needs and focus on your business needs when choosing technology.&lt;/p>
+&lt;p>Feel free to leave comments below to share your independent development tech stack and cloud service provider choices. Let&amp;rsquo;s learn and exchange ideas together.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://nextjs.org">https://nextjs.org&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://pages.cloudflare.com">https://pages.cloudflare.com&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nextra.site/docs/guide/ssg">https://nextra.site/docs/guide/ssg&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://developers.cloudflare.com/pages/framework-guides/nextjs/deploy-a-nextjs-site/">https://developers.cloudflare.com/pages/framework-guides/nextjs/deploy-a-nextjs-site/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tailwindcss.com/">https://tailwindcss.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/why-shadcn-ui-is-so-popular-in-2023-0f95e66f3ddc">https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/why-shadcn-ui-is-so-popular-in-2023-0f95e66f3ddc&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.radix-ui.com/">https://www.radix-ui.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/t3-oss/create-t3-app">https://github.com/t3-oss/create-t3-app&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://ui.shadcn.com/blocks">https://ui.shadcn.com/blocks&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://developers.cloudflare.com/workers/platform/pricing/#workers">https://developers.cloudflare.com/workers/platform/pricing/#workers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://next-auth.js.org/">https://next-auth.js.org/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.cloudflare.com/prisma-orm-and-d1">https://blog.cloudflare.com/prisma-orm-and-d1&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.cloudflare.com/zh-cn/products/distributed-sql-database/">https://www.cloudflare.com/zh-cn/products/distributed-sql-database/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://neon.tech/">https://neon.tech/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://supabase.com/">https://supabase.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://clarity.microsoft.com/">https://clarity.microsoft.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://developer.chrome.com/docs/lighthouse/overview/">https://developer.chrome.com/docs/lighthouse/overview/&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>GPT Application Development and Reflections</title><link>https://think-crow.guthub.io/en/blog/en/gpt-embeddings/</link><pubDate>Mon, 31 Jul 2023 20:10:00 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://think-crow.guthub.io/en/blog/en/gpt-embeddings/</guid><description>&lt;p>In the past few months, it seems like we are in the midst of an AI revolution. Besides the well-known OpenAI ChatGPT, many novel, interesting, and practical AI applications have emerged, and using these applications has indeed boosted my productivity.&lt;/p>
+&lt;p>However, there seems to be a lack of comprehensive resources on GPT application development and its pathways. Therefore, I decided to compile some of my experiences and thoughts into a series, hoping to help others.&lt;/p>
+&lt;p>This article mainly introduces thoughts on GPT-related application development. In April this year, while developing the open-source project &lt;a href="https://github.com/guangzhengli/ChatFiles">ChatFiles&lt;/a>, I learned about GPT-related technologies. Due to limited time and energy, I hadn&amp;rsquo;t had the chance to organize these insights into an article until recently. With new ideas, I open-sourced another project, &lt;a href="https://github.com/guangzhengli/vectorhub">VectorHub&lt;/a>, which is also based on GPT Prompt and Embeddings technology. This deepened my understanding of GPT and Embeddings, leading to this sharing.&lt;/p>
+&lt;h2 id="starting-with-prompts">Starting with Prompts&lt;/h2>
+&lt;p>AI application development has attracted many developers recently. Besides the well-known ChatGPT, many valuable AI applications have emerged, such as AI-based translation applications like &lt;a href="https://github.com/openai-translator/openai-translator">openai-translator&lt;/a> and &lt;a href="https://immersivetranslate.com/">immersivetranslate&lt;/a>, writing tools like &lt;a href="https://www.notion.so/product/ai">Notion AI&lt;/a>, and coding assistants like &lt;a href="https://github.com/features/copilot">GitHub Copilot&lt;/a> and &lt;a href="https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat?tool=vscode">GitHub Copilot Chat&lt;/a>.&lt;/p>
+&lt;p>Some of these applications optimize existing experiences, like the GPT-based translator &lt;a href="https://github.com/openai-translator/openai-translator">openai-translator&lt;/a>, which offers superior translation quality and reading experience compared to previous machine translations. Others provide previously unattainable functionalities, like &lt;a href="https://github.com/features/copilot">GitHub Copilot&lt;/a> for code completion and generation, and &lt;a href="https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat?tool=vscode">GitHub Copilot Chat&lt;/a> for answering coding-related questions, explaining code, generating unit tests, and suggesting fixes for erroneous code. These functionalities were unimaginable before.&lt;/p>
+&lt;p>Although these applications differ in functionality, they all primarily rely on GPT&amp;rsquo;s Prompt (instructions). A Prompt is the text or instruction provided to the model to guide it in generating natural language output (Completion). It provides context to the model and is crucial for the output.&lt;/p>
+&lt;p>We know that GPT (Generative Pre-trained Transformer) is an inference model based on two stages: pre-training and fine-tuning.&lt;/p>
+&lt;p>In the pre-training stage, a large corpus is used for foundational training, such as Wikipedia, news articles, novels, etc. After training, when given a sentence, it predicts the next word based on the learned knowledge, generating a sequence of words through repeated predictions. This is why it&amp;rsquo;s called a generative AI.&lt;/p>
+&lt;p>This sentence is what we call a Prompt, the foundation of generative AI&amp;rsquo;s probabilistic generation. This explains why the same Prompt can yield different results each time, as each result is probabilistically generated.&lt;/p>
+&lt;p>Thus, we understand the importance of Prompts in GPT application development. Besides fine-tuning, it&amp;rsquo;s our only way to interact with the GPT model (though we can also adjust the model&amp;rsquo;s temperature and top_p settings to control the diversity or creativity of the output, but this doesn&amp;rsquo;t significantly affect output quality or downstream task handling). Therefore, Prompts are the core of GPT application development and require developers&amp;rsquo; careful consideration and optimization.&lt;/p>
+&lt;p>After pre-training, in the fine-tuning stage, the GPT model is loaded onto specific tasks and trained with task-specific datasets. This allows the model to better understand Prompts and generate task-relevant text. Fine-tuning enables GPT to adapt to different tasks, such as text classification, sentiment analysis, Q&amp;amp;A systems, etc. However, due to high costs and unstable results, fine-tuning isn&amp;rsquo;t a viable option for most GPT developers. Hence, most GPT application developers rely on Prompts for development.&lt;/p>
+&lt;h2 id="learning-path-for-prompts">Learning Path for Prompts&lt;/h2>
+&lt;p>For basic knowledge of Prompts, you can start with Andrew Ng&amp;rsquo;s &lt;a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/">ChatGPT Prompt Engineering&lt;/a>. In less than two hours, you can quickly grasp the usage and charm of Prompts.&lt;/p>
+&lt;p>After gaining a preliminary understanding, I recommend the &lt;a href="https://www.promptingguide.ai/">Prompt Engineering Guide&lt;/a>. This document contains extensive foundational knowledge and future directions for Prompts. Besides learning the basics, GPT application developers can gain insights into the engineering and academic perspectives on Prompt development, which are invaluable for AI application development.&lt;/p>
+&lt;p>Lastly, I highly recommend checking out OpenAI&amp;rsquo;s official &lt;a href="https://platform.openai.com/docs/guides/gpt-best-practices">GPT Best Practices&lt;/a>. This document, provided by OpenAI, includes numerous Prompt examples and usage tips, making it a valuable resource for GPT application developers. It summarizes best practices from various business domains through partnerships and hackathons, offering great inspiration for developers! Below is an excerpt from this document:&lt;/p>
+&lt;h2 id="best-practices-for-writing-prompts">Best Practices for Writing Prompts&lt;/h2>
+&lt;p>For best practices in writing Prompts, the most recommended resource is OpenAI&amp;rsquo;s official &lt;a href="https://platform.openai.com/docs/guides/gpt-best-practices">GPT Best Practices&lt;/a>. However, for GPT application development, I want to share some practices combining these best practices with my own experiences.&lt;/p>
+&lt;h3 id="clarity-and-detail">Clarity and Detail&lt;/h3>
+&lt;p>In reality, most developers use GPT primarily to solve programming problems or ask questions, often bringing their experience with search engines like Google into using and developing GPT.&lt;/p>
+&lt;p>For example, if you want to know how to write a Fibonacci sequence in Python, you might type &lt;code>python fibonacci&lt;/code> in Google. This is sufficient because Google, based on inverted indexing and PageRank algorithms, can provide high-quality web answers with just keywords.&lt;/p>
+&lt;p>This minimal input method is the simplest and most efficient. Even if you type a few more words like &lt;code>how to write python fibonacci&lt;/code>, the output quality on Google doesn&amp;rsquo;t differ much.&lt;/p>
+&lt;p>However, using GPT, an input like &lt;code>python fibonacci&lt;/code> is unfriendly because it can&amp;rsquo;t clearly understand your intent, possibly giving irrelevant results (varying slightly with different model qualities).&lt;/p>
+&lt;p>But if you input &lt;code>Write a Python function to efficiently calculate the Fibonacci sequence. Comment on each line of code to explain its purpose and why it's written that way&lt;/code>, this is clear and detailed for GPT. It can understand your intent, providing more accurate results, &lt;strong>ensuring a minimum quality threshold while improving the upper limit of output quality!&lt;/strong>&lt;/p>
+&lt;p>This differs from developers&amp;rsquo; experience with search engines like Google and is often overlooked by GPT developers and users. Early this year, while developing the &lt;a href="https://github.com/guangzhengli/ChatFiles">ChatFiles&lt;/a> project, I anonymously collected user Prompts and found that over 95% of users used very simple Prompts, sometimes as brief as a few words.&lt;/p>
+&lt;p>Therefore, when developing GPT applications, developers must ensure Prompts are clear and detailed. Try multiple times to choose a Prompt with stable output quality and consistent format, which is key to ensuring GPT application quality.&lt;/p>
+&lt;h3 id="handling-more-complex-tasks">Handling More Complex Tasks&lt;/h3>
+&lt;p>Most developers can design good Prompts and achieve decent output quality for simple tasks by spending some time adjusting Prompts. However, for complex tasks, improving GPT&amp;rsquo;s output quality requires two crucial techniques: &lt;strong>making GPT reason instead of answer, and breaking down tasks for guidance&lt;/strong>.&lt;/p>
+&lt;h4 id="reasoning-instead-of-answering">Reasoning Instead of Answering&lt;/h4>
+&lt;p>Reasoning instead of answering means instructing the GPT model not to immediately judge correctness or provide an answer but to guide it into deeper thinking. You can ask it to list various views on the problem, break down the task, explain each step&amp;rsquo;s reasoning, and then conclude. Adding step-by-step reasoning requirements in the Prompt makes the language model spend more time on logical thinking, resulting in more reliable and accurate outputs.&lt;/p>
+&lt;p>For example, if you need GPT to evaluate a student&amp;rsquo;s solution, a Prompt like &lt;code>Evaluate if the student's solution is correct&lt;/code> might lead to incorrect answers for complex problems because GPT doesn&amp;rsquo;t reason like humans. It immediately judges, often leading to errors (similar to humans struggling with complex math in a short time).&lt;/p>
+&lt;p>But if the Prompt is &lt;code>First solve the problem yourself, then compare your solution with the student's and evaluate if the student's solution is correct. Do not determine the correctness of the student's solution before solving the problem yourself&lt;/code>, this clear guidance makes the GPT model spend more time deriving the answer, resulting in more accurate outcomes.&lt;/p>
+&lt;h4 id="breaking-down-tasks">Breaking Down Tasks&lt;/h4>
+&lt;p>Breaking down tasks for guidance means splitting a complex task into multiple subtasks, guiding the GPT model through each, and then integrating the results. This approach helps the GPT model focus on each subtask, improving output quality.&lt;/p>
+&lt;p>For instance, summarizing a book directly might not yield good results. Instead, you can summarize each part through a series of subtasks and then compile the summaries.&lt;/p>
+&lt;p>However, breaking down tasks introduces new challenges, such as the quality of individual task outputs affecting the overall result. Additionally, with current token costs, breaking down tasks incurs extra costs. Nevertheless, designing and breaking down complex tasks is crucial for GPT applications, maintaining their competitive edge, and is a core design point for large model AI frameworks like LangChain. This topic deserves a separate article for discussion.&lt;/p>
+&lt;h3 id="usage-tips">Usage Tips&lt;/h3>
+&lt;p>Besides the important practices mentioned above, some small tips can be very helpful for application development. Here are some summarized tips:&lt;/p>
+&lt;ul>
+&lt;li>Provide a few examples (Few-Shot Prompting): Give the model one or two expected input-output examples to help it understand our requirements and expected output format.&lt;/li>
+&lt;li>Request structured output in the Prompt: Output in JSON format for easier subsequent code processing.&lt;/li>
+&lt;li>Separators: Use separators like &lt;code>&amp;quot;&amp;quot;&amp;quot;&lt;/code> to isolate different instructions and contexts, preventing conflicts between system and user Prompts.&lt;/li>
+&lt;/ul>
+&lt;h2 id="gpt-embedding-application-development">GPT Embedding Application Development&lt;/h2>
+&lt;p>Above, we mainly discussed developing AI applications based on Prompts. However, sometimes we encounter new problems. For instance, large models&amp;rsquo; training data is often months or even years old. When we need GPT applications to provide the latest data, like answering questions based on recent news or private documents, the large model hasn&amp;rsquo;t been trained on these materials and can&amp;rsquo;t solve such problems.&lt;/p>
+&lt;p>In such cases, we can have the model use reference texts to answer questions. For example, our Prompt can be:&lt;/p>
+&lt;pre tabindex="0">&lt;code>You will receive a document separated by triple quotes and a question.
+Your task is to answer the question using the provided document and cite the text used to answer the question.
+If the document does not contain the information needed to answer the question, simply write: &amp;#34;Insufficient information.&amp;#34;
+If providing an answer, include citation notes.
+Use the following format to cite relevant paragraphs ({&amp;#34;citation&amp;#34;: …}).
+&lt;/code>&lt;/pre>&lt;p>This approach allows GPT to answer questions based on the provided reference text. For example, if we want to know the latest World Cup champion, we can attach the latest World Cup news as a reference text. GPT will understand the entire news article before answering the question. This way, we can address the issues of timeliness and specific downstream tasks for large models.&lt;/p>
+&lt;p>However, this solution introduces another problem: the length limit of reference texts. GPT Prompts have size limits, like the gpt-3.5-turbo model, which has a 4K token limit (~3000 words). This means users can input a maximum of 3000 words for GPT to understand and infer answers.&lt;/p>
+&lt;p>If the required reference text exceeds 3000 words, we can&amp;rsquo;t get an answer from GPT in one go. Developers need to split the reference text into multiple parts, convert them to GPT Embeddings, and store them in a vector database. For more information on vector databases, refer to my other blog &lt;a href="https://think-crow.guthub.io/en/blog/en/vector-database/">Vector Database&lt;/a>. When querying the reference text, convert the question to a vector, retrieve it from the vector database, and convert the retrieved vectors back to text. This way, we get reference text within GPT&amp;rsquo;s token limit, relevant to the question.&lt;/p>
+&lt;p>We submit the question and the relevant reference text to GPT to get the desired answer. This process is the core of GPT Embeddings application development. The core idea is to retrieve the most relevant text segments through vector retrieval, bypassing GPT&amp;rsquo;s token limit.&lt;/p>
+&lt;p>&lt;img alt="Embedding" src="https://storage.guangzhengli.com/images/Embedding.png">&lt;/p>
+&lt;p>The overall development process is as shown in the image above:&lt;/p>
+&lt;ol>
+&lt;li>Load the document and obtain the target text information. For example, in the mainstream LLM framework LangChain, there are two text acquisition methods: File Loader and Web Loader.
+&lt;ol>
+&lt;li>File Loader based on the file system, such as loading PDF files, Word files, etc.&lt;/li>
+&lt;li>Web Loader based on the web, such as a webpage, AWS S3, etc.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Split the target text into multiple paragraphs, mainly based on two methods.
+&lt;ol>
+&lt;li>One is the text quantity-based splitting method, such as 1000 words per segment. This method is simple but may split a paragraph into multiple segments, reducing coherence and potentially lowering answer quality due to missing context.&lt;/li>
+&lt;li>The other is the punctuation-based splitting method, such as using line breaks as separators. This method maintains coherence but results in varying segment sizes, potentially triggering GPT&amp;rsquo;s token limit.&lt;/li>
+&lt;li>The last method is the GPT token limit-based splitting method, such as grouping 2000 tokens and searching for the two most relevant segments during the query. This way, the combined segments stay within the 4096 token limit.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Store the split text blocks uniformly in the &lt;a href="https://think-crow.guthub.io/en/blog/en/vector-database/">vector database&lt;/a>.&lt;/li>
+&lt;li>Convert the user&amp;rsquo;s question to a vector, retrieve the most relevant text segments from the vector database (note that this retrieval is not traditional database fuzzy matching or inverted indexing but semantic search, so the retrieved text can answer the user&amp;rsquo;s question. For details, see another blog &lt;a href="https://think-crow.guthub.io/en/blog/en/vector-database/">Vector Database&lt;/a>).&lt;/li>
+&lt;li>Combine the retrieved relevant text information, user question, and system Prompt into a Prompt for the Embeddings scenario, clearly stating to answer the question using the reference text, not GPT itself.&lt;/li>
+&lt;li>GPT answers the final Prompt, providing the desired answer.&lt;/li>
+&lt;/ol>
+&lt;p>If you&amp;rsquo;re interested in the specific implementation code, check out the &lt;a href="https://js.langchain.com/docs/modules/data_connection/">Retrieval chapter&lt;/a> in LangChain.&lt;/p>
+&lt;p>GPT Embeddings applications can solve problems that GPT alone can&amp;rsquo;t answer, which is their biggest advantage. Without training or fine-tuning, simply converting text to vectors and retrieving them can make certain business scenarios possible at a low cost.&lt;/p>
+&lt;p>However, this solution also introduces new problems, such as the quality of text splitting and retrieval significantly affecting the final result. Balancing query range, quality, and time, and handling cases where the retrieved reference text can&amp;rsquo;t answer the user&amp;rsquo;s question are all issues developers need to carefully consider for business needs and scenarios.&lt;/p>
+&lt;p>Looking further ahead, all documents in human history have been written for humans, not optimized for vector retrieval. Will there be texts specifically written for AI and retrieval in the future, making AI better understand and align with database retrieval? These questions require long-term thinking and validation, which we won&amp;rsquo;t expand on here.&lt;/p>
+&lt;h2 id="gpt-agents-application-development">GPT Agents Application Development&lt;/h2>
+&lt;p>Beyond the business needs that can be addressed by the aforementioned prompt and embeddings solutions, there is another very common requirement in GPT application development: how to integrate with existing systems or APIs.&lt;/p>
+&lt;p>The software industry has been evolving for many years, and many companies have their own systems and APIs. These APIs can significantly extend the capabilities of GPT applications. If a GPT application is to be implemented in real-life scenarios, it inevitably needs to integrate with existing systems.&lt;/p>
+&lt;p>For instance, if you want to ask GPT a simple question like, &amp;ldquo;What&amp;rsquo;s the weather in Beijing today?&amp;rdquo; From the previous sections, we know that GPT cannot answer such questions on its own. However, if GPT can call a weather API, development becomes much more convenient.&lt;/p>
+&lt;p>To achieve the requirement of GPT calling a weather API, we face two problems: one is to make the GPT application understand the function of a particular API and call it when appropriate; the other is that the input and output must be structured to ensure system stability.&lt;/p>
+&lt;h3 id="understanding-and-calling-existing-apis">Understanding and Calling Existing APIs&lt;/h3>
+&lt;p>To make GPT understand the function of an API, the best way is for developers to manually add names and specific descriptions to the API, including the structure of input and output values and what each field represents. This can greatly influence GPT&amp;rsquo;s judgment and ultimately decide whether to call the API.&lt;/p>
+&lt;p>For example, the description of calling a weather API on the &lt;a href="https://openai.com/blog/function-calling-and-other-api-updates">OpenAI official website&lt;/a> is as follows:&lt;/p>
+&lt;pre tabindex="0">&lt;code>function_descriptions = [
+{
+&amp;#34;name&amp;#34;: &amp;#34;get_current_weather&amp;#34;,
+&amp;#34;description&amp;#34;: &amp;#34;Get the current weather in a given location&amp;#34;,
+&amp;#34;parameters&amp;#34;: {
+&amp;#34;type&amp;#34;: &amp;#34;object&amp;#34;,
+&amp;#34;properties&amp;#34;: {
+&amp;#34;location&amp;#34;: {
+&amp;#34;type&amp;#34;: &amp;#34;string&amp;#34;,
+&amp;#34;description&amp;#34;: &amp;#34;The city and state, e.g. San Francisco, CA&amp;#34;,
+},
+&amp;#34;unit&amp;#34;: {
+&amp;#34;type&amp;#34;: &amp;#34;string&amp;#34;,
+&amp;#34;description&amp;#34;: &amp;#34;The temperature unit to use. Infer this from the users location.&amp;#34;,
+&amp;#34;enum&amp;#34;: [&amp;#34;celsius&amp;#34;, &amp;#34;fahrenheit&amp;#34;]
+},
+},
+&amp;#34;required&amp;#34;: [&amp;#34;location&amp;#34;],
+},
+}
+]
+&lt;/code>&lt;/pre>&lt;p>The above method describes in detail that to call this function, at least the current location information must be provided, and the temperature unit can be optionally provided. GPT will decide whether to call this function based on whether the question is related to the function&amp;rsquo;s description. The specific code details can be written in another article, so we won&amp;rsquo;t expand on it here.&lt;/p>
+&lt;p>By providing a large number of API documentation, we can help LLMs understand and learn the functions, usage, and combination methods of these APIs. Ultimately, this allows the overall requirements to be broken down into multiple sub-tasks, with each sub-task interacting with a specific API, achieving automation and AI goals.&lt;/p>
+&lt;p>The existing APIs we describe here are not limited to HTTP requests. They can include converting to SQL queries to databases, calling SDKs to achieve complex functions, and even in the future, extending to calling physical world switches, robotic arms, etc. Personally, I believe that based on the current capabilities and development trends of GPT, the way humans interact with machines will undergo significant changes.&lt;/p>
+&lt;h3 id="structured-output">Structured Output&lt;/h3>
+&lt;p>In addition to making GPT understand and call existing APIs, we also need to ensure that the results output by GPT can be understood by existing systems. This requires the output to be structured, such as data in JSON format.&lt;/p>
+&lt;p>You might immediately think, can&amp;rsquo;t we achieve this through prompts? In most cases, yes, but in some rare cases, prompts are not as stable as function calling. Traditional systems have very high requirements for stability. For example:&lt;/p>
+&lt;pre tabindex="0">&lt;code>student_description=Wang is a sophomore majoring in computer science at Peking University, with a GPA of 3.8. He is very skilled in programming and an active member of the university&amp;#39;s robotics club. He hopes to pursue a career in artificial intelligence after graduation.
+&lt;/code>&lt;/pre>&lt;p>In this passage, we can use a prompt to require the output to be in JSON format, such as:&lt;/p>
+&lt;pre tabindex="0">&lt;code>Please extract the following information from the given text and return it as a JSON object:
+name
+major
+school
+grades
+club
+This is the body of text to extract the information from:
+{student_1_description}
+&lt;/code>&lt;/pre>&lt;p>However, the difficult part is that we cannot ensure whether GPT will output &lt;code>3.8&lt;/code> or &lt;code>3.8 GPA&lt;/code> for grades. For humans, there is no difference between these two outputs, but for computers, they are completely different. The former is a floating-point number, and the latter is a string. For some languages, conversion will directly result in an error.&lt;/p>
+&lt;p>We can certainly reduce such problems by adding more descriptions to the prompt, but the reality is more complex. It is difficult to fully describe the requirements through natural language, and it is hard to ensure that GPT&amp;rsquo;s answers will always maintain the same output. Therefore, for such problems, using the function calling method provided by OpenAI can solve the interaction problem between natural language and machine language to a certain extent.&lt;/p>
+&lt;p>For example, the above problem can be described as a function, where we describe the grades field as an integer to avoid such issues. This structured capability is crucial for developing a stable system.&lt;/p>
+&lt;pre tabindex="0">&lt;code>student_custom_functions = [
+{
+&amp;#39;name&amp;#39;: &amp;#39;extract_student_info&amp;#39;,
+&amp;#39;description&amp;#39;: &amp;#39;Get the student information from the body of the input text&amp;#39;,
+&amp;#39;parameters&amp;#39;: {
+&amp;#39;type&amp;#39;: &amp;#39;object&amp;#39;,
+&amp;#39;properties&amp;#39;: {
+&amp;#39;name&amp;#39;: {
+&amp;#39;type&amp;#39;: &amp;#39;string&amp;#39;,
+&amp;#39;description&amp;#39;: &amp;#39;Name of the person&amp;#39;
+},
+&amp;#39;major&amp;#39;: {
+&amp;#39;type&amp;#39;: &amp;#39;string&amp;#39;,
+&amp;#39;description&amp;#39;: &amp;#39;Major subject.&amp;#39;
+},
+&amp;#39;school&amp;#39;: {
+&amp;#39;type&amp;#39;: &amp;#39;string&amp;#39;,
+&amp;#39;description&amp;#39;: &amp;#39;The university name.&amp;#39;
+},
+&amp;#39;grades&amp;#39;: {
+&amp;#39;type&amp;#39;: &amp;#39;integer&amp;#39;,
+&amp;#39;description&amp;#39;: &amp;#39;GPA of the student.&amp;#39;
+},
+&amp;#39;club&amp;#39;: {
+&amp;#39;type&amp;#39;: &amp;#39;string&amp;#39;,
+&amp;#39;description&amp;#39;: &amp;#39;School club for extracurricular activities. &amp;#39;
+}
+}
+}
+}
+]
+&lt;/code>&lt;/pre>&lt;p>For the complete debugging process, you can check out this &lt;a href="https://www.datacamp.com/tutorial/open-ai-function-calling-tutorial">OpenAI function calling example&lt;/a>.&lt;/p>
+&lt;h2 id="gpt-application-requirements-analysis">GPT Application Requirements Analysis&lt;/h2>
+&lt;p>The above mainly discusses some techniques for developing GPT applications, but if we want to create a product, we still need to start from business needs and think about what kind of business value we can create to meet the current potential users&amp;rsquo; needs.&lt;/p>
+&lt;blockquote>
+&lt;p>Update on 2023/09/06: The official LangChain documentation has been updated, dividing the documentation into RAG (Retrieval Augmented Generation) and Agents sections. This indicates that since the explosion of GPT a few months ago, the industry currently believes that RAG and Agents are the two directions for business needs to land. RAG is mainly the GPT Embeddings part we discussed above, and we will also give examples from these two directions later. I think anchoring to leading frameworks like LangChain is very valuable for developers because they summarize some best practices and experiences in the process of business implementation, which is very helpful for developers to understand business needs.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="content-generation">Content Generation&lt;/h3>
+&lt;p>Content generation is currently the most mainstream demand and the direction with the highest traffic statistics in current AI applications. Besides well-known products like ChatGPT, there are also high-traffic AI companion (role-playing) applications like &lt;a href="https://beta.character.ai/">Character AI&lt;/a> mainly developed based on prompts.&lt;/p>
+&lt;p>In the broader content generation category, there are image generation fields like &lt;a href="https://www.midjourney.com/">Midjourney&lt;/a>, voice generation fields like &lt;a href="https://elevenlabs.io">ElevenLabs&lt;/a>, text creativity fields like &lt;a href="https://www.copy.ai/">copy ai&lt;/a>, and some niche text content generation fields like novel generation assistance &lt;a href="https://ai-novel.com/">AI-Novel&lt;/a>, etc.&lt;/p>
+&lt;p>Content generation is currently the AI demand field with the highest internet traffic and the easiest to implement because its application scenarios are very broad. Content generation assistance can often directly improve productivity, so the willingness to pay is often not low. The competition in this field is often the most intense.&lt;/p>
+&lt;h3 id="gpt-embeddings-demand">GPT Embeddings Demand&lt;/h3>
+&lt;p>GPT Embeddings is a direction I think has great potential value. When &lt;a href="https://github.com/guangzhengli/ChatFiles">ChatFiles&lt;/a> was just open-sourced, I received some inquiries asking if it could optimize existing scenarios and businesses in customer service, sales, operation manuals, knowledge bases, etc. My personal answer is that GPT Embeddings has great prospects in these scenarios.&lt;/p>
+&lt;p>In this field, we can currently see startups like &lt;a href="https://www.mendable.ai">mendable ai&lt;/a> that have already occupied a certain market share, supporting document Q&amp;amp;A functions for leading GPT frameworks like &lt;a href="https://js.langchain.com/">LangChain&lt;/a>. They are also actively expanding business scenarios such as sales and customer service.&lt;/p>
+&lt;p>In addition, the website with the highest traffic in this field is currently &lt;a href="https://www.chatpdf.com">ChatPDF&lt;/a>, where you can upload PDF files and then ask questions and make requests based on the PDF, such as summarizing. This direction has also derived various niche demands, such as assisting in reading and collaborating on papers like &lt;a href="https://jenni.ai">Jenni AI&lt;/a>.&lt;/p>
+&lt;h3 id="gpt-agents-demand">GPT Agents Demand&lt;/h3>
+&lt;p>The demand for GPT Agents is diverse because it is based on the integration of existing systems. By analyzing the APIs of existing systems, we can determine what kind of business value we can create. For example, many GPT-provided networking functions are achieved by integrating SerpAPI, which is an aggregated query website that integrates major search engines. This allows ChatGPT to answer some search-based questions, such as current weather, stock market, news, etc.&lt;/p>
+&lt;p>Among them, the most famous are naturally the two projects &lt;a href="https://github.com/Significant-Gravitas/Auto-GPT">Auto GPT&lt;/a> and &lt;a href="https://github.com/reworkd/AgentGPT">AgentGPT&lt;/a>. If you are interested in GPT Agents applications, you might want to check out these two projects. In addition, companies like &lt;a href="https://github.com/calcom/cal.com/tree/main/apps/ai">cal.com&lt;/a> that integrate AI agents to enhance functions like scheduling meetings with natural language might give you some different inspirations.&lt;/p>
+&lt;h3 id="unstructured-input-and-structured-output">Unstructured Input and Structured Output&lt;/h3>
+&lt;p>Another point that I think many people overlook is the ability of GPT/LLM to handle unstructured data. In the past, we needed to spend a lot of development time to process some simple texts, such as extracting some key information from SMS, like names, phone numbers, addresses, etc. Due to different SMS templates, this information is unstructured.&lt;/p>
+&lt;p>We cannot convert this content into structured output like JSON format through a simple method, so we often need a set of complex regular expressions or NLP technology to extract this information. However, regular expression development is complex, and for different SMS templates, plus the templates change over time, we need to constantly adjust the regular expressions, which is a very time-consuming process for developers and engineers.&lt;/p>
+&lt;p>NLP technology can only be applied to certain specific scenarios, such as extracting phone numbers, extracting addresses, etc. For different scenarios, we need different NLP technologies. So once the business needs change, such as recognizing license plates, we need to redevelop and adjust.&lt;/p>
+&lt;p>But with a unified API like OpenAI GPT, we only need to provide different prompts to the service, and we can guide GPT to reason through the prompts to get the results we want. This can greatly simplify our development process, shorten development time, and quickly respond to market changes.&lt;/p>
+&lt;p>And due to GPT&amp;rsquo;s strong generalization ability, we only need to think about how to handle unstructured data for different scenarios. This ability to handle unstructured data will change many traditional business development processes and methods in future software development, having a profound impact on the software lifecycle.&lt;/p>
+&lt;h3 id="natural-language-interaction">Natural Language Interaction&lt;/h3>
+&lt;p>Finally, I want to say that GPT&amp;rsquo;s ability to handle natural language will deeply change the way humans interact with machines. In the past, from command lines to graphical interfaces, to touch screens, these are all histories of human-machine interaction revolutions. Most people&amp;rsquo;s interaction with machines actually requires the programmer as a medium. People have various needs, business analysts and developers extract the needs, and programmers generate graphical pages through code. People then interact with the graphical pages to achieve human-machine interaction.&lt;/p>
+&lt;p>This process involves information transmission loss and generates a lot of limitations and costs. If machines can understand natural language, we can interact directly with machines. Then the concepts of software, machines, and intelligence that we are familiar with will undergo tremendous changes, and human-machine interaction will also undergo earth-shaking changes.&lt;/p>
+&lt;p>If you find it hard to understand this uncertain, unreferenced change, you can experience the &lt;a href="https://github.com/KillianLucas/open-interpreter">open interpreter&lt;/a> project. It is a project that generates code based on natural language and executes it directly on the computer. Although it is very primitive and unstable, you can see the revolution in human-machine interaction from it.&lt;/p>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/guangzhengli/ChatFiles">https://github.com/guangzhengli/ChatFiles&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/guangzhengli/vectorhub">https://github.com/guangzhengli/vectorhub&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://js.langchain.com/docs/modules/data_connection">https://js.langchain.com/docs/modules/data_connection&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.datacamp.com/tutorial/open-ai-function-calling-tutorial">https://www.datacamp.com/tutorial/open-ai-function-calling-tutorial&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://openai.com/blog/function-calling-and-other-api-updates">https://openai.com/blog/function-calling-and-other-api-updates&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://openai.com/blog/chatgpt-plugins#code-interpreter">https://openai.com/blog/chatgpt-plugins#code-interpreter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/KillianLucas/open-interpreter">https://github.com/KillianLucas/open-interpreter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.chatpdf.com">https://www.chatpdf.com&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jenni.ai">https://jenni.ai&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/reworkd/AgentGPT">https://github.com/reworkd/AgentGPT&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://a16z.com/how-are-consumers-using-generative-ai">https://a16z.com/how-are-consumers-using-generative-ai&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Vector Databases</title><link>https://think-crow.guthub.io/en/blog/en/vector-database/</link><pubDate>Sat, 15 Jul 2023 15:15:00 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://think-crow.guthub.io/en/blog/en/vector-database/</guid><description>&lt;p>You might have recently heard news like a startup focusing on vector databases securing millions in investment just after finishing their PPT, or an open-source vector database making headlines on Hackernews due to its simplistic code. Over the past few months, the development of AI applications has been booming, driving the entire AI tech stack, with vector databases being one of the hottest topics.&lt;/p>
+&lt;p>Recently, while developing an open-source projects, &lt;a href="https://github.com/guangzhengli/ChatFiles">ChatFiles&lt;/a>, I delved into vector databases. After gaining a general understanding of mainstream vector databases and search algorithms, I decided to compile this knowledge into an article to help others.&lt;/p>
+&lt;h2 id="gpts-limitations">GPT&amp;rsquo;s Limitations&lt;/h2>
+&lt;p>In the past few months, we have been in the midst of an AI revolution, with the most dazzling being the emergence of GPT-3.5/4. While GPT-3.5/4 has brought us immense amazement, its inherent limitations and numerous restrictions have also been a headache for developers. For instance, the input context (tokens) size limitation troubles many developers and consumers. The gpt-3.5-turbo model has a limit of 4K tokens (~3000 words), meaning users can input a maximum of 3000 words for GPT to understand and infer answers.&lt;/p>
+&lt;p>Some might wonder, &amp;ldquo;My ChatGPT has a conversation memory function. Since it can remember chats, the input token limit shouldn&amp;rsquo;t matter. I can just split the text into multiple inputs, and it will naturally remember my previous conversations, thus bypassing the token limit.&amp;rdquo;&lt;/p>
+&lt;p>This idea is not entirely correct. GPT, as an LLM model, does not have a memory function. The so-called memory function is just developers storing conversation records in memory or a database. When you send a message to the GPT model, the program automatically combines the recent few conversation records (based on the 4096 tokens limit) into the final question through a prompt and sends it to ChatGPT. In short, if your conversation memory exceeds 4096 tokens, it will forget the previous conversations. This is a current limitation of GPT in handling more complex tasks.&lt;/p>
+&lt;p>Different models have different token limits. GPT-4 has a limit of 32K tokens, while the largest token limit currently is &lt;a href="https://www.anthropic.com/index/100k-context-windows">Claude&amp;rsquo;s 100K&lt;/a>, meaning you can input about 75,000 words of context to GPT, allowing GPT to directly understand the entire content of a book like &amp;ldquo;Harry Potter&amp;rdquo; and answer related questions.&lt;/p>
+&lt;p>But does this solve all our problems? The answer is no. For instance, Claude&amp;rsquo;s example shows that GPT&amp;rsquo;s response time for 72K tokens of context is 22 seconds. If we have GB-level or larger documents that need GPT&amp;rsquo;s understanding and Q&amp;amp;A, the current computing power is hard to provide a good experience. More critically, the current GPT API charges based on tokens, so the more context you input, the more expensive it gets.&lt;/p>
+&lt;p>This situation is somewhat similar to early developers facing the dilemma of developing applications with only a few MB or even KB of memory. One, &amp;lsquo;memory&amp;rsquo; was expensive, and two, &amp;lsquo;memory&amp;rsquo; was too small. So, until there are revolutionary advancements in GPT models in terms of performance, cost, and attention mechanisms, developers have to face the challenge of bypassing GPT&amp;rsquo;s token limitations.&lt;/p>
+&lt;h2 id="the-rise-of-vector-databases">The Rise of Vector Databases&lt;/h2>
+&lt;p>Under the limitations of GPT models, developers have to look for other solutions, and vector databases are one of them. The core idea of vector databases is to convert text into vectors, then store the vectors in a database. When a user inputs a question, it is converted into a vector, then the database searches for the most similar vectors and context, and finally returns the text to the user.&lt;/p>
+&lt;p>When we have a document that needs GPT processing, such as a customer service training manual or an operation manual, we can first convert all the content of this document into vectors (this process is called Vector Embedding). Then, when a user asks a related question, we convert the user&amp;rsquo;s search content into a vector, search for the most similar vectors in the database, match the most similar contexts, and finally return the context to GPT. This not only greatly reduces GPT&amp;rsquo;s computation, thereby improving response speed, but more importantly, reduces costs and bypasses GPT&amp;rsquo;s token limitations.&lt;/p>
+&lt;p>&lt;img alt="Embedding" src="https://storage.guangzhengli.com/images/Embedding.png">&lt;/p>
+&lt;p>For example, if we have a long conversation with ChatGPT, we can save all the conversations as vectors. When we ask ChatGPT a question, we can convert the question into a vector to semantically search all past chat records, find the &amp;lsquo;memory&amp;rsquo; most related to the current question, and send it to ChatGPT, greatly improving GPT&amp;rsquo;s output quality.&lt;/p>
+&lt;p>The role of vector databases is not limited to text semantic search. In traditional AI and machine learning scenarios, it also includes functions like facial recognition, image search, and voice recognition. However, it is undeniable that the current boom in vector databases is because they greatly help AI in understanding and maintaining long-term memory to perform complex tasks. For example, you can try &lt;a href="https://js.langchain.com/docs/">LangChainJs&amp;rsquo;s document search/Q&amp;amp;A function&lt;/a> to feel its charm, or try my open-source projects &lt;a href="https://github.com/guangzhengli/vectorhub">VectorHub&lt;/a> and &lt;a href="https://github.com/guangzhengli/ChatFiles">ChatFiles&lt;/a>, where you can upload a document or base it on a web document and then ask related questions. These functions are all based on Vector Embedding and vector database products.&lt;/p>
+&lt;h2 id="vector-embeddings">Vector Embeddings&lt;/h2>
+&lt;p>For traditional databases, search functions are implemented based on different indexing methods (B Tree, inverted index, etc.) combined with exact matching and ranking algorithms (BM25, TF-IDF). Essentially, it is based on exact text matching. This indexing and search algorithm is very suitable for keyword search functions but very weak for semantic search functions.&lt;/p>
+&lt;p>For example, if you search for &amp;ldquo;puppy,&amp;rdquo; you can only get results related to the keyword &amp;ldquo;puppy&amp;rdquo; and not &amp;ldquo;Corgi,&amp;rdquo; &amp;ldquo;Golden Retriever,&amp;rdquo; etc., because &amp;ldquo;puppy&amp;rdquo; and &amp;ldquo;Golden Retriever&amp;rdquo; are different words. Traditional databases cannot recognize their semantic relationship, so traditional applications need to manually tag the features between &amp;ldquo;puppy&amp;rdquo; and &amp;ldquo;Golden Retriever&amp;rdquo; to achieve semantic search. This process of generating and selecting features is also known as Feature Engineering, which is the process of transforming raw data into features that better represent the essence of the problem.&lt;/p>
+&lt;p>However, if you need to handle unstructured data, you will find that the number of features of unstructured data will start to expand rapidly. For example, if we are dealing with images, audio, video, etc., this process becomes very difficult. For images, features like color, shape, texture, edges, objects, scenes, etc., can be labeled, but these features are too many and hard to label manually. So, we need an automated way to extract these features, which can be achieved through Vector Embedding.&lt;/p>
+&lt;p>Vector Embedding is generated by AI models (such as large language models LLM). It generates high-dimensional vector data representing different features of the data based on different algorithms. These features represent different dimensions of the data. For example, for text, these features may include vocabulary, grammar, semantics, sentiment, emotion, theme, context, etc. For audio, these features may include pitch, rhythm, pitch, timbre, volume, speech, music, etc.&lt;/p>
+&lt;p>For example, currently, text vectors can be generated through OpenAI&amp;rsquo;s text-embedding-ada-002 model, image vectors can be generated through the clip-vit-base-patch32 model, and audio vectors can be generated through the wav2vec2-base-960h model. These vectors are all generated by AI models, so they all have semantic information.&lt;/p>
+&lt;p>For example, if we use the text-embedding-ada-002 model to embed the sentence &amp;ldquo;Your text string goes here,&amp;rdquo; it will generate a 1536-dimensional vector, and the result will look like this: &lt;code>“-0.006929283495992422, -0.005336422007530928, ... -4547132266452536e-05,-0.024047505110502243”&lt;/code>. This vector contains all the features of the sentence, including vocabulary and grammar, and we can store it in a vector database for subsequent semantic search.&lt;/p>
+&lt;h2 id="features-and-vectors">Features and Vectors&lt;/h2>
+&lt;p>Although the core of vector databases is similarity search, before diving into similarity search, we need to understand the concepts and principles of features and vectors.&lt;/p>
+&lt;p>Let&amp;rsquo;s think about a question: Why do we distinguish different objects and things in life?&lt;/p>
+&lt;p>From a theoretical perspective, this is because we recognize different features of different things to identify categories. For example, to distinguish different types of dogs, we can use features like body size, hair length, and nose length. As shown in the photo below, sorted by body size, you can see that the larger the dog, the closer it is to the right side of the coordinate axis. This way, we get a one-dimensional coordinate of the body size feature and the corresponding value, from 0 to 1, showing the position of each dog in the coordinate system.&lt;/p>
+&lt;p>&lt;img alt="Snipaste_2023-07-15_20-55-09" src="https://storage.guangzhengli.com/images/Snipaste_2023-07-15_20-55-09.png">&lt;/p>
+&lt;p>However, relying on just one feature of body size is not enough. For example, the body sizes of Huskies, Golden Retrievers, and Labradors in the photo are very close, making it hard to distinguish them. So, we continue to observe other features, such as hair length.&lt;/p>
+&lt;p>&lt;img alt="Snipaste_2023-07-15_20-59-13" src="https://storage.guangzhengli.com/images/Snipaste_2023-07-15_20-59-13.png">&lt;/p>
+&lt;p>This way, each dog corresponds to a two-dimensional coordinate point, and we can easily distinguish Huskies, Golden Retrievers, and Labradors. If we still can&amp;rsquo;t distinguish German Shepherds and Rottweilers, we can continue to use other features, like nose length, to get a three-dimensional coordinate system and the position of each dog in the three-dimensional coordinate system.&lt;/p>
+&lt;p>In this case, as long as there are enough features, we can distinguish all dogs, and finally get a high-dimensional coordinate system. Although we can&amp;rsquo;t imagine what a high-dimensional coordinate system looks like, in an array, we just need to keep adding numbers to the array.&lt;/p>
+&lt;p>In fact, as long as there are enough dimensions, we can distinguish all things. Everything in the world can be represented by a multi-dimensional coordinate system, and they all correspond to a coordinate point in a high-dimensional feature space.&lt;/p>
+&lt;p>So, what does this have to do with similarity search? You will find that in the two-dimensional coordinates above, the coordinates of German Shepherds and Rottweilers are very close, which means their features are also very close. We all know that vectors are mathematical structures with magnitude and direction, so we can represent these features with vectors and determine their similarity by calculating the distance between vectors. This is &lt;strong>similarity search&lt;/strong>.&lt;/p>
+&lt;p>The above images and detailed explanations are from &lt;a href="https://www.bilibili.com/video/BV11a4y1c7SW">this video&lt;/a>, which also includes some of the similarity search algorithms introduced below. If you are interested in vector databases, I highly recommend watching this video.&lt;/p>
+&lt;h2 id="similarity-search">Similarity Search&lt;/h2>
+&lt;p>Now that we know we can determine the similarity of vectors by comparing their distances, how do we apply this to real-world scenarios? If we want to find the most similar vector to a given vector in a massive dataset, we need to compare each vector in the database, but this is computationally intensive. So, we need an efficient algorithm to solve this problem.&lt;/p>
+&lt;p>There are many efficient search algorithms, and their main idea is to improve search efficiency in two ways:&lt;/p>
+&lt;ol>
+&lt;li>Reduce vector size—by dimensionality reduction or reducing the length of the representation vector.&lt;/li>
+&lt;li>Narrow the search range—by clustering or organizing vectors into tree or graph structures and limiting the search range to the closest cluster or filtering through the most similar branches.&lt;/li>
+&lt;/ol>
+&lt;p>First, let&amp;rsquo;s introduce the core concept shared by most algorithms, which is clustering.&lt;/p>
+&lt;h3 id="k-means-and-faiss">K-Means and Faiss&lt;/h3>
+&lt;p>After saving the vector data, we can first cluster the vector data. For example, in the two-dimensional coordinate system below, four cluster centers are defined, and each vector is assigned to the nearest cluster center. The clustering algorithm continuously adjusts the cluster center positions, dividing the vector data into four clusters. Each time we search, we only need to determine which cluster the search vector belongs to and then search within that cluster, reducing the search range from four clusters to one, greatly reducing the search range.&lt;/p>
+&lt;p>&lt;img alt="kmeans" src="https://storage.guangzhengli.com/images/kmeans.png">&lt;/p>
+&lt;p>Common clustering algorithms include K-Means, which can divide data into k categories, where k is specified in advance. The basic steps of the k-means algorithm are:&lt;/p>
+&lt;ol>
+&lt;li>Choose k initial cluster centers.&lt;/li>
+&lt;li>Assign each data point to the nearest cluster center.&lt;/li>
+&lt;li>Calculate the new center of each cluster.&lt;/li>
+&lt;li>Repeat steps 2 and 3 until the cluster centers no longer change or the maximum number of iterations is reached.&lt;/li>
+&lt;/ol>
+&lt;p>However, this search method also has some drawbacks. For example, if the search content is right in the middle of two classification areas, it is likely to miss the most similar vector.&lt;/p>
+&lt;p>In reality, the distribution of vectors is not as clear-cut as in the figure. The boundaries of regions are often adjacent, as shown in the &lt;a href="https://github.com/facebookresearch/faiss">Faiss algorithm&lt;/a> below.&lt;/p>
+&lt;p>We can imagine vectors as being contained within Voronoi cells. When a new query vector is introduced, the distance to the centroids is first measured, and the search range is limited to the cell containing the centroid.&lt;/p>
+&lt;p>&lt;img alt="WUjl5M" src="https://storage.guangzhengli.com/images/WUjl5M.jpg">&lt;/p>
+&lt;p>To solve the problem of possible omissions during the search, the search range can be dynamically adjusted. For example, when nprobe = 1, only the nearest cluster center is searched. When nprobe = 2, the nearest two cluster centers are searched. The value of nprobe can be adjusted according to actual business needs.&lt;/p>
+&lt;p>&lt;img alt="FZadSG" src="https://storage.guangzhengli.com/images/FZadSG.jpg">&lt;/p>
+&lt;p>In fact, except for brute-force search, which can perfectly find the nearest neighbor, all search algorithms can only make a trade-off between speed, quality, and memory. These algorithms are also known as Approximate Nearest Neighbor (ANN).&lt;/p>
+&lt;h3 id="product-quantization-pq">Product Quantization (PQ)&lt;/h3>
+&lt;p>In large-scale datasets, the biggest problem with clustering algorithms is the high memory consumption. This is mainly reflected in two aspects. First, because each vector&amp;rsquo;s coordinates need to be saved, and each coordinate is a floating-point number, the memory consumption is already very large. In addition, the cluster centers and the cluster center index of each vector need to be maintained, which also consumes a lot of memory.&lt;/p>
+&lt;p>For the first problem, it can be solved by quantization, which is a common lossy compression method. For example, in memory, each vector in the cluster center can be represented by the cluster center vector, and a codebook of all vectors to the cluster center can be maintained, greatly reducing memory consumption.&lt;/p>
+&lt;p>But this still cannot solve all problems. In the previous example, the cluster centers were defined in a two-dimensional coordinate system. Similarly, in a high-dimensional coordinate system, multiple cluster centers can be defined, continuously adjusted, and iterated until multiple stable and convergent center points are found.&lt;/p>
+&lt;p>However, in high-dimensional coordinate systems, the curse of dimensionality problem will also be encountered. Specifically, as the dimensions increase, the distance between data points will grow exponentially. This means that in high-dimensional coordinate systems, more cluster centers are needed to divide the data points into smaller clusters to improve classification quality. Otherwise, the distance between the vector and its cluster center will be very far, greatly reducing search speed and quality.&lt;/p>
+&lt;p>But if you want to maintain classification and search quality, you need to maintain a large number of cluster centers. This brings another problem: the number of cluster centers will grow exponentially with the increase in dimensions, leading to a rapid increase in the size of the codebook, greatly increasing memory consumption. For example, a 128-dimensional vector needs to maintain 2^64 cluster centers to maintain a good quantization result, but the size of such a codebook has already exceeded the memory size of maintaining the original vector.&lt;/p>
+&lt;p>The solution to this problem is to decompose the vector into multiple sub-vectors and then quantize each sub-vector independently. For example, a 128-dimensional vector can be divided into 8 16-dimensional vectors, and then clustering is performed on the 8 16-dimensional sub-vectors. Since a 16-dimensional sub-vector only needs about 256 cluster centers to achieve a good quantization result, the size of the codebook can be reduced from 2^64 to 8 * 256 = 2048 cluster centers, thereby reducing memory consumption.&lt;/p>
+&lt;p>&lt;img alt="5dAeV5" src="https://storage.guangzhengli.com/images/5dAeV5.jpg">&lt;/p>
+&lt;p>After encoding the vector, 8 encoding values are obtained, which are combined to form the final encoding value of the vector. When used, these 8 encoding values are searched in the 8 sub-codebooks to find the corresponding 16-dimensional vectors, which are then combined using the Cartesian product to form a 128-dimensional vector, obtaining the final search result. This is the principle of Product Quantization (PQ).&lt;/p>
+&lt;p>Using the PQ algorithm can significantly reduce memory consumption and speed up the search. Its only problem is that the search quality will decrease, but as we mentioned earlier, all algorithms make a trade-off between memory, speed, and quality.&lt;/p>
+&lt;h3 id="hierarchical-navigable-small-worlds-hnsw">Hierarchical Navigable Small Worlds (HNSW)&lt;/h3>
+&lt;p>Apart from clustering, approximate nearest neighbor search can also be achieved by constructing trees or graphs. The basic idea is to add vectors to the database by first finding the nearest vector and then connecting them, forming a graph. When searching, you can start from a node in the graph and continuously perform nearest neighbor searches and shortest path calculations until you find the most similar vector.&lt;/p>
+&lt;p>This algorithm ensures search quality, but if all nodes in the graph are connected by the shortest path, as in the bottom layer of the graph, you still need to traverse all nodes during the search.&lt;/p>
+&lt;p>&lt;img alt="GD7ufK" src="https://storage.guangzhengli.com/images/GD7ufK.jpg">&lt;/p>
+&lt;p>To solve this problem, the approach is similar to the common skip list algorithm. As shown in the figure, to search a skip list, you start from the highest level and move right along the longest &amp;ldquo;skip&amp;rdquo; edges. If the current node&amp;rsquo;s value exceeds the target, you move down one level and continue.&lt;/p>
+&lt;p>&lt;img alt="wOu6JL" src="https://storage.guangzhengli.com/images/wOu6JL.jpg">&lt;/p>
+&lt;p>HNSW inherits the same layered format, with longer edges at the top layer for fast searches and shorter edges at the lower layers for accurate searches.&lt;/p>
+&lt;p>Specifically, the graph can be divided into multiple layers, each being a small world where nodes are interconnected. Each layer&amp;rsquo;s nodes connect to the nodes in the layer above. When searching, you start from the top layer, where the distances between nodes are long, reducing search time, and then search layer by layer downwards. The bottom layer ensures search quality by connecting similar nodes, allowing you to find the most similar vector.&lt;/p>
+&lt;p>If you&amp;rsquo;re interested in skip lists and HNSW, check out &lt;a href="https://www.youtube.com/watch?v=QvKMwLjdK-s&amp;t=168s&amp;ab_channel=JamesBriggs">this video&lt;/a>.&lt;/p>
+&lt;p>The HNSW algorithm is a classic space-for-time algorithm, offering high search quality and speed but with significant memory overhead. This is because it needs to store all vectors in memory and maintain a graph structure. Therefore, the choice of this algorithm depends on the actual scenario.&lt;/p>
+&lt;h3 id="locality-sensitive-hashing-lsh">Locality Sensitive Hashing (LSH)&lt;/h3>
+&lt;p>Locality Sensitive Hashing (LSH) is another indexing technique for approximate nearest neighbor search. It is fast and provides approximate, non-exhaustive results. LSH uses a set of hash functions to map similar vectors into &amp;ldquo;buckets,&amp;rdquo; so similar vectors have the same hash value. This allows you to determine vector similarity by comparing hash values.&lt;/p>
+&lt;p>Typically, we design hash algorithms to minimize hash collisions because the search time complexity of hash functions is O(1). However, if a hash collision occurs, meaning two different keys are mapped to the same bucket, data structures like linked lists are used to resolve conflicts, making the search time complexity O(n), where n is the length of the list. To improve the efficiency of hash functions, we usually minimize the probability of collisions.&lt;/p>
+&lt;p>But in vector search, our goal is to find similar vectors, so we can design a hash function that maximizes the probability of collisions for similar vectors. This way, similar vectors are mapped to the same bucket.&lt;/p>
+&lt;p>When searching for a specific vector, the same hash function is used to &amp;ldquo;bucket&amp;rdquo; similar vectors into a hash table. The query vector is hashed into a specific table, and then compared with other vectors in that table to find the closest match. This method is much faster than searching the entire dataset because each hash table bucket contains far fewer vectors than the entire space.&lt;/p>
+&lt;p>How should this hash function be designed? To better understand, let&amp;rsquo;s start with a 2D coordinate system. As shown below, a random line can divide the 2D coordinate system into two regions, allowing us to determine similarity by checking if vectors are on the same side of the line. For example, the figure below shows four randomly generated lines, allowing a vector&amp;rsquo;s position to be represented by four binary numbers, such as A and B being in the same region.&lt;/p>
+&lt;p>&lt;img alt="lsh2" src="https://storage.guangzhengli.com/images/lsh2.png">&lt;/p>
+&lt;p>The principle is simple: if two vectors are close, they are more likely to be on the same side of the line. For example, the probability of a line passing through AC is much higher than passing through AB, so the probability of AB being on the same side is much higher than AC.&lt;/p>
+&lt;p>When searching for a vector, the vector is hashed again, and vectors in the same bucket are found. Then, a brute-force search is used to find the closest vector. As shown below, if a vector is hashed to 10, similar vectors like D in the same bucket are found, greatly reducing search time.&lt;/p>
+&lt;p>&lt;img alt="lsh3" src="https://storage.guangzhengli.com/images/lsh3.png">&lt;/p>
+&lt;p>For more details on the LSH algorithm, refer to &lt;a href="https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing/">this blog&lt;/a>.&lt;/p>
+&lt;h4 id="random-projection-for-lsh">Random Projection for LSH&lt;/h4>
+&lt;p>If a random line can distinguish similarity in a 2D coordinate system, similarly, a random plane can divide a 3D coordinate system into two regions. In a multi-dimensional coordinate system, a random hyperplane can divide the space into two regions to distinguish similarity.&lt;/p>
+&lt;p>However, in high-dimensional space, the distance between data points is often very sparse, and the distance increases exponentially with dimensions. This results in many buckets, with the extreme case being one vector per bucket, making computation very slow. Therefore, in practice, LSH algorithms use random projection to project high-dimensional data points into lower-dimensional space, reducing computation time and improving query quality.&lt;/p>
+&lt;p>The basic idea behind random projection is to use a random projection matrix to project high-dimensional vectors into lower-dimensional space. A matrix of random numbers is created, with the size being the desired target low-dimensional value. Then, the dot product between the input vector and the matrix is calculated, resulting in a projected matrix with fewer dimensions but retaining their similarity.&lt;/p>
+&lt;p>When querying, the same projection matrix is used to project the query vector into lower-dimensional space. The projected query vector is then compared with the projected vectors in the database to find the nearest neighbor. Since the data dimensions are reduced, the search process is much faster than searching the entire high-dimensional space.&lt;/p>
+&lt;p>The basic steps are:&lt;/p>
+&lt;ol>
+&lt;li>Randomly select a hyperplane from the high-dimensional space and project data points onto it.&lt;/li>
+&lt;li>Repeat step 1, selecting multiple hyperplanes and projecting data points onto them.&lt;/li>
+&lt;li>Combine the projection results of multiple hyperplanes into a vector representing the low-dimensional space.&lt;/li>
+&lt;li>Use a hash function to map the vectors in the low-dimensional space into hash buckets.&lt;/li>
+&lt;/ol>
+&lt;p>Similarly, random projection is an approximate method, and the projection quality depends on the projection matrix. Generally, the more random the projection matrix, the better the mapping quality. However, generating truly random projection matrices can be computationally expensive, especially for large datasets. For more details on the RP for LSH algorithm, refer to &lt;a href="https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing-random-projection/">this blog&lt;/a>.&lt;/p>
+&lt;h2 id="similarity-measurement">Similarity Measurement&lt;/h2>
+&lt;p>We have discussed different search algorithms for vector databases, but not how to measure similarity. In similarity search, the distance between two vectors is calculated to determine their similarity.&lt;/p>
+&lt;p>How do we calculate the distance between vectors in high-dimensional space? There are three common vector similarity algorithms: Euclidean distance, cosine similarity, and dot product similarity.&lt;/p>
+&lt;h3 id="euclidean-distance">Euclidean Distance&lt;/h3>
+&lt;p>Euclidean distance refers to the distance between two vectors, calculated as:&lt;/p>
+&lt;p>$$d(\mathbf{A}, \mathbf{B}) = \sqrt{\sum_{i=1}^{n}(A_i - B_i)^2}$$&lt;/p>
+&lt;p>where $\mathbf{A}$ and $\mathbf{B}$ represent two vectors, and $n$ represents the vector&amp;rsquo;s dimensions.&lt;/p>
+&lt;p>&lt;img alt="KPhJ27" src="https://storage.guangzhengli.com/images/KPhJ27.jpg">&lt;/p>
+&lt;p>The advantage of the Euclidean distance algorithm is that it reflects the absolute distance between vectors, suitable for similarity calculations that consider vector length. For example, in recommendation systems, the number of historical user behaviors needs to be considered, not just the similarity of behaviors.&lt;/p>
+&lt;h3 id="cosine-similarity">Cosine Similarity&lt;/h3>
+&lt;p>Cosine similarity refers to the cosine value of the angle between two vectors, calculated as:&lt;/p>
+&lt;p>$$\cos(\theta) = \frac{\mathbf{A} \cdot \mathbf{B}}{|\mathbf{A}| |\mathbf{B}|}$$&lt;/p>
+&lt;p>where $\mathbf{A}$ and $\mathbf{B}$ represent two vectors, $\cdot$ represents the dot product, and $|\mathbf{A}|$ and $|\mathbf{B}|$ represent the magnitudes of the vectors.&lt;/p>
+&lt;p>&lt;img alt="fHLAfz" src="https://storage.guangzhengli.com/images/fHLAfz.jpg">&lt;/p>
+&lt;p>Cosine similarity is insensitive to vector length and only focuses on direction, making it suitable for high-dimensional vector similarity calculations, such as semantic search and document classification.&lt;/p>
+&lt;h3 id="dot-product-similarity">Dot Product Similarity&lt;/h3>
+&lt;p>Dot product similarity refers to the dot product value between two vectors, calculated as:&lt;/p>
+&lt;p>$$\mathbf{A} \cdot \mathbf{B} = \sum_{i=1}^{n}A_i B_i$$&lt;/p>
+&lt;p>where $\mathbf{A}$ and $\mathbf{B}$ represent two vectors, and $n$ represents the vector&amp;rsquo;s dimensions.&lt;/p>
+&lt;p>&lt;img alt="kyA3AN" src="https://storage.guangzhengli.com/images/kyA3AN.jpg">&lt;/p>
+&lt;p>The advantage of the dot product similarity algorithm is its simplicity, fast computation, and consideration of both vector length and direction. It is suitable for many practical scenarios, such as image recognition, semantic search, and document classification. However, the dot product similarity algorithm is sensitive to vector length, which may cause issues when calculating high-dimensional vector similarity.&lt;/p>
+&lt;p>Each similarity measurement algorithm has its advantages and disadvantages, and developers need to choose based on their data characteristics and business scenarios.&lt;/p>
+&lt;h2 id="filtering">Filtering&lt;/h2>
+&lt;p>In practical business scenarios, similarity searches are often not needed across the entire vector database but are filtered by some business fields before querying. Therefore, vectors stored in the database often need to include metadata, such as user ID, document ID, etc. This allows filtering search results based on metadata to get the final result.&lt;/p>
+&lt;p>To achieve this, vector databases typically maintain two indexes: a vector index and a metadata index. Metadata filtering is performed before or after the similarity search itself, but in either case, it can slow down the query process.&lt;/p>
+&lt;p>&lt;img alt="VwZxFW" src="https://storage.guangzhengli.com/images/VwZxFW.jpg">&lt;/p>
+&lt;p>The filtering process can be performed before or after the vector search itself, but each method has its challenges and may affect query performance:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Pre-filtering: Metadata filtering is performed before the vector search. While this can help reduce the search space, it may cause the system to ignore relevant results that do not match the metadata filtering criteria.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Post-filtering: Metadata filtering is performed after the vector search is completed. This ensures that all relevant results are considered, and irrelevant results are filtered out after the search.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>To optimize the filtering process, vector databases use various techniques, such as advanced indexing methods for metadata or parallel processing to speed up filtering tasks. Balancing search performance and filtering accuracy is crucial for providing efficient and relevant vector database query results.&lt;/p>
+&lt;h2 id="choosing-a-vector-database">Choosing a Vector Database&lt;/h2>
+&lt;p>In this article, I have spent a lot of time introducing the principles and implementation of similarity search algorithms in vector databases. While similarity search algorithms are a core and key point of a vector database, other factors need to be considered in practical business scenarios, such as the database&amp;rsquo;s availability, scalability, security, whether the code is open source, and the community&amp;rsquo;s activity.&lt;/p>
+&lt;h3 id="distributed">Distributed&lt;/h3>
+&lt;p>A mature vector database often needs to support distributed deployment to meet the storage and query needs of large-scale data. The more data you have, the more nodes you need, and the more errors and failures you encounter. Therefore, a distributed vector database needs to have high availability and fault tolerance.&lt;/p>
+&lt;p>High availability and fault tolerance in databases often require implementing sharding and replication capabilities. In traditional databases, sharding is often done based on the primary key or business needs. However, in distributed vector databases, sharding needs to consider vector similarity to ensure query quality and speed.&lt;/p>
+&lt;p>Other factors, such as consistency of replicated node data, data security, etc., also need to be considered in distributed vector databases.&lt;/p>
+&lt;h3 id="access-control-and-backup">Access Control and Backup&lt;/h3>
+&lt;p>In addition, whether the access control design is sufficient is another factor to consider. For example, when an organization and business grow rapidly, can new users and permissions be quickly added? Can new nodes be quickly added? Are audit logs complete? These are all factors to consider.&lt;/p>
+&lt;p>Moreover, database monitoring and backup are also important factors. When data fails, being able to quickly locate problems and restore data is a must for a mature vector database.&lt;/p>
+&lt;h3 id="api--sdk">API &amp;amp; SDK&lt;/h3>
+&lt;p>Compared to the above factors, API &amp;amp; SDK may often be overlooked, but in practical business scenarios, API &amp;amp; SDK are often the most concerned factors for developers. The design of API &amp;amp; SDK directly affects the development efficiency and user experience of developers. A well-designed API &amp;amp; SDK can adapt to different needs. Vector databases are a new field, and this point is easily overlooked when most people are not clear about the needs in this area.&lt;/p>
+&lt;h3 id="selection">Selection&lt;/h3>
+&lt;p>As of now, the following are some vector database options:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Vector Database&lt;/th>
+&lt;th>URL&lt;/th>
+&lt;th>GitHub Star&lt;/th>
+&lt;th>Language&lt;/th>
+&lt;th>Cloud&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>chroma&lt;/td>
+&lt;td>&lt;a href="https://github.com/chroma-core/chroma">https://github.com/chroma-core/chroma&lt;/a>&lt;/td>
+&lt;td>7.4K&lt;/td>
+&lt;td>Python&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>milvus&lt;/td>
+&lt;td>&lt;a href="https://github.com/milvus-io/milvus">https://github.com/milvus-io/milvus&lt;/a>&lt;/td>
+&lt;td>21.5K&lt;/td>
+&lt;td>Go/Python/C++&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>pinecone&lt;/td>
+&lt;td>&lt;a href="https://www.pinecone.io/">https://www.pinecone.io/&lt;/a>&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>qdrant&lt;/td>
+&lt;td>&lt;a href="https://github.com/qdrant/qdrant">https://github.com/qdrant/qdrant&lt;/a>&lt;/td>
+&lt;td>11.8K&lt;/td>
+&lt;td>Rust&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>typesense&lt;/td>
+&lt;td>&lt;a href="https://github.com/typesense/typesense">https://github.com/typesense/typesense&lt;/a>&lt;/td>
+&lt;td>12.9K&lt;/td>
+&lt;td>C++&lt;/td>
+&lt;td>❌&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>weaviate&lt;/td>
+&lt;td>&lt;a href="https://github.com/weaviate/weaviate">https://github.com/weaviate/weaviate&lt;/a>&lt;/td>
+&lt;td>6.9K&lt;/td>
+&lt;td>Go&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="extending-traditional-data">Extending Traditional Data&lt;/h3>
+&lt;p>Besides choosing a specialized vector database, extending traditional databases is also an option. For example, Redis, besides its traditional Key-Value database use, offers Redis Modules, which extend Redis with new features, commands, and data types. For example, the &lt;a href="https://redis.io/docs/interact/search-and-query/">RediSearch&lt;/a> module extends vector search capabilities.&lt;/p>
+&lt;p>Similarly, PostgreSQL extensions can extend database functionality. For example, &lt;a href="https://github.com/pgvector/pgvector">pgvector&lt;/a> enables vector search capabilities. It supports exact and similarity searches, cosine similarity, and other similarity measurement algorithms. Most importantly, it is attached to PostgreSQL, allowing you to leverage all PostgreSQL features, such as ACID transactions, concurrency control, backup, and recovery. It also has all PostgreSQL client libraries, allowing access from any language&amp;rsquo;s PostgreSQL client, reducing developer learning and service maintenance costs.&lt;/p>
+&lt;p>For example, my open-source projects &lt;a href="https://github.com/guangzhengli/ChatFiles">ChatFiles&lt;/a> and &lt;a href="https://github.com/guangzhengli/vectorhub">VectorHub&lt;/a> currently use pgvector to implement vector search for GPT document Q&amp;amp;A, based on &lt;a href="https://supabase.com/blog/openai-embeddings-postgres-vector">Supabase&amp;rsquo;s PostgreSQL + pgvector&lt;/a> service.&lt;/p>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>This article mainly introduces the principles and implementation of vector databases, including basic concepts, similarity search algorithms, similarity measurement algorithms, filtering algorithms, and vector database selection. Vector databases are a new field, and most vector database companies&amp;rsquo; valuations are rapidly growing with the AI and GPT wave. However, in practical business scenarios, the application scenarios of vector databases are still relatively few. Developers and business experts need to explore the application scenarios of vector databases beyond the hype.&lt;/p>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV11a4y1c7SW">https://www.bilibili.com/video/BV11a4y1c7SW&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.bilibili.com/video/BV1BM4y177Dk">https://www.bilibili.com/video/BV1BM4y177Dk&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/learn/vector-database/">https://www.pinecone.io/learn/vector-database/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/guangzhengli/ChatFiles">https://github.com/guangzhengli/ChatFiles&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/guangzhengli/vectorhub">https://github.com/guangzhengli/vectorhub&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.anthropic.com/index/100k-context-windows">https://www.anthropic.com/index/100k-context-windows&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://js.langchain.com/docs/">https://js.langchain.com/docs/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing/">https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/learn/series/faiss/product-quantization/">https://www.pinecone.io/learn/series/faiss/product-quantization/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing-random-projection/">https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing-random-projection/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=QvKMwLjdK-s&amp;t=168s&amp;ab_channel=JamesBriggs">https://www.youtube.com/watch?v=QvKMwLjdK-s&amp;t=168s&amp;ab_channel=JamesBriggs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/learn/series/faiss/faiss-tutorial/">https://www.pinecone.io/learn/series/faiss/faiss-tutorial/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=sKyvsdEv6rk&amp;ab_channel=JamesBriggs">https://www.youtube.com/watch?v=sKyvsdEv6rk&amp;ab_channel=JamesBriggs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/learn/vector-similarity/">https://www.pinecone.io/learn/vector-similarity/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/chroma-core/chroma">https://github.com/chroma-core/chroma&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/milvus-io/milvus">https://github.com/milvus-io/milvus&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.pinecone.io/">https://www.pinecone.io/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/qdrant/qdrant">https://github.com/qdrant/qdrant&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/typesense/typesense">https://github.com/typesense/typesense&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/weaviate/weaviate">https://github.com/weaviate/weaviate&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://redis.io/docs/interact/search-and-query/">https://redis.io/docs/interact/search-and-query/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/pgvector/pgvector">https://github.com/pgvector/pgvector&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Using Reading as a Method</title><link>https://think-crow.guthub.io/en/blog/en/reading/</link><pubDate>Sat, 18 Mar 2023 16:05:00 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://think-crow.guthub.io/en/blog/en/reading/</guid><description>&lt;p>When I first started college, I disliked discussing reading as a method for research. I believed that reading should be purely for pleasure, only caring about resonance and enjoyment. At that time, I pursued a superficial understanding of books and looked down on the research-like reading methods, scoffing at the meticulous and detailed reading approach.&lt;/p>
+&lt;p>As time passed and I encountered more complex subjects and obscure knowledge, I developed a greater respect for knowledge. I slowly realized that my reading methods and attitudes couldn&amp;rsquo;t keep up with the demands of the knowledge I was trying to acquire. This led me to explore reading methodologies, which is the basis for this article.&lt;/p>
+&lt;h2 id="the-flaws-of-casual-reading">The Flaws of Casual Reading&lt;/h2>
+&lt;blockquote>
+&lt;p>In life, feelings, and thoughts, I record some things I become aware of. Many things remain unnoticed, existing in a state of sleep and chaos. When reading, because of resonance, struggle, or even distraction, the sleeping is awakened, and the chaotic becomes clear. For me, one of the greatest joys of reading is self-discovery, realizing that I have such good things within me.&lt;/p>
+&lt;/blockquote>
+&lt;p>Initially, there wasn&amp;rsquo;t much information on the internet, and all my reading activities were based on the university library&amp;rsquo;s collection. Most of the time, I read novels by authors like Wang Xiaobo, Yu Hua, Camus, and Hemingway. At that time, I believed that casual and random reading was a lifestyle; you didn&amp;rsquo;t need to remember what you read, just like you didn&amp;rsquo;t need to remember what you ate on a particular day. These things had already become part of your body and spirit. This change was nourishing and growth-oriented, so there was no need to force it.&lt;/p>
+&lt;p>I still believe this theory has its merits, but as I grew older and encountered more disciplines and theories, this casual reading habit revealed its flaws. The first time I felt the strain was during my sophomore year when I encountered economics. Out of interest, I borrowed Mankiw&amp;rsquo;s [Principles of Economics] and read both volumes in one go. Although I felt my worldview was reshaped during the reading process, and I experienced the joy of having a method to deconstruct the world for the first time, I felt empty after finishing the book. It felt like the knowledge was floating away like clouds. This was completely different from the mindset after finishing literature or novels.&lt;/p>
+&lt;p>It wasn&amp;rsquo;t until I read [How to Read a Book] that I realized different types of books require different reading methods. For example, not seeking a deep understanding when reading novels and literature might be beneficial, but when reading professional books, if you don&amp;rsquo;t outline and conduct thematic reading, you can&amp;rsquo;t say you&amp;rsquo;ve read the book well.&lt;/p>
+&lt;blockquote>
+&lt;p>Thematic reading, also known as comparative reading, is the most demanding and challenging type of reading. Thematic reading involves reading multiple materials around a specific theme and comparing and analyzing them. The goal of thematic reading is not to fully understand any particular text but to deepen the understanding of a specific theme.&lt;/p>
+&lt;/blockquote>
+&lt;p>After this realization, I consciously began to explore reading methods, reducing unnecessary burdens outside of reading. After a long period of adjustment and modification, I have developed a workflow that, although it may need future tweaks, has stood the test of time.&lt;/p>
+&lt;p>My reading workflow consists of &lt;strong>discovery, collection, planning, reading, and output&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Discovery: Finding interesting and valuable books.&lt;/li>
+&lt;li>Collection: Using tools to collect books.&lt;/li>
+&lt;li>Planning: Creating specific themed book lists and reading plans based on OKRs or personal interests.&lt;/li>
+&lt;li>Reading: Using different reading methods for different types of books.&lt;/li>
+&lt;li>Output: Deepening knowledge understanding through knowledge output.&lt;/li>
+&lt;/ol>
+&lt;h2 id="the-journey-of-discovery">The Journey of Discovery&lt;/h2>
+&lt;p>Although there are many media to obtain information in the internet age, such as blogs, websites, long and short videos, online communication, etc., I still believe that books are the best practice for acquiring systematic knowledge. But this has a premise: the reading material must be of high quality. Reading inferior content can lead to more bias and narrow-mindedness than other media.&lt;/p>
+&lt;p>So the first step in the reading process is to find excellent books. If I had to add a qualifier, it would be to find excellent books that interest you.&lt;/p>
+&lt;h3 id="finding-interests">Finding Interests&lt;/h3>
+&lt;p>Instead of starting with a vast sea of classic books, starting from your interests might be a better choice. Rather than forcing yourself to finish certain classic books, follow your inner preferences and start your reading journey from curiosity and the desire to read.&lt;/p>
+&lt;p>If you don&amp;rsquo;t have a specific book in mind and are unsure about your interests, try visiting a bookstore. Compared to online recommendations and e-books, physical books provide more direct feedback. Flipping through the table of contents and general content can quickly tell you if you&amp;rsquo;re interested in that type of book.&lt;/p>
+&lt;p>Due to pressure and competition, existing independent bookstores have unique considerations for book display and arrangement. Regularly checking the popular recommendation sections can quickly help you find newly published good books. Independent bookstores often have strong personalities.&lt;/p>
+&lt;h3 id="finding-books">Finding Books&lt;/h3>
+&lt;p>If you&amp;rsquo;re not interested in visiting bookstores, you can find interesting subjects online through quality book lists, which features many time-tested classic books. If you&amp;rsquo;re interested in new books, following specific field bloggers might help.&lt;/p>
+&lt;p>In the early stages of reading, I suggest not worrying too much about whether the book is excellent. If you&amp;rsquo;re slightly interested, you can use inspectional reading (skimming) to judge whether a book is worth reading. Only by reading can you know if the book interests you and is worth reading. If you&amp;rsquo;re not interested in the theme, you can always switch to another book.&lt;/p>
+&lt;p>If you already have an interesting subject or book in mind, you can find more related books through the following methods:&lt;/p>
+&lt;ul>
+&lt;li>What other books has the author written? For example, if you&amp;rsquo;re interested in [Sapiens: A Brief History of Humankind], you&amp;rsquo;re likely to enjoy Yuval Noah Harari&amp;rsquo;s trilogy.&lt;/li>
+&lt;li>Which publisher released the book?&lt;/li>
+&lt;li>Many authors include their recommended and reference books in the preface or at the end. Follow these recommendations to find more books.&lt;/li>
+&lt;/ul>
+&lt;h2 id="the-journey-of-collection">The Journey of Collection&lt;/h2>
+&lt;h3 id="book-categorization">Book Categorization&lt;/h3>
+&lt;p>After discovering excellent books, ideally, you would read them immediately. However, reality often doesn&amp;rsquo;t allow this, as various work and chores occupy our time. To prevent forgetting to continue reading later, I often save the books and categorize them for visualization, preparing for future reading plans and thematic reading:&lt;/p>
+&lt;ul>
+&lt;li>On one hand, we can&amp;rsquo;t always start reading a good book immediately upon discovering it. Especially when conducting thematic reading, we might read multiple similar books at once, so we need to collect and categorize similar books before reading.&lt;/li>
+&lt;li>On the other hand, the number of books collected out of interest might far exceed the number we can plan to read, so we need to plan and select before reading to see if they meet the thematic reading needs and current reading priorities.&lt;/li>
+&lt;/ul>
+&lt;p>The first step is to categorize the books of interest in one place. The tools and processes for this step need to be:&lt;/p>
+&lt;ul>
+&lt;li>Automated: Automatically add book names, authors, ISBNs, covers, etc., and support manual additions.&lt;/li>
+&lt;li>Flexible: Add and delete book fields to better organize and categorize, such as book categories, completion dates, ratings, etc.&lt;/li>
+&lt;li>Visual: Good page support, customizable to display the required fields and images, such as displaying currently reading, want to read, and read pages.&lt;/li>
+&lt;li>Note support: Combine with subsequent output, integrating with notes to reduce management pressure.&lt;/li>
+&lt;/ul>
+&lt;p>Given these requirements, I currently use &lt;a href="https://www.notion.so/">Notion&lt;/a>, whose database functionality covers the last three needs. Combined with its Chrome extension &lt;a href="https://chrome.google.com/webstore/detail/save-to-notion/ldmmifpegigmeammaeckplhnjbbpccmm">Save to Notion&lt;/a>, it perfectly achieves the first automation function. The overall process is simple, highly customizable, and Notion&amp;rsquo;s minimalist design makes it my favorite solution. Of course, you can choose any tool you like.&lt;/p>
+&lt;p>The entire saving logic process is as follows:&lt;/p>
+&lt;p>First, customize a book resource database in Notion, setting up related database fields such as book name, author, reading status, cover image, category, etc.&lt;/p>
+&lt;p>&lt;img alt="screenshotr_2023-3-19T16-44-26" src="https://storage.guangzhengli.com/images/screenshotr_2023-3-19T16-44-26.png">&lt;/p>
+&lt;p>Next, organize views through the database, listing &lt;code>currently reading&lt;/code>, &lt;code>want to read&lt;/code>, &lt;code>read&lt;/code>, and &lt;code>planned reading&lt;/code> lists at the entrance. This creates a basic library system. If you want a similar setup, you can click &lt;a href="https://guangzhengli.notion.site/Guangzheng-Book-Template-a446554b015748deb4c61559f99f9bf8">Guangzheng Book Template&lt;/a> to copy the template and create your database and book management system.&lt;/p>
+&lt;p>&lt;img alt="screenshotr_2023-3-19T16-57-50" src="https://storage.guangzhengli.com/images/screenshotr_2023-3-19T16-57-50.png">&lt;/p>
+&lt;h2 id="planning-reading">Planning Reading&lt;/h2>
+&lt;p>From the previous text, you can see that I used to be a fan of random reading. The main factor that led me to planned reading was the need for thematic reading. When you need to view a theory or phenomenon dialectically, relying on one author&amp;rsquo;s perspective often leads to bias. One book often can&amp;rsquo;t provide a complete view of knowledge.&lt;/p>
+&lt;p>Therefore, we need to obtain different authors&amp;rsquo; and perspectives on the same issue. For example, in economics, Keynes and Hayek, two contemporaneous economists, can have completely opposite views on state interventionism and economic liberalism. Such examples are numerous in books and life. We need to maintain a calm and humble attitude towards thematic reading to gain insights.&lt;/p>
+&lt;blockquote>
+&lt;p>In the past, I easily idolized a book or author while reading, but after a few years, rereading the book often led to disappointment, and I couldn&amp;rsquo;t understand why I was so passionate about it. Later, no matter how reasonable or excellent a book was, I kept a certain distance.&lt;/p>
+&lt;/blockquote>
+&lt;p>Additionally, some knowledge has high thresholds. If you don&amp;rsquo;t read in order, it can lead to ineffective reading and loss of interest. Many philosophical theories build on or critique predecessors, so skipping earlier theories can lead to confusion.&lt;/p>
+&lt;p>Therefore, making a reading plan helps build a personal knowledge system. Planning reading doesn&amp;rsquo;t mean planning how many books to read in a year or month but clarifying the areas of interest, listing themed book lists, and setting a reading order.&lt;/p>
+&lt;p>Once the plan is made, the number of books in the planned list is often more than what can be read. At this point, you can continue to trim the list to ensure the quality of the reading content.&lt;/p>
+&lt;h2 id="reading">Reading&lt;/h2>
+&lt;p>When the plan is made and reading begins, I suggest giving up on everything else besides reading itself. I&amp;rsquo;ve seen many discussions and arguments about reading, such as choosing reading devices, paper or electronic, and selecting e-book reading software. I believe these comparisons and choices are meaningless. No device can replace your thinking, and no tool can replace your dialogue with the author.&lt;/p>
+&lt;p>In my childhood, I rented books from bookstores, borrowed books from the library in college, and chose electronic reading after renting a house for work. These different reading methods made no difference to my reading itself; it was still a dialogue with the author&amp;rsquo;s soul. Using paper books or expensive electronic devices didn&amp;rsquo;t make the process smoother.&lt;/p>
+&lt;p>However, in terms of reading efficiency, I must admit that buying books is not as good as borrowing them! Borrowing books is not as good as renting them! Rented books are often more enjoyable than bought ones! Human laziness and flaws are fully reflected in me at this moment! So if you have the conditions to borrow books, give it a try.&lt;/p>
+&lt;p>In summary, I don&amp;rsquo;t recommend any devices or tools to assist reading in this section and suggest readers give up on investing time in reading tools and focus on reading itself! Reading one more book&amp;rsquo;s content is more valuable than spending time on reading tools, methods, and processes. I hope we can all encourage each other!&lt;/p>
+&lt;p>Of course, reading methods are not limited to tools; some cognitive aspects require methodological thinking. For example, how should different types of books be read? How should books of varying difficulty be chosen?&lt;/p>
+&lt;h3 id="categorized-reading">Categorized Reading&lt;/h3>
+&lt;p>Before reading, we often need to understand a book&amp;rsquo;s category, which helps us view issues and knowledge dialectically.&lt;/p>
+&lt;p>For example, when reading professional books like economics and political science, we might need to ask many questions to aid reading, such as:&lt;/p>
+&lt;ul>
+&lt;li>What is this book about?&lt;/li>
+&lt;li>What is the significance and content of this book?&lt;/li>
+&lt;li>What is the author&amp;rsquo;s purpose?&lt;/li>
+&lt;li>Is the content of this book true?&lt;/li>
+&lt;li>Did your views on the book change significantly before and after reading? Will you adjust your views?&lt;/li>
+&lt;li>What do you think is right or flawed in the book?&lt;/li>
+&lt;/ul>
+&lt;p>This is because some professional books require us to summarize and analyze their themes and compare them later.&lt;/p>
+&lt;p>But if you&amp;rsquo;re reading imaginative literature or storybooks, the above focus points are meaningless. In imaginative literature, you might need to pay attention to not resisting the story&amp;rsquo;s imagination and influence, and you don&amp;rsquo;t need to find consensus, themes, or arguments. If you use standards suitable for conveying knowledge and aligning with truth to view novels, you won&amp;rsquo;t gain any resonance the author wants to bring you.&lt;/p>
+&lt;h3 id="layered-reading">Layered Reading&lt;/h3>
+&lt;p>Besides focusing on categorized reading methods, some books and materials require layered reading, choosing the appropriate difficulty based on your level, such as:&lt;/p>
+&lt;ul>
+&lt;li>Introductory: Stimulate personal interest and understand the general scope and concepts of a field. Help you decide if you&amp;rsquo;re interested in the theme and want to continue researching.&lt;/li>
+&lt;li>Proficient: Basic textbooks and general knowledge books in a field, requiring a complete system structure.&lt;/li>
+&lt;li>Professional: Having a considerable understanding of the entire field, conducting targeted and extended reading on a specific direction or school of thought.&lt;/li>
+&lt;li>Pioneer: No need for much explanation, far beyond my capabilities. The book&amp;rsquo;s effectiveness likely no longer satisfies you; go study papers.&lt;/li>
+&lt;/ul>
+&lt;p>Most professional books require layered reading. The only reminder I have is that for levels above introductory, such as building a complete field knowledge system, try to choose foreign textbooks. See which textbooks are used by the best schools in this field. You can search for commonly used textbooks at top universities through the &lt;a href="https://galaxy.opensyllabus.org/">Open Syllabus Project&lt;/a> to avoid having your interest ruined by unqualified textbooks.&lt;/p>
+&lt;p>Trust me, if you can&amp;rsquo;t get through introductory and proficient-level books in a field, it&amp;rsquo;s not your problem; it&amp;rsquo;s the author&amp;rsquo;s problem.&lt;/p>
+&lt;h2 id="unity-of-knowledge-and-action">Unity of Knowledge and Action&lt;/h2>
+&lt;blockquote>
+&lt;p>Hiding what you&amp;rsquo;ve learned in your heart is not only shameful but also harmful. Whatever we don&amp;rsquo;t strive to share will inevitably be lost from us.&lt;/p>
+&lt;/blockquote>
+&lt;p>Whenever I finish a book, I initially feel proud, thinking I&amp;rsquo;ve mastered a lot of knowledge. But as time passes and memories fade, I have to pessimistically admit that knowledge won&amp;rsquo;t always belong to me. So I explore ways to retain knowledge longer, including but not limited to these methods:&lt;/p>
+&lt;ul>
+&lt;li>Active reading: Asking questions to the book and author.
+&lt;ul>
+&lt;li>What is this book about? How does it develop its theme step by step, breaking down key issues from the core theme?&lt;/li>
+&lt;li>What does the author want to express? Identify the main ideas, statements, and arguments, and combine them into the author&amp;rsquo;s special message.&lt;/li>
+&lt;li>Is the book reasonable? Is it entirely reasonable or only partially?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Taking notes:
+&lt;ul>
+&lt;li>List outlines and key points.&lt;/li>
+&lt;li>Answer the active reading questions above.&lt;/li>
+&lt;li>Connections between books on the same theme, different authors&amp;rsquo; views on the same issue.&lt;/li>
+&lt;li>The author&amp;rsquo;s and your views.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>After these efforts, does the knowledge belong to you? I have to despairingly admit that the loss of knowledge may slow down but still continues irreversibly.&lt;/p>
+&lt;p>Moreover, writing full notes can make me deny my ignorance and shallowness, thinking that the notes I wrote are the knowledge I&amp;rsquo;ve gained. The sense of superiority from notes leads me to self-deception and vanity.&lt;/p>
+&lt;p>Over time, I found that sharing knowledge and teaching others might be the only way to address this issue to some extent.&lt;/p>
+&lt;p>Only when I struggle to find words while sharing do I face my ignorance. Only when I can&amp;rsquo;t explain myself while sharing knowledge do I recognize my biases. This embarrassment helps me escape ignorance and bias, learning knowledge with a humble attitude.&lt;/p>
+&lt;p>So perhaps only through sharing and teaching can we face ignorance and shallowness. Even through practical action and unity of knowledge and action can we fully grasp knowledge.&lt;/p>
+&lt;p>So how do we share? It is definitely a great joy in life to have friends around us to share, discuss and debate. If not, it doesn&amp;rsquo;t matter. In the era of the Internet, we can publish articles, such as on our own blogs or online platforms. We can also expand by making videos or holding sessions to find more like-minded friends.&lt;/p>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>Looking back at all the content above, we have derived some processes to assist reading from the need for theme reading. However, all tools and processes can only serve as auxiliary means. Remember not to lose sight of the big picture and get caught up in the vortex of tools.&lt;/p>
+&lt;p>The only valuable thing about reading methodology is reading itself. Reading one book&amp;rsquo;s content multiple times is more valuable than spending time on reading tools, methods and processes.&lt;/p>
+&lt;p>There is no universal method of reading for everyone in the world. The method itself represents strong personality traits and preaching. If you have better or more suitable methods, you can discuss them with each other in comments.&lt;/p>
+&lt;p>This article was written on the eve of a disruptive productivity revolution when OpenAI just released its GPT-4 model. Throughout modern history since industrial revolution, we may be on the eve of steam engine or information technology revolution; with changes in productivity comes increased social unrest - inflation, unemployment and war are products at this bottom point of Kondratiev cycle (economic wave). The harder times are，the more precious thinking becomes especially because AI cannot replace thinking itself&lt;/p>
+&lt;h2 id="reference">Reference&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="https://sspai.com/post/78133">https://sspai.com/post/78133&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://book.douban.com/top250">https://book.douban.com/top250&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://galaxy.opensyllabus.org/">https://galaxy.opensyllabus.org/&lt;/a>&lt;/li>
+&lt;li>How to Read a Book&amp;quot;&lt;/li>
+&lt;/ol></description></item><item><title>The Art of Logging</title><link>https://think-crow.guthub.io/en/blog/en/the-art-of-logging/</link><pubDate>Tue, 28 Feb 2023 20:33:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://think-crow.guthub.io/en/blog/en/the-art-of-logging/</guid><description>&lt;p>Understanding logs isn&amp;rsquo;t easy. Developers often struggle with whether a log statement is meaningful, SREs are at a loss when production issues lack logs, Ops spend extra effort managing massive logs, and project managers don&amp;rsquo;t want to invest too much in logs that don&amp;rsquo;t add business value.&lt;/p>
+&lt;p>Therefore, following best practices when developing applications and using mature solutions for log collection and management can alleviate these conflicts, which is the focus of this article.&lt;/p>
+&lt;h2 id="the-beginning-of-the-conflict">The Beginning of the Conflict&lt;/h2>
+&lt;p>First, let&amp;rsquo;s discuss why we need to log and the purpose of logs. Most developers have a clear understanding and strong need for logs when debugging code and solving bugs in different environments. Logs are the assistant for debugging and the savior in production environments. I&amp;rsquo;ve only seen complaints about too few logs, rarely about too many. Logs help determine code paths, check if APIs are requested correctly, verify core business data, and identify error stack traces. It&amp;rsquo;s hard to imagine troubleshooting bugs in a complex system without any logs.&lt;/p>
+&lt;p>If there&amp;rsquo;s such a strong need, why not log every line of code to capture the context? In theory, this is feasible, but there are issues. First, storage: common medium to large systems generate logs in the TB range, and super-large systems in the PB range. According to &lt;a href="https://blog.cloudflare.com/log-analytics-using-clickhouse/">Cloudflare&amp;rsquo;s data&lt;/a>, they handle about 40 million requests per second, posing a huge storage cost. Second, search performance: solutions like &lt;a href="https://github.com/elastic/elasticsearch">Elasticsearch&lt;/a> struggle with massive logs, even with different indexes and distributed clusters. Third, generating massive logs during peak times can slow down the system and increase failure risks.&lt;/p>
+&lt;p>So, the simplest conclusion is that logs shouldn&amp;rsquo;t be too many to make storage and management difficult, nor too few to hinder troubleshooting. This paradox is the art of logging!&lt;/p>
+&lt;h2 id="log-levels">Log Levels&lt;/h2>
+&lt;p>Before logging, we need to determine the log level. Log levels help prioritize log information, reduce noise, and prevent alert fatigue. They also aid in filtering logs during searches.&lt;/p>
+&lt;p>Common log levels, from low to high, are: &lt;code>TRACE&lt;/code>, &lt;code>DEBUG&lt;/code>, &lt;code>INFO&lt;/code>, &lt;code>WARN&lt;/code>, &lt;code>ERROR&lt;/code>, &lt;code>FATAL&lt;/code>. In local environments, we usually set the log level to &lt;code>Trace&lt;/code> to print all logs. In production, due to storage pressure, search performance, and disk IO impact, we adjust the log level to &lt;code>INFO&lt;/code> or even &lt;code>ERROR&lt;/code>. This means logs below this level won&amp;rsquo;t be printed.&lt;/p>
+&lt;p>Does this mean we only need to log at the production level? For example, if production only logs &lt;code>INFO&lt;/code>, should we skip &lt;code>DEBUG&lt;/code> logs? Some project managers, to save on log management costs, only log &lt;code>ERROR&lt;/code> in production. Should we skip &lt;code>INFO&lt;/code> logs then? While this is common, reality is more complex, as shown in the following scenarios.&lt;/p>
+&lt;h3 id="scenario-one">Scenario One&lt;/h3>
+&lt;p>An engineer investigating low performance of a resource creation API in production found that logging &lt;code>INFO&lt;/code> level logs with resource objects before saving them caused memory buffer exhaustion during peak times, slowing down the main thread and overall service performance. The engineer removed the log to reduce disk IO and solve the performance issue.&lt;/p>
+&lt;p>However, a later code change in the API service chain caused errors in created objects. Without the resource-saving logs, it was hard to determine if the issue was with the API request parameters or subsequent logic. Should we modify the log level and redeploy?&lt;/p>
+&lt;h3 id="scenario-two">Scenario Two&lt;/h3>
+&lt;p>If production logs are set to &lt;code>ERROR&lt;/code>, a downstream service failure causing timeouts during peak QPS can generate massive error logs, increasing disk IO and CPU usage, leading to service crashes. How should we handle this?&lt;/p>
+&lt;h3 id="scenario-three">Scenario Three&lt;/h3>
+&lt;p>An engineer troubleshooting a production issue found that &lt;code>INFO&lt;/code> logs were insufficient and needed a &lt;code>DEBUG&lt;/code> log, but production only had &lt;code>INFO&lt;/code> logs. Should we change the log level and restart the service?&lt;/p>
+&lt;h3 id="log-level-standards-and-dynamic-adjustment">Log Level Standards and Dynamic Adjustment&lt;/h3>
+&lt;p>To solve these issues, we need clear log level standards in projects and dynamic log level adjustment. Lowering the log level in production to get comprehensive debug logs can help engineers locate issues efficiently. Raising the log level during log surges can reduce log generation, ease disk IO pressure, and improve service performance.&lt;/p>
+&lt;p>Here are some log level suggestions:&lt;/p>
+&lt;ul>
+&lt;li>TRACE: Use during development to trace errors, but never commit to version control.&lt;/li>
+&lt;li>DEBUG: Log everything happening in the program. Use mainly during debugging, and reduce debug statements before production, leaving only the most meaningful entries, which can be activated during troubleshooting.&lt;/li>
+&lt;li>INFO: Log all user-driven events or system-specific operations (e.g., scheduled tasks).&lt;/li>
+&lt;li>WARN: Log potential errors, like a database call taking too long or a memory cache nearing capacity. This allows for appropriate alerts and better understanding of system behavior before failures.&lt;/li>
+&lt;li>ERROR: Log every error condition, like API calls returning errors or internal errors.&lt;/li>
+&lt;li>FATAL: Indicates the entire service is down. Use sparingly, usually indicating program termination.&lt;/li>
+&lt;/ul>
+&lt;h2 id="logging">Logging&lt;/h2>
+&lt;h3 id="when-to-log">When to Log&lt;/h3>
+&lt;p>There&amp;rsquo;s no standard for when to log; developers must judge based on business and code. Besides regular event logging (e.g., operations performed, unexpected situations, unhandled exceptions or warnings, scheduled tasks), I suggest logging in the following scenarios:&lt;/p>
+&lt;ul>
+&lt;li>When calling third-party systems, log the API URL, &lt;code>Request/Response Body&lt;/code>, and exceptions. This provides clear logs to identify issues, reducing disputes between different system operators or companies and facilitating problem resolution.&lt;/li>
+&lt;li>Log key code and branches in important core business, like if-then-else statements, to help developers understand if the program followed the expected path. Core business data is often hard to reproduce manually, so understanding code paths is crucial.&lt;/li>
+&lt;li>Audit logs for core business, especially if related to legal or contractual matters. Store logs in a strongly consistent database.&lt;/li>
+&lt;li>Log configuration information when the application starts. Initialization logic usually runs once and is hard to reproduce during diagnosis, so it should be logged.&lt;/li>
+&lt;/ul>
+&lt;h3 id="log-attributes">Log Attributes&lt;/h3>
+&lt;p>Besides the usual &lt;code>log level&lt;/code>, &lt;code>timestamp&lt;/code>, &lt;code>message&lt;/code>, &lt;code>exception&lt;/code>, and &lt;code>stack trace&lt;/code>, other fields can help locate and identify root causes. Common extra fields include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>trace id&lt;/code>: A unique ID for service link tracking. Add it to the HTTP header at the system&amp;rsquo;s 7-layer gateway and carry it throughout the request. When the request chain is long, &lt;code>trace id&lt;/code> helps find complete logs.&lt;/li>
+&lt;li>&lt;code>span id&lt;/code>: Represents a single operation in the &lt;code>trace id&lt;/code> lifecycle. Each service generates a &lt;code>span id&lt;/code> for the request, with the first being the root span. The upstream &lt;code>span id&lt;/code> is recorded as &lt;code>pspanid&lt;/code> (parent-spanid). The current service&amp;rsquo;s &lt;code>span id&lt;/code> is passed downstream as &lt;code>pspanid&lt;/code>. This helps reconstruct the request chain when service calls are complex.&lt;/li>
+&lt;li>&lt;code>user id&lt;/code>: A unique user ID. When users report issues or submit tickets, this helps directly query error logs, reducing interference and shortening troubleshooting time.&lt;/li>
+&lt;li>&lt;code>tenant_id&lt;/code>: The tenant ID (if applicable). Useful for multi-tenant systems.&lt;/li>
+&lt;li>&lt;code>request uri&lt;/code>: The current microservice request URI. When a business issue arises, the &lt;code>request uri&lt;/code> often quickly provides the &lt;code>trace id&lt;/code>, which helps find the corresponding request logs.&lt;/li>
+&lt;li>&lt;code>application name&lt;/code>: The current microservice name. Helps identify which service generated the log and filter logs by &lt;code>application name&lt;/code> to query overall service failures.&lt;/li>
+&lt;li>&lt;code>pod name&lt;/code>: The k8s resource Pod name (if applicable). Most microservices use k8s for container orchestration. Logging &lt;code>pod name&lt;/code> helps restart or kill a faulty Pod.&lt;/li>
+&lt;li>&lt;code>host name&lt;/code>: The machine name of the current request. Even with k8s-managed microservices, hardware issues like disk or network failures can cause service issues. Logging &lt;code>host name&lt;/code> helps troubleshoot the final mile of hardware-related failures.&lt;/li>
+&lt;/ul>
+&lt;h3 id="log-security">Log Security&lt;/h3>
+&lt;p>Logs must ensure the security of the logging framework and handle sensitive information. Use mature, production-validated logging libraries, not custom solutions. Sensitive information handling is crucial for most companies. Remember these security and compliance requirements:&lt;/p>
+&lt;ul>
+&lt;li>Do not leak sensitive personal identity information (PII).&lt;/li>
+&lt;li>Do not leak encryption keys or secrets.&lt;/li>
+&lt;li>Ensure the company&amp;rsquo;s privacy policy covers log data.&lt;/li>
+&lt;li>Ensure log providers meet compliance requirements.&lt;/li>
+&lt;li>Ensure data storage duration requirements are met.&lt;/li>
+&lt;/ul>
+&lt;h3 id="bad-logging-practices">Bad Logging Practices&lt;/h3>
+&lt;ul>
+&lt;li>Using non-English logs.
+&lt;ul>
+&lt;li>English logs are recorded in ASCII characters, which is important as non-English characters may not display correctly after processing.&lt;/li>
+&lt;li>English has built-in word segmentation, making it easier to store and query logs in engines like &lt;code>ElasticSearch&lt;/code>. Non-English logs require special tokenizers and have less effective storage and query results.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Logs without context, like &lt;code>Transaction failed&lt;/code> or &lt;code>User operation succeeds&lt;/code>. These messages may be understandable in code context but not in the log itself.&lt;/li>
+&lt;li>Logging in loops. Unless necessary, loop logs are hard to read and consume storage.&lt;/li>
+&lt;li>Referencing slow operation data. If logging requires remote service calls, database queries, or heavy computation, consider if the information is necessary and appropriate.&lt;/li>
+&lt;/ul>
+&lt;h2 id="log-observability">Log Observability&lt;/h2>
+&lt;p>In the last decade, the rise of microservices and cloud-native has significantly changed log collection, storage, and analysis. Early on, we didn&amp;rsquo;t need log collection, storing all monolithic service logs in files and using tail, grep, and awk to extract information. But with increasing system complexity, this approach no longer suffices. To meet growing log management needs, the open-source community and industry have developed solutions like the popular &lt;a href="https://www.elastic.co/elastic-stack/">Elastic Stack&lt;/a>, and cloud providers offer one-stop solutions like &lt;a href="https://www.datadoghq.com/product/log-management/">AWS DataDog&lt;/a> and &lt;a href="https://www.dynatrace.com/monitoring/platform/log-management-analytics/">Azure Dynatrace&lt;/a>.&lt;/p>
+&lt;p>Regardless of the solution, log management is no longer simple. Between logging and querying logs, there are steps like collection, buffering, aggregation, processing, indexing, and storage, each with its challenges.&lt;/p>
+&lt;p>&lt;img alt="azaofU" src="https://storage.guangzhengli.com/images/azaofU.jpg">&lt;/p>
+&lt;h3 id="log-collection">Log Collection&lt;/h3>
+&lt;p>Initially, we used &lt;a href="https://www.elastic.co/logstash/">Logstash&lt;/a> from the &lt;a href="https://www.elastic.co/elastic-stack/">Elastic Stack&lt;/a> for log collection and processing. Different services in the system sent logs to Logstash via tcp/udp, which then transformed and output the logs. This method lasted a long time but had significant drawbacks. Logstash and its plugins, written in JRuby, ran on a separate Java virtual machine process with a default heap size of 1GB. Deploying thousands of log collectors made this approach too heavy. Later, Elastic.co rewrote a lighter, more efficient log collector &lt;a href="https://github.com/elastic/beats/tree/master/filebeat">Filebeat&lt;/a> in Golang, alleviating this issue.&lt;/p>
+&lt;p>Additionally, &lt;a href="https://github.com/fluent/fluentd">Fluentd&lt;/a> is the preferred open-source log collector for Kubernetes. It&amp;rsquo;s Kubernetes-native and can be deployed as a DaemonSet for seamless integration. It collects logs from various sources like Kubernetes clusters, MySQL, and Apache2, and sends them to destinations like Elasticsearch and Amazon S3. Fluentd, written in Ruby, performs well at low volumes but faces performance issues with increased nodes and applications.&lt;/p>
+&lt;p>During log collection, business peaks can generate massive logs, affecting service stability and causing log loss. In such cases, we need a buffer layer before Logstash or the log storage database. For smaller systems, &lt;a href="https://redis.io/topics/streams-intro/">Redis streams&lt;/a> is a good choice. For larger data scales, Kafka clusters or cloud provider message queue solutions are ideal.&lt;/p>
+&lt;h3 id="structured-logs">Structured Logs&lt;/h3>
+&lt;p>After collecting logs, we need to structure them. Logs are unstructured data, often containing multiple pieces of information in one line. Without processing, we can only use raw full-text search, which isn&amp;rsquo;t conducive to statistics, comparison, or filtering. For example, this is an Nginx server access log:&lt;/p>
+&lt;pre tabindex="0">&lt;code>10.209.21.28 - - [04/Mar/2023:18:12:11 +0800] &amp;#34;GET /index.html HTTP/1.1&amp;#34; 200 1314 &amp;#34;https://guangzhengli.com&amp;#34; Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+&lt;/code>&lt;/pre>&lt;p>Despite being familiar with the default Nginx format, the above example is still hard to read and process. We can use Logstash or other tools to convert it into structured data, like JSON:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;RemoteIp&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;10.209.21.28&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;RemoteUser&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">null&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Datetime&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;04/Mar/2023:10:49:21 +0800&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Method&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;GET&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;URL&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;/index.html&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Protocol&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;HTTP/1.1&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Status&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">200&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Size&amp;#34;&lt;/span>: &lt;span style="color:#ae81ff">1314&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Refer&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;https://guangzhengli.com&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Agent&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>After structuring, databases like ElasticSearch can index different data items for query, statistics, and aggregation.&lt;/p>
+&lt;p>Another industrial practice, like &lt;a href="https://dev.splunk.com/enterprise/docs/developapps/addsupport/logging/loggingbestpractices/">Splunk&lt;/a>, recommends converting fields into key-value pairs in a single log line (logfmt). For example, the Nginx log as a canonical log line becomes:&lt;/p>
+&lt;pre tabindex="0">&lt;code>remote-ip=10.209.21.28 remote-user=null datetime=&amp;#34;04/Mar/2023:10:49:21 +0800&amp;#34; method=GET url=https://think-crow.guthub.io/index.html protocol=HTTP/1.1 status=200 size=1314 refer=https://guangzhengli.com agent=&amp;#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36&amp;#34;
+&lt;/code>&lt;/pre>&lt;p>Stored in Splunk, this data can be queried using built-in query language, like &lt;code>method=get status=500&lt;/code> to find all GET methods returning 500 responses. Using &lt;code>method=get status=500 earliest=-7d | timechart count&lt;/code> to get the total number and chart of GET methods returning 500 responses in the past 7 days. For more details, refer to &lt;a href="https://stripe.com/blog/canonical-log-lines">Stripe canonical-log-lines&lt;/a>.&lt;/p>
+&lt;h3 id="log-storage-and-query">Log Storage and Query&lt;/h3>
+&lt;p>After structuring logs, we can store and analyze them in a database. Before choosing a storage and analysis solution, let&amp;rsquo;s look at log data characteristics:&lt;/p>
+&lt;ul>
+&lt;li>Logs are write-intensive, with over 99% not queried after writing.&lt;/li>
+&lt;li>Logs are standard time-series data, written sequentially and not modified after storage.&lt;/li>
+&lt;li>Logs are time-sensitive, usually only needing recent logs for query and analysis, with older logs cleared or archived.&lt;/li>
+&lt;li>Logs are semi-structured, even if all application service logs are structured, system logs, network logs, etc., have different fields.&lt;/li>
+&lt;li>Log queries rely on full-text search and ad-hoc search.&lt;/li>
+&lt;li>Log queries don&amp;rsquo;t require strong timeliness but can&amp;rsquo;t accept hour or day delays.&lt;/li>
+&lt;/ul>
+&lt;p>Based on these needs, &lt;a href="https://github.com/elastic/elasticsearch">Elasticsearch&lt;/a> excels in log storage. Elasticsearch can use time ranges as indexes, like daily indexes, avoiding dynamic creation overhead. It can handle hot and cold data, using SSDs and stronger processors for recent logs, and HDDs or AWS S3 for older logs.&lt;/p>
+&lt;p>Most importantly, Elasticsearch&amp;rsquo;s core storage engine uses inverted indexes, perfect for full-text search. Paired with Kibana (for graphical interface and display), it supports data search, aggregation, statistics, and custom charts and tables. Below is an official &lt;a href="https://www.elastic.co/elastic-stack/">Elastic Stack&lt;/a> image:&lt;/p>
+&lt;p>&lt;img alt="nWzzSw" src="https://storage.guangzhengli.com/images/nWzzSw.jpg">&lt;/p>
+&lt;p>However, Elasticsearch has drawbacks, like Mapping Explosion, where too many keys in the mapping table consume memory and cause frequent garbage collection. Its hot-cold storage also has issues, as daily data moves from hot to cold storage, affecting cluster read-write performance.&lt;/p>
+&lt;p>For medium-sized clusters and full-text search, Elasticsearch is excellent. For large clusters and analysis scenarios, columnar databases like ClickHouse may be better. Logs&amp;rsquo; immutability suits ClickHouse&amp;rsquo;s storage and analysis capabilities, and its compression codecs can reduce storage needs. ClickHouse&amp;rsquo;s linear scalability easily expands clusters. For more on using ClickHouse for logs, see &lt;a href="https://blog.cloudflare.com/log-analytics-using-clickhouse/">Log analytics using ClickHouse&lt;/a>. Commercial open-source company &lt;a href="https://signoz.io/blog/opentelemetry-logs/">Signoz&lt;/a> also uses ClickHouse for its OpenTelemetry implementation. Below is Signoz&amp;rsquo;s &lt;a href="https://www.splunk.com/en_us/blog/learn/splunk-log-observer.html">real-time log analysis&lt;/a>.&lt;/p>
+&lt;p>&lt;img alt="8fYrZD" src="https://storage.guangzhengli.com/images/8fYrZD.jpg">&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>This article covers best practices for logging, challenges in log management, and solutions. Logs are crucial for system observability. As systems grow more complex, developers and operators should follow good logging practices to tackle log management challenges.&lt;/p>
+&lt;p>If there are any errors or biased views in the above content, please point them out directly. If you have additional information, feel free to comment or contribute to the &lt;a href="https://github.com/guangzhengli/guangzhengli.github.io">repository&lt;/a>. Thank you!&lt;/p>
+&lt;h2 id="reference">Reference&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.cloudflare.com/log-analytics-using-clickhouse/">https://blog.cloudflare.com/log-analytics-using-clickhouse/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.cortex.io/post/best-practices-for-logging-microservices">https://www.cortex.io/post/best-practices-for-logging-microservices&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stripe.com/blog/canonical-log-lines">https://stripe.com/blog/canonical-log-lines&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://messagetemplates.org/">https://messagetemplates.org/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.dataset.com/blog/the-10-commandments-of-logging/">https://www.dataset.com/blog/the-10-commandments-of-logging/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://brandur.org/canonical-log-lines">https://brandur.org/canonical-log-lines&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://dev.splunk.com/enterprise/docs/developapps/addsupport/logging/loggingbestpractices/">https://dev.splunk.com/enterprise/docs/developapps/addsupport/logging/loggingbestpractices/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://opentelemetry.io/docs/reference/specification/logs/#log-correlation">https://opentelemetry.io/docs/reference/specification/logs/#log-correlation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://signoz.io/blog/opentelemetry-logs/">https://signoz.io/blog/opentelemetry-logs/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://izsk.me/2021/10/31/OpenTelemetry-Trace/">https://izsk.me/2021/10/31/OpenTelemetry-Trace/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://sematext.com/guides/kubernetes-logging/">https://sematext.com/guides/kubernetes-logging/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.datadoghq.com/product/log-management/">https://www.datadoghq.com/product/log-management/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.dynatrace.com/monitoring/platform/log-management-analytics/">https://www.dynatrace.com/monitoring/platform/log-management-analytics/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tech.meituan.com/2017/02/17/change-log-level.html">https://tech.meituan.com/2017/02/17/change-log-level.html&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://icyfenix.cn/distribution/observability/logging.html">http://icyfenix.cn/distribution/observability/logging.html&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
