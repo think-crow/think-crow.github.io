@@ -1,6 +1,6 @@
 ---
 title: How to create your blog for free in 10min
-date: 2022-08-01
+date: 2022-08-14T21:34:36+08:00
 tags: ["hugo", "ladder", "Tutorial", "GitHub Pages"]
 series: ["how to create your blog"]
 featured: false

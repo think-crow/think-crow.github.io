@@ -1,6 +1,6 @@
 ---
 title: 如何 10 分钟快速搭建你自己的独立博客
-date: 2022-08-01
+date: 2022-08-14T21:34:36+08:00
 tags: ["hugo", "ladder主题", "教程", "GitHub Pages"]
 series: ["how to create your blog"]
 featured: false
