@@ -49,6 +49,8 @@ jobs:
           hugo \
             --minify \
             --baseURL ${{ steps.pages.outputs.base_url }}
+      - name: Check Hugo version
+        run: hugo version
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
