@@ -3,7 +3,7 @@ Author:
   name: "Haoshuang Ren"
   email: "rhaoshaung@163.com"
 baseURL: 'https://think-crow.github.io/'
-title: GuangzhengLi
+title: HaoshuangRen
 theme: hugo-theme-ladder
 # license: MIT
 # licenselink: 'https://github.com/guangzhengli/hugo-theme-ladder/blob/master/LICENSE'
@@ -38,7 +38,7 @@ menu:
 params:
   brand: HOME
   avatarURL: /images/avatar.png
-  author: Guangzheng Li
+  author: Haoshuang Ren
   authorDescription: 'Welcome to my blog, contact me: iguangzhengli@gmail.com'
   info: |
     A Full Stack Developer, Reading & Thinking
@@ -118,7 +118,7 @@ languages:
   zh:
     languageName: 中
     brand: 主页
-    author: Guangzheng Li
+    author: Haoshuang Ren
     authorDescription: 阅读与思考，真理与自由
     info: |
       一个还在重新学习，重塑思想的开发者
