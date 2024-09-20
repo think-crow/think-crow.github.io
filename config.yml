@@ -10,7 +10,7 @@ theme: hugo-theme-ladder
 description: 'A fast, clean Hugo theme'
 homepage: 'https://think-crow.github.io/'
 defaultContentLanguage: 'zh'
-googleAnalytics: G-7E4JNTL3ES
+# googleAnalytics: G-7E4JNTL3ES
 enableRobotsTXT: true
 paginate: 10
 # markup:
@@ -57,16 +57,16 @@ params:
     title: Sponsors
     description: Support me by becoming a sponsor
     buymeaCoffee:
-      enable: true
-      url: https://www.buymeacoffee.com/iguangzhengli
+      enable: false
+      url: 
       buttom_api: https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=iguangzhengli&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff
-      qr: https://storage.guangzhengli.com/images/buymeacoffee_sponsors.png
+      qr: 
     wechat:
-      enable: true
-      qr: https://storage.guangzhengli.com/images/alipay_sponsors.jpeg
+      enable: false
+      qr: 
     alipay:
-      enable: true
-      qr: https://storage.guangzhengli.com/images/weixin_sponsors.jpeg
+      enable: false
+      qr: 
   comments:
     giscus:
       enable: false
