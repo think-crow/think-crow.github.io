@@ -2,10 +2,6 @@
 name: Deploy Hugo site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
-#  push:
-#    branches: ["master"]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -41,14 +37,11 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v1
       - name: Build with Hugo
         run: |
           hugo \
             --minify \
-            --baseURL ${{ steps.pages.outputs.base_url }}
+            --baseURL ${{ github.event.repository.html_url }}
       - name: Check Hugo version
         run: hugo version
       - name: Upload artifact
