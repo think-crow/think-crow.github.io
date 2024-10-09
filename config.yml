@@ -39,7 +39,7 @@ params:
   brand: HOME
   avatarURL: /images/avatar.png
   author: Haoshuang Ren
-  authorDescription: 'Welcome to my blog, contact me: iguangzhengli@gmail.com'
+  authorDescription: 'Welcome to my blog, contact me: rhaoshuang@163.com'
   info: |
     A Full Stack Developer, Reading & Thinking
 
@@ -69,14 +69,14 @@ params:
       qr: 
   comments:
     giscus:
-      enable: false
-      repo: guangzhengli/blog-comments
-      repo_id: R_kgDOHtsjNw
-      category: Announcements
-      category_id: DIC_kwDOHtsjN84CQr99
+      enable: true
+      repo: think-crow/giscus_2029.today
+      repo_id: R_kgDOM4DNHg
+      category: 2029.today
+      category_id: DIC_kwDOM4DNHs4Ci2MD
       mapping: pathname
       position: top
-      lang: en # pick a language from https://github.com/giscus/giscus/tree/main/locales
+      lang: zh-CN # pick a language from https://github.com/giscus/giscus/tree/main/locales
     utteranc:
       enable: false
       repo: guangzhengli/blog-comments
@@ -85,7 +85,7 @@ params:
     google:
       SiteVerificationTag: RL6kP6-6yjRPyYGLeqBQ2JIX6QQAz7A6gHZb7bHlZnU
     umami:
-      enable: true
+      enable: false
       website_id: 24349452-bff6-4e96-93bf-6c764e191b26
       url: https://umami-ochre-nu.vercel.app/hugo-ladder
   guestbook:
@@ -121,7 +121,7 @@ languages:
     author: Haoshuang Ren
     authorDescription: 阅读与思考，真理与自由
     info: |
-      一个还在重新学习，重塑思想的开发者
+      一个还在重新学习，重塑思想的探索者
 
       [RSS订阅](https://think-crow.github.io/index.xml) ·
       [赞赏](https://think-crow.github.io/sponsors)
