@@ -1,5 +1,5 @@
 ---
-title: 我的阅读写作工具
+title: 搬文-我的阅读写作工具
 date: 2023-03-21T21:35:00+08:00
 tags: ["reading", "writing"]
 series: ["reading-writing"]
@@ -10,6 +10,8 @@ desc: "介绍我的阅读和写作工具。"
 <!--more-->
 
 本篇介绍的是我的写作和阅读工具的随笔，希望能对你有所帮助。
+
+原文地址：https://guangzhengli.com/art/zh/read-write-tools/
 
 ## 写作
 
