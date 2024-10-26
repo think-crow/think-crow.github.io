@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HaoshuangRen</title><link>https://think-crow.github.io/</link><description>Recent content on HaoshuangRen</description><generator>Hugo -- gohugo.io</generator><copyright>2024 HaoshuangRen All rights reserved</copyright><lastBuildDate>Wed, 09 Oct 2024 21:27:16 +0800</lastBuildDate><atom:link href="https://think-crow.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>是否适合搭建个人网站</title><link>https://think-crow.github.io/blog/zh/%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link><pubDate>Wed, 09 Oct 2024 21:27:16 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid><description>&lt;p>当你看到这篇文章时，证明你还是感兴趣的，不妨搭建一个.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HaoshuangRen</title><link>https://think-crow.github.io/</link><description>Recent content on HaoshuangRen</description><generator>Hugo -- gohugo.io</generator><copyright>2024 HaoshuangRen All rights reserved</copyright><lastBuildDate>Wed, 09 Oct 2024 21:27:16 +0800</lastBuildDate><atom:link href="https://think-crow.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>是否适合搭建个人网站</title><link>https://think-crow.github.io/blog/zh/%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link><pubDate>Wed, 09 Oct 2024 21:27:16 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid><description>&lt;p>18到28岁段，最应该建一个个人博客网站！&lt;/p>
+&lt;p>对看书或写作很感兴趣，也挺适合！&lt;/p>
+&lt;p>当你看到这篇文章时，证明你还是感兴趣的，不妨搭建一个.&lt;/p>
 &lt;h2 id="判断方法">判断方法：&lt;/h2>
 &lt;h3 id="1对写博客文章是否感兴趣也可以是生活技术随摘总结一类">1、对写博客文章是否感兴趣！也可以是生活、技术随摘、总结一类。&lt;/h3>
 &lt;h3 id="2是否喜欢阅读">2、是否喜欢阅读！&lt;/h3>
@@ -39,8 +41,8 @@
 &lt;h1 id="6markdown-图片语法">6、Markdown 图片语法&lt;/h1>
 &lt;p>要添加图像，请使用感叹号 (&lt;code>!&lt;/code>), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。&lt;/p>
 &lt;p>插入图片Markdown语法代码：&lt;code>![图片alt](图片链接 &amp;quot;图片title&amp;quot;)&lt;/code>。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>![这是图片](/images/blog/1.png &amp;#34;图片链接失效时显示的文字&amp;#34;)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://think-crow.github.io/images/blog/1.jpg" alt="这是图片" title="图片链接失效时显示的文字">&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>![这是图片](/images/blog/1.png &amp;#34;图片标题&amp;#34;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://think-crow.github.io/images/blog/1.jpg" alt="这是图片" title="图片标题">&lt;/p>
 &lt;hr>
 &lt;p>最后：上述只是部分Markdown文档语法，完全够新手使用，后续可以自己学习更多的语法来编写自己的文章！&lt;/p></description></item><item><title>git命令教程</title><link>https://think-crow.github.io/blog/zh/git%E6%95%99%E7%A8%8B/</link><pubDate>Wed, 09 Oct 2024 21:00:43 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/git%E6%95%99%E7%A8%8B/</guid><description>&lt;p>网站文档更新到网站的必要学习步骤，参考 标题1 即可！.&lt;/p>
 &lt;h1 id="git上传操作步骤图解">git上传操作步骤图解：&lt;/h1>
@@ -155,4 +157,16 @@
 &lt;/li>
 &lt;/ul>
 &lt;hr></description></item><item><title>如何选择选hugo主题</title><link>https://think-crow.github.io/blog/zh/%E6%80%8E%E4%B9%88%E9%80%89hugo%E4%B8%BB%E9%A2%98/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://think-crow.github.io/blog/zh/%E6%80%8E%E4%B9%88%E9%80%89hugo%E4%B8%BB%E9%A2%98/</guid><description>&lt;p>hugo官网：https://gohugo.io&lt;/p>
-&lt;h2 id="-1进入hugo官网">## 1、进入hugo官网&lt;/h2></description></item></channel></rss>
+&lt;h1 id="选择主题">选择主题：&lt;/h1>
+&lt;h2 id="1进入hugo官网选择导航栏的themes也可右键翻译为中文">1、进入hugo官网，选择导航栏的themes（也可右键翻译为中文）&lt;/h2>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/how-hugo-themes/1.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;h2 id="2挑选合适的主题">2、挑选合适的主题&lt;/h2>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/how-hugo-themes/2.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;h2 id="预览">预览：&lt;/h2>
+&lt;h2 id="1点击下载或donwload进入github仓库页面">1、点击下载或donwload，进入github仓库页面&lt;/h2>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/how-hugo-themes/3.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;h2 id="2进入仓库页面后右边这个蓝色的一串便是预览地址右边没有的话或许是放在了仓库下面的文档说明里面">2、进入仓库页面后，右边这个蓝色的一串便是预览地址（右边没有的话或许是放在了仓库下面的文档说明里面）&lt;/h2>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/how-hugo-themes/4.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;h1 id="预览效果">预览效果&lt;/h1>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/how-hugo-themes/5.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/how-hugo-themes/6.png" alt="这是图片" title="图片标题">&lt;/p></description></item></channel></rss>
