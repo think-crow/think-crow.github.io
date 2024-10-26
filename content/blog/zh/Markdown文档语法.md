@@ -84,10 +84,10 @@ ___
 插入图片Markdown语法代码：`![图片alt](图片链接 "图片title")`。
 
 ```text
-![这是图片](/images/blog/1.png "图片链接失效时显示的文字")
+![这是图片](/images/blog/1.png "图片标题")
 ```
 
-![这是图片](/images/blog/1.jpg "图片链接失效时显示的文字")
+![这是图片](/images/blog/1.jpg "图片标题")
 
 
 
