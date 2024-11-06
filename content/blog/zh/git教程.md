@@ -1,7 +1,7 @@
 ---
 title: git命令教程
 date: 2024-10-09T21:00:43+08:00
-tags: ["git"]
+tags: ["hugo"]
 series: ["hugo建站"]
 featured: true
 ---

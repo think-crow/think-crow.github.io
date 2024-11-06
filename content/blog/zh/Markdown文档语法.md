@@ -1,7 +1,7 @@
 ---
 title: Markdown文档语法
 date: 2024-10-09T21:26:06+08:00
-tags: []
+tags: ["hugo"]
 series: []
 featured: true
 ---
@@ -88,6 +88,10 @@ ___
 ```
 
 ![这是图片](/images/blog/1.jpg "图片标题")
+
+图片链接地址也可以为外链地址，像这样：https://www.rwany.net/uploads/money/weixin.jpg（浏览器里面输入这个地址能直接访问到！）
+
+外链地址的优势：博客搬家时，大量引用的图片地址仍然有效！不会占用服务器资源，增加访问速度！
 
 
 

@@ -9,9 +9,9 @@ desc: "介绍我的阅读和写作工具。"
 
 <!--more-->
 
-本篇介绍的是我的写作和阅读工具的随笔，希望能对你有所帮助。
+原文地址：[https://guangzhengli.com/art/zh/read-write-tools/](https://guangzhengli.com/art/zh/read-write-tools/)
 
-原文地址：https://guangzhengli.com/art/zh/read-write-tools/
+本篇介绍的是我的写作和阅读工具的随笔，希望能对你有所帮助。
 
 ## 写作
 

@@ -1,6 +1,6 @@
 ---
 title: 如何选择选hugo主题
-tags: ["教程", "hugo"]
+tags: [ "hugo"]
 series: ["hugo"]
 featured: true
 ---
