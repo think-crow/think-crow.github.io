@@ -1,4 +1,134 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on HaoshuangRen</title><link>https://think-crow.github.io/blog/</link><description>Recent content in Blogs on HaoshuangRen</description><generator>Hugo -- gohugo.io</generator><copyright>2024 HaoshuangRen All rights reserved</copyright><lastBuildDate>Wed, 09 Oct 2024 21:27:16 +0800</lastBuildDate><atom:link href="https://think-crow.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>是否适合搭建个人网站</title><link>https://think-crow.github.io/blog/zh/%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link><pubDate>Wed, 09 Oct 2024 21:27:16 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid><description>&lt;p>18到28岁，最应该建一个个人博客网站！&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on HaoshuangRen</title><link>https://think-crow.github.io/blog/</link><description>Recent content in Blogs on HaoshuangRen</description><generator>Hugo -- gohugo.io</generator><copyright>2024 HaoshuangRen All rights reserved</copyright><lastBuildDate>Fri, 01 Nov 2024 15:01:24 +0800</lastBuildDate><atom:link href="https://think-crow.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>kail安装报错 解决办法</title><link>https://think-crow.github.io/blog/zh/kail-install-summary/</link><pubDate>Fri, 01 Nov 2024 15:01:24 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/kail-install-summary/</guid><description>&lt;p>安装步骤网上现成的很多,这里只记录下碰到的问题！&lt;/p>
+&lt;h3 id="问题1执行某个安装步骤失败您可以尝试从菜单中重新运行这个失败的项目-或跳过它并选择其他项目">问题1：执行某个安装步骤失败。您可以尝试从菜单中重新运行这个失败的项目, 或跳过它并选择其他项目。&lt;/h3>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail5.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;p>原因：网络问题&lt;/p>
+&lt;p>方法：关闭防火墙，外置usb网卡接入kail虚拟机再安装即可。&lt;/p>
+&lt;h3 id="问题2开机黑屏只有一个_">问题2：开机黑屏，只有一个_&lt;/h3>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail4.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;p>原因：核对一下安装过程碰到的GRUB启动引导器选项选择那里！(如下图就懒得截图，找了两张一样的！原地址：&lt;a href="https://blog.csdn.net/fingue/article/details/127559353">kail安装教程&lt;/a>【图片竟然还有防盗措施，那就截屏吧】)&lt;/p>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail2.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail3.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;p>方法：确定上述两项没问题后，系统安装完成重启时，虚拟机可能会弹出一个选项，选择连接到虚拟机一下（感觉应该是这个原因，第一次我点的拒绝！）&lt;/p>
+&lt;h3 id="安装完成后的效果">安装完成后的效果：&lt;/h3>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail1.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail.png" alt="这是图片" title="图片标题">&lt;/p></description></item><item><title>个人博客网站是什么</title><link>https://think-crow.github.io/blog/zh/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%98%AF%E4%BB%80%E4%B9%88/</link><pubDate>Sun, 27 Oct 2024 21:41:47 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%98%AF%E4%BB%80%E4%B9%88/</guid><description>&lt;p>个人博客（网络日志）网站是什么！&lt;/p>
+&lt;p>日志是记录事件、活动、想法或观察的文档。它可以用于多种目的，具体包括：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>个人反思&lt;/strong>：个人日志通常用于记录日常生活、情感和经历，帮助自我反思和成长。&lt;/li>
+&lt;li>&lt;strong>工作记录&lt;/strong>：在工作环境中，日志可以用来跟踪项目进度、会议纪要或工作任务。&lt;/li>
+&lt;li>&lt;strong>学习记录&lt;/strong>：学生可以使用日志来记录学习进展、课程笔记或对知识的理解。&lt;/li>
+&lt;li>&lt;strong>数据记录&lt;/strong>：在科学研究或技术领域，日志可以用于记录实验数据、观察结果或系统运行状态。&lt;/li>
+&lt;li>&lt;strong>时间管理&lt;/strong>：日志有助于管理时间和计划，提高个人效率。&lt;/li>
+&lt;/ol>
+&lt;p>总的来说，日志是一种工具，用于整理和反映经历和信息。&lt;/p>
+&lt;h3 id="什么是个人网站">什么是个人网站&lt;/h3>
+&lt;p>个人网站通常是个人在网络上创建的独立页面或域名。它可以包括个人简历、作品集、博客、联系方式等，帮助个人建立在线形象或品牌。个人网站可以用于求职、展示创作、分享观点等，具有很强的个性化和自定义功能。&lt;/p>
+&lt;h3 id="特点">特点&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>自定义设计&lt;/strong>：用户可以根据个人喜好定制网站外观。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>独立性&lt;/strong>：拥有独立域名，增强专业形象。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>个人表达的平台&lt;/strong>：自由表达思想与创意。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="个人网站的用途">个人网站的用途&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>展示个人作品&lt;/strong>: 个人网站是展示项目、设计和成就的理想平台，帮助潜在客户或雇主更好地了解您。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>品牌建设&lt;/strong>: 通过个人网站，您可以塑造自己的品牌形象，建立专业形象，吸引目标受众。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>分享知识与经验&lt;/strong>: 网站可以作为分享专业知识、技能和个人见解的渠道，提升您的影响力。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>职业发展&lt;/strong>: 个人网站在求职过程中尤为重要，它能展示您的能力，增加职业机会。&lt;/p>
+&lt;p>观念不一样：商用，非商用！&lt;/p>
+&lt;p>完全就是兴趣所在！&lt;/p>
+&lt;p>内容完全由自己所控！样式由自己设计，更加彰显个性！&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="发展历史">发展历史&lt;/h2>
+&lt;p>美国博客的发展经历了几个重要阶段，以下是大致的时间段和历史概述：&lt;/p>
+&lt;h3 id="1990年代初期博客的萌芽">1990年代初期：博客的萌芽&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>1994-1999&lt;/strong>：最早的博客形式出现。1994年，个人网站逐渐兴起，成为博客的雏形。1997年，Jorn Barger 创建了术语“博客”（weblog），指的是网络日志。&lt;/li>
+&lt;/ul>
+&lt;h3 id="1999年博客的正式定义">1999年：博客的正式定义&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>1999年&lt;/strong>：David Winer 和 Evan Williams 发布了 Blogger，这是一种专门用于创建和管理博客的平台，使得普通用户可以轻松发布内容。&lt;/li>
+&lt;/ul>
+&lt;h3 id="2000年代初博客的普及">2000年代初：博客的普及&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>2000-2005&lt;/strong>：博客逐渐流行，许多媒体机构和个人开始创建博客。此时，WordPress（2003年）和Movable Type（2001年）等平台的出现使得博客创建变得更加容易和多样化。&lt;/li>
+&lt;/ul>
+&lt;h3 id="2005年博客的高潮">2005年：博客的高潮&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>2005年&lt;/strong>：博客成为主流，许多知名博客如 Daily Kos、Huffington Post 等相继推出，政治、文化、科技等领域的博客迅速增加。同时，博客开始在社交媒体和传统媒体中获得关注。&lt;/li>
+&lt;/ul>
+&lt;h3 id="2010年代社交媒体与博客的融合">2010年代：社交媒体与博客的融合&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>2010-2015&lt;/strong>：随着社交媒体的兴起（如 Facebook、Twitter），博客的形式和内容发生变化。许多博客与社交媒体平台结合，形成了“微型博客”形式（如 Tumblr）。博客依然是个人和品牌表达的重要方式。&lt;/li>
+&lt;/ul>
+&lt;h3 id="2020年代博客的转型">2020年代：博客的转型&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>2020至今&lt;/strong>：虽然短视频和社交媒体内容的兴起影响了传统博客，但长形式内容仍然在某些领域保持重要性。个人品牌、专业知识分享和内容营销仍然驱动着博客的发展。&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>&lt;strong>Hugo&lt;/strong>：创建于 2013 年。&lt;/li>
+&lt;li>&lt;strong>Hexo&lt;/strong>：创建于 2012 年。&lt;/li>
+&lt;li>&lt;strong>Jekyll&lt;/strong>：创建于 2008 年。&lt;/li>
+&lt;li>WordPress 最初于 &lt;strong>2003 年&lt;/strong> 发布&lt;/li>
+&lt;/ol>
+&lt;h3 id="总结">总结&lt;/h3>
+&lt;p>美国博客的发展历程反映了互联网内容消费方式的变化，从早期的个人日志到如今的多元化平台，博客依然是个体和品牌表达的重要工具。&lt;/p>
+&lt;h3 id="个人网站的市场趋势">个人网站的市场趋势&lt;/h3>
+&lt;p>2024年，博客网站仍然非常重要。尽管社交媒体的兴起改变了内容传播的方式，但博客依然在多个方面发挥着关键作用：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>深度内容&lt;/strong>：博客允许您深入探讨主题，提供详细的信息和见解，而社交媒体通常更适合短小精悍的内容。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>个人品牌建设&lt;/strong>：通过定期发布高质量的博客文章，您可以建立个人品牌和专业声誉，吸引特定的受众。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>SEO价值&lt;/strong>：博客有助于提升搜索引擎优化（SEO），增加在搜索引擎中的可见性，从而吸引更多有针对性的流量。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>知识分享&lt;/strong>：博客是分享知识、经验和观点的理想平台，能够吸引志同道合的人群，建立社区。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>控制内容&lt;/strong>：拥有自己的博客让您对内容、设计和用户体验有更大的控制权，而社交媒体平台的规则和算法可能随时变化。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>建立信任&lt;/strong>：提供有价值的信息和见解能够增强您与读者之间的信任关系，有助于潜在客户或雇主的决策。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>总之，尽管社交媒体依然占据重要地位，但博客在内容的深度、品牌建设和SEO等方面仍然具有不可替代的价值。&lt;/p>
+&lt;h3 id="技术的发展">技术的发展&lt;/h3>
+&lt;p>无代码平台的兴起、SEO优化技术的普及，使得创建个人网站变得更加容易。&lt;/p>
+&lt;h2 id="创建个人网站">创建个人网站&lt;/h2>
+&lt;h3 id="选择平台">选择平台&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>WordPress&lt;/strong>：灵活强大的内容管理系统。&lt;/li>
+&lt;li>&lt;strong>GitHub Pages&lt;/strong>：适合开发者的免费托管服务。&lt;/li>
+&lt;li>静态网站生成器
+&lt;ol>
+&lt;li>&lt;strong>Hugo&lt;/strong>：快速的静态网站生成器，支持多语言。&lt;/li>
+&lt;li>&lt;strong>Hexo&lt;/strong>：基于 Node.js 的静态博客框架。&lt;/li>
+&lt;li>&lt;strong>Jekyll&lt;/strong>：GitHub Pages 推荐的静态网站生成器。&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="总结-1">总结&lt;/h2>
+&lt;p>个人网站是展示个人才能、建立品牌和促进职业发展的多重工具。无论是作为创作者、求职者还是知识分享者，个人网站都能为您带来显著的价值。&lt;/p>
+&lt;h3 id="鼓励行动">鼓励行动&lt;/h3>
+&lt;p>考虑创建自己的个人网站，您可以通过网络上的丰富资源和工具，轻松启动您的个人网站之旅。&lt;/p></description></item><item><title>是否适合搭建个人网站</title><link>https://think-crow.github.io/blog/zh/%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link><pubDate>Wed, 09 Oct 2024 21:27:16 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid><description>&lt;p>18到28岁，最应该建一个个人博客网站！&lt;/p>
 &lt;p>对看书或写作很感兴趣，也挺适合！&lt;/p>
 &lt;p>当你看到这篇文章时，证明你还是感兴趣的，不妨搭建一个.&lt;/p>
 &lt;h2 id="判断方法">判断方法：&lt;/h2>
@@ -43,6 +173,8 @@
 &lt;p>插入图片Markdown语法代码：&lt;code>![图片alt](图片链接 &amp;quot;图片title&amp;quot;)&lt;/code>。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>![这是图片](/images/blog/1.png &amp;#34;图片标题&amp;#34;)
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://think-crow.github.io/images/blog/1.jpg" alt="这是图片" title="图片标题">&lt;/p>
+&lt;p>图片链接地址也可以为外链地址，像这样：https://www.rwany.net/uploads/money/weixin.jpg（浏览器里面输入这个地址能直接访问到！）&lt;/p>
+&lt;p>外链地址的优势：博客搬家时，大量引用的图片地址仍然有效！不会占用服务器资源，增加访问速度！&lt;/p>
 &lt;hr>
 &lt;p>最后：上述只是部分Markdown文档语法，完全够新手使用，后续可以自己学习更多的语法来编写自己的文章！&lt;/p></description></item><item><title>git命令教程</title><link>https://think-crow.github.io/blog/zh/git%E6%95%99%E7%A8%8B/</link><pubDate>Wed, 09 Oct 2024 21:00:43 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/git%E6%95%99%E7%A8%8B/</guid><description>&lt;p>网站文档更新到网站的必要学习步骤，参考 标题1 即可！.&lt;/p>
 &lt;h1 id="git上传操作步骤图解">git上传操作步骤图解：&lt;/h1>
@@ -156,6 +288,8 @@
 &lt;!-- raw HTML omitted -->
 &lt;/li>
 &lt;/ul>
+&lt;h3 id="8发现更多">8、发现更多&lt;/h3>
+&lt;p>&lt;a href="https://d.cosx.org/d/421538">大家贴一下自己的博客地址吧&lt;/a>&lt;/p>
 &lt;hr></description></item><item><title>如何选择选hugo主题</title><link>https://think-crow.github.io/blog/zh/%E6%80%8E%E4%B9%88%E9%80%89hugo%E4%B8%BB%E9%A2%98/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://think-crow.github.io/blog/zh/%E6%80%8E%E4%B9%88%E9%80%89hugo%E4%B8%BB%E9%A2%98/</guid><description>&lt;p>hugo官网：https://gohugo.io&lt;/p>
 &lt;h1 id="选择主题">选择主题：&lt;/h1>
 &lt;h2 id="1进入hugo官网选择导航栏的themes也可右键翻译为中文">1、进入hugo官网，选择导航栏的themes（也可右键翻译为中文）&lt;/h2>
