@@ -3,7 +3,7 @@ title: node实现鼠标点击事件
 date: 2024-11-11T21:04:07+08:00
 tags: []
 series: []
-featured: true
+featured: false
 ---
 碰到一个网站，页面刷新浏览量自动加2，试一下看能否自动点击鼠标实现浏览量增加！
 
