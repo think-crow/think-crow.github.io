@@ -1,15 +1,1014 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HaoshuangRen</title><link>https://think-crow.github.io/</link><description>Recent content on HaoshuangRen</description><generator>Hugo -- gohugo.io</generator><copyright>2024 HaoshuangRen All rights reserved</copyright><lastBuildDate>Fri, 01 Nov 2024 15:01:24 +0800</lastBuildDate><atom:link href="https://think-crow.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>kail安装报错 解决办法</title><link>https://think-crow.github.io/blog/zh/kail-install-summary/</link><pubDate>Fri, 01 Nov 2024 15:01:24 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/kail-install-summary/</guid><description>&lt;p>安装步骤网上现成的很多,这里只记录下碰到的问题！&lt;/p>
-&lt;h3 id="问题1执行某个安装步骤失败您可以尝试从菜单中重新运行这个失败的项目-或跳过它并选择其他项目">问题1：执行某个安装步骤失败。您可以尝试从菜单中重新运行这个失败的项目, 或跳过它并选择其他项目。&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HaoshuangRen</title><link>https://think-crow.github.io/</link><description>Recent content on HaoshuangRen</description><generator>Hugo -- gohugo.io</generator><copyright>2024 HaoshuangRen All rights reserved</copyright><lastBuildDate>Wed, 27 Nov 2024 12:02:05 +0800</lastBuildDate><atom:link href="https://think-crow.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>社会人多长时间学完中职教材：ps2020图形图像处理教程</title><link>https://think-crow.github.io/blog/zh/2024-11-27-ps2020/</link><pubDate>Wed, 27 Nov 2024 12:02:05 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/2024-11-27-ps2020/</guid><description>&lt;p>弟弟中职，觉得他花一年时间就进度就学了个这些东西，很没有效率，出这个文档让他看一下社会末流人士的学习能力！希望他能好好反思，积极并认真学习课程之外的本专业知识！&lt;/p>
+&lt;p>作技术文档的本质：&lt;/p>
+&lt;p>遗忘是学习的本质，文档是我们的工具库，当我们用这个功能时能想起曾经使用过，找到这个文档就足够了！&lt;/p>
+&lt;p>达到效果：任何人都能一眼看懂！&lt;/p>
+&lt;p>学习之前的一个想法：技术性的东西是否都不需要学习，会用就可以！更多的精力去学习一些国学理念和知识及方法，这是很或缺的！&lt;/p>
+&lt;p>学习之后的一个想法：技术还是需要沉淀！入一行，专一行，精一行，始终如一！&lt;/p>
+&lt;p>Photoshop 2020图形图像处理教程 杨玉珠 梁礼中 主编&lt;/p>
+&lt;p>学习开始日期参见本文章创建日期！&lt;/p>
+&lt;hr>
+&lt;h2 id="项目一-photoshop-2020-概述">&lt;strong>项目一 Photoshop 2020 概述&lt;/strong>&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;h3 id="任务一-photoshop-常识和工作界面">任务一 Photoshop 常识和工作界面。&lt;/h3>
+&lt;p>要用最简洁的图像和 文字给人以最强烈的视觉冲击。视觉创意是 Photoshop 的特长 。功能：处理数码照片！&lt;/p>
+&lt;p>图像的类型：位图（像素图，缩放会模糊）和矢量图（直线或曲线组成，缩放不会模糊）。&lt;/p>
+&lt;p>图像的格式：TIFF、GIF、JPEG 、PNG、BMP。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;p>认识 Photoshop 2020 工作界面 （略）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务二-文件的基本操作">任务二 文件的基本操作&lt;/h3>
+&lt;p>“Ctrl+T 快捷键 图像的变换与变形:&lt;/p>
+&lt;p>按“Ctrl+S键保存文件;&lt;/p>
+&lt;p>添加文字并设置阴影！&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务三-颜色的填充">任务三 颜色的填充&lt;/h3>
+&lt;p>Photoshop 软中的颜色大致分为前景色和背 景色。 前景色主要用于描边、画笔颜色、就随之发生变化。 在文本颜色等颜色的设置,背 景色主要用于部分选区删除后的颜色、橡皮擦的颜色及背景色的填充等。&lt;/p>
+&lt;ol>
+&lt;li>填充&lt;strong>前景色&lt;/strong>,按“Alt+Delete组合键即可;填充&lt;strong>背景色&lt;/strong>,按“Ctrl+ Delete组合键即可。&lt;/li>
+&lt;li>执行&lt;strong>编辑/填充&lt;/strong>命令或者快捷键“ Shift+F5,弹出填充对话框,选择填充用的内容及模式,即可将所选的颜色进行填充。&lt;/li>
+&lt;li>&lt;strong>油漆桶&lt;/strong>工具可以用前景色或者图案填充色彩类似的连续区域。&lt;/li>
+&lt;li>&lt;strong>减淡工具是&lt;/strong>一款提亮工具。&lt;/li>
+&lt;li>&lt;strong>加深工具&lt;/strong>跟减淡工具刚好相反,通 过降低图像的曝光度来降低图像的亮度。&lt;/li>
+&lt;li>使用&lt;strong>吸管工具&lt;/strong>单击图像的一部分以选择一种颜色。&lt;/li>
+&lt;li>使用&lt;strong>魔棒工具&lt;/strong>可以选择颜色一致的区域&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务四-画布大小设置及裁剪工具">任务四 画布大小设置及裁剪工具&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>画布大小的调整 : 图像 / 画布大小。为保留画布的原 本比例,必须勾选揖相对复选框。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>裁剪工具&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>常见证件照尺寸介绍&lt;/p>
+&lt;p>标准 1 寸照片尺寸:25 mmx35 mm,在 5 寸相纸(12. 7 x 8. 9 厘米)中排 8 张,常用于 学生证、健康证、工作证、教师资格证等;&lt;/p>
+&lt;p>大 1 寸照片尺寸:33 mm x 48 mm,常用于护照、通行证、签证、考试证上等;&lt;/p>
+&lt;p>2 英寸照片尺寸:35 mm x 49 mm,在 5 寸相纸(12. 7 x 8. 9 厘米)中排 4 张; 小 2 寸照片尺寸:33 mm x 48 mm,常用于毕业证、简历中。&lt;/p>
+&lt;p>备注：这里通过自己的实操，发现单文字已没了更好的记录，录制视频方便大家参考！&lt;/p>
+&lt;!DOCTYPE HTML>
+&lt;html lang="en">
+&lt;head>
+&lt;style type="text/css">
+.bilibili_shortcodes {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 66%;
+margin: auto;
+overflow: hidden;
+text-align: center;
+}
+.bilibili_shortcodes iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;div class="bilibili_shortcodes">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1syzrYaEoR&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务五-标尺参考线的应用">任务五 标尺参考线的应用&lt;/h3>
+&lt;p>按“Ctrl+R”组合键即可打开标尺。 或视图/参考线，通过双击标尺，还可以直接更改图片及文字的单位、装订线的大小、打印分辨率和屏幕分辨率等&lt;/p>
+&lt;p>参考线的应用：在设定辅助线前，必须先打开【标尺】工具，可以从标尺位置拖出参考线，创建或者移动参考线时如果按住Shift键，可以使参考线和标尺上的刻度对齐。“Ctrl+H”，隐藏参考线&lt;/p>
+&lt;p>保留部分图像：使用矩形选框工具选取图层，并“Ctrl+C”进行复制，“Ctrl+V”进行粘贴。&lt;/p>
+&lt;p>选择图层4，执行【滤镜】/【模糊】/【高斯模糊】命令&lt;/p>
+&lt;p>，使用固定大小的矩形选框工具，在参考线画好的格子里画一个360pxX360px大小的正方形选区，“Ctrl+C”进行复制，“Ctrl+V”进行粘贴。&lt;/p>
+&lt;p>对每个图层都进行以上的设置，将高与宽的比值设置为98%&lt;/p>
+&lt;!DOCTYPE HTML>
+&lt;html lang="en">
+&lt;head>
+&lt;style type="text/css">
+.bilibili_shortcodes {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 66%;
+margin: auto;
+overflow: hidden;
+text-align: center;
+}
+.bilibili_shortcodes iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;div class="bilibili_shortcodes">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1pgzrYdE3i&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务六-综合实例---放射性线条的制作">任务六 综合实例 &amp;ndash;放射性线条的制作&lt;/h3>
+&lt;p>选择多边形套索工具，创建多边形选区，前景色设为为红色，“Alt+Delete”键填充前景色，按快捷键“Ctrl+J”进行图层复制产生图层1副本。&lt;/p>
+&lt;p>&lt;strong>旋转：&lt;/strong>“Ctrl+T”进行自由变换，将中心点移到水平和垂直参考线的交叉点处，在自由变换属性栏设置旋转角度为20度，）使用“Shift+Ctrl+Alt+T”快捷键进行重复复制变换操作， 也可右键选择变形命令改变图形形状。&lt;/p>
+&lt;p>**合并图层：**按住“Shift”键，同时选中图层1至图层1副本17，执行“Ctrl+E”，合并图层。&lt;/p>
+&lt;p>**描边：**对红色矩形执行“Ctrl+T”命令。选择图层1，按住“Ctrl”键的同时点击图层1的缩略图，把图层1载为选区，执行【编辑】/【描边】命令，宽度设置为10像素，颜色为#f2e5d5，&lt;/p>
+&lt;p>**创建变形文字：**使用【文字工具】，添加“放射性线条”文字，点击工具属性栏中的创建变形文字图标 ，变形文字属性设置&lt;/p>
+&lt;!DOCTYPE HTML>
+&lt;html lang="en">
+&lt;head>
+&lt;style type="text/css">
+.bilibili_shortcodes {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 66%;
+margin: auto;
+overflow: hidden;
+text-align: center;
+}
+.bilibili_shortcodes iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;div class="bilibili_shortcodes">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1ngzrY9EQV&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="项目二-数码处理">&lt;strong>项目二 数码处理&lt;/strong>&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;h3 id="任务一-矩形选框工具组">任务一 矩形选框工具组&lt;/h3>
+&lt;p>【矩形选框工具】属性，分为3个部分:选择方式、羽化和消除锯齿、样式。&lt;/p>
+&lt;p>（按住【Shift】键：创建的选区 &lt;code>添加&lt;/code> 到原来的选区中&lt;/p>
+&lt;p>（按住【Alt】键创建的选区从原来的的选区中 &lt;code>减去&lt;/code>&lt;/p>
+&lt;p>【与选区交叉】&lt;img src="https://mooc1.chaoxing.com/ananas/new-editor/ueditor/themes/default/images/spacer.gif" alt="img">只保留原有选区与新创建的选区相交的部分（按住【Shift+Alt】键也可以实现相同的操作)&lt;/p>
+&lt;p>1）【羽化】：用于设定选区边界的羽化程度。设置羽化参数可以有效地消除选择区域中的硬边界并将它们柔化，使选择区域的边界产生朦胧渐隐的过渡效果。该参数的取值范围为0~250像素，取值越大，选区的边界会相应变得越朦胧。&lt;/p>
+&lt;p>2）【消除锯齿】：用于清除选区边缘的锯齿。其原理就是在锯齿之间插入中间色调，这样就使那些边缘不规则的图像在视觉上消除了锯齿现象。Photoshop 中的图像是由一个个正方形的色块构成的，如果没有勾选【消除锯齿】复选框，在制作圆形选区或者其他形状不规则的选区时就会产生难看的锯齿边缘。&lt;/p>
+&lt;p>3）【样式】：选项提供了3种样式。【正常】是默认的选择样式，可以用鼠标创建长宽任意的矩形选区。【固定比例】可以为矩形选区设定任意的长宽比，只要在对应的宽度和高度参数框中填入宽度和高度比值即可;在默认的状态下，宽度和高度的比值为 1:1。【固定大小】可以通过直接输入宽度值和高度值来精确定义矩形选区的大小。&lt;/p>
+&lt;p>4）【宽度】和【高度】：用来设定宽度和高度。&lt;/p>
+&lt;p>绘制椭圆选区（同上）:&lt;/p>
+&lt;p>绘制出圆形的选区：椭圆选区绘制完成。按住【Shift】键的同时，松鼠标左键。&lt;/p>
+&lt;p>创建图层：按“Shift+Ctrl+N”快捷键。&lt;/p>
+&lt;p>问题：&lt;/p>
+&lt;ol>
+&lt;li>当使用Photoshop通过选区删除图片的某部分内容时，可能会遇到一个错误提示：“无法完成请求，因为此图层的内容不能直接编辑”。&lt;a href="https://www.3d66.com/answers/question_1198509.html">目前就想到三种解决办法：&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;p>右键图层面板栅格化此图层，然后再用画笔工具
+或者新建透明图层，用画笔工具
+或者椭圆工具直接选择像素模式，然后就可以直接用画笔工具。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务二-套索工具组">任务二 套索工具组&lt;/h3>
+&lt;p>知识要点：&lt;/p>
+&lt;p>1、使用【椭圆选框工具】，绘制椭圆选区。可以执行【右键】|【变换选区】，执行【Shift+Ctrl+J】命令创建新图层&lt;/p>
+&lt;p>2、【套索工具】绘制选区。&lt;/p>
+&lt;p>3、渐变色：选择【渐变工具】&lt;img src="https://mooc1.chaoxing.com/ananas/new-editor/ueditor/themes/default/images/spacer.gif" alt="img">，在其属性工具栏选择【径向渐变】&lt;img src="https://mooc1.chaoxing.com/ananas/new-editor/ueditor/themes/default/images/spacer.gif" alt="img">、粉色_09、【反向渐变颜色】&lt;img src="https://mooc1.chaoxing.com/ananas/new-editor/ueditor/themes/default/images/spacer.gif" alt="img">，从中心向外绘制渐变线，&lt;/p>
+&lt;p>4、嵌入内置水花&lt;/p>
+&lt;p>5、变形Ctrl+T 及右键调整变形方法&lt;/p>
+&lt;!DOCTYPE HTML>
+&lt;html lang="en">
+&lt;head>
+&lt;style type="text/css">
+.bilibili_shortcodes {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 66%;
+margin: auto;
+overflow: hidden;
+text-align: center;
+}
+.bilibili_shortcodes iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;div class="bilibili_shortcodes">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1HgzrYREGg&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html>
+&lt;p>【磁性套索工具】可以用来选取不规则的、与背景反差大的图像（自动分离图像）。&lt;/p>
+&lt;p>1）【宽度】：用于设定套索检测范围，【磁性套索工具】将在这个范围内选取反差最大的边缘。&lt;/p>
+&lt;p>2）【对比度】：用于设定选取边缘的灵敏度，数值越大，则边缘与背景的反差越大。&lt;/p>
+&lt;p>3）【颇率】：用于设定选区点的速率，数值越大，标记速率越快，标记点越多。&lt;/p>
+&lt;p>4）【使用绘图板压力以更改钢笔宽度】按钮&lt;img src="https://mooc1.chaoxing.com/ananas/new-editor/ueditor/themes/default/images/spacer.gif" alt="img">：用于设定专用绘图板的笔刷压力。&lt;/p>
+&lt;p>知识要点：&lt;/p>
+&lt;p>1、【矩形选框工具】绘制矩形选区，使用【Alt+Shift+Ctrl+V】组合键，将自动创建【图层1】，并将荷花粘贴入创建的矩形选区中。&lt;/p>
+&lt;p>2、【磁性套索工具】&lt;/p>
+&lt;p>3、渐变色：设置前景色为白色，背景色为RGB（182，233，254）。单击【背景】图层，选择【渐变工具】&lt;img src="https://mooc1.chaoxing.com/ananas/new-editor/ueditor/themes/default/images/spacer.gif" alt="img">，在其属性工具栏选择【径向渐变】&lt;img src="https://mooc1.chaoxing.com/ananas/new-editor/ueditor/themes/default/images/spacer.gif" alt="img">、前景色到背景色渐变，从中心向外绘制渐变线&lt;/p>
+&lt;p>4、使用【形状工具】 &lt;img src="https://mooc1.chaoxing.com/ananas/new-editor/ueditor/themes/default/images/spacer.gif" alt="img">组中的【直线工具】， 绘制两条斜线，将画面分隔开，增加视觉效果。&lt;/p>
+&lt;!DOCTYPE HTML>
+&lt;html lang="en">
+&lt;head>
+&lt;style type="text/css">
+.bilibili_shortcodes {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 66%;
+margin: auto;
+overflow: hidden;
+text-align: center;
+}
+.bilibili_shortcodes iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;div class="bilibili_shortcodes">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1wgzrYdEr4&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务三-魔棒工具组">任务三 魔棒工具组&lt;/h3>
+&lt;p>&lt;strong>案例一：制作中国风招贴&lt;/strong>&lt;/p>
+&lt;p>知识要点：&lt;/p>
+&lt;ol>
+&lt;li>魔棒工具的使用&lt;/li>
+&lt;li>Shift+Ctrl+I组合键(反选)&lt;/li>
+&lt;li>对象选择工具或套索工具的使用。Shift+F6组合键,设置羽化，边缘过度更自然。&lt;/li>
+&lt;li>使用橡皮擦工具,设置模式为画笔、大小为 354 像素、硬度为 14% ,在“宫殿四周多次涂抹,使多余部分渐隐。可根据需要调整大小及硬度, 硬度越小,越透明。)&lt;/li>
+&lt;/ol>
+&lt;!DOCTYPE HTML>
+&lt;html lang="en">
+&lt;head>
+&lt;style type="text/css">
+.bilibili_shortcodes {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 66%;
+margin: auto;
+overflow: hidden;
+text-align: center;
+}
+.bilibili_shortcodes iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;div class="bilibili_shortcodes">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1jDzWYeEkQ&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html>
+&lt;p>&lt;strong>案例二:制作旅游宣传图片&lt;/strong>&lt;/p>
+&lt;p>知识要点：&lt;/p>
+&lt;ol>
+&lt;li>对象选择工具:自动识别主体物。&lt;/li>
+&lt;li>设置不透明度为 40% 。&lt;/li>
+&lt;li>按住“ Shift 键画水平或垂直的线。&lt;/li>
+&lt;li>使用自定形状工具 ,在属性栏中找到小船。&lt;/li>
+&lt;/ol>
+&lt;!DOCTYPE HTML>
+&lt;html lang="en">
+&lt;head>
+&lt;style type="text/css">
+.bilibili_shortcodes {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 66%;
+margin: auto;
+overflow: hidden;
+text-align: center;
+}
+.bilibili_shortcodes iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;div class="bilibili_shortcodes">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1iDzWYeEBh&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务四-选区的基本操作">任务四 选区的基本操作&lt;/h3>
+&lt;p>&lt;strong>案例一：色光三原色绘制&lt;/strong>&lt;/p>
+&lt;p>知识要点：&lt;/p>
+&lt;ol>
+&lt;li>选区存储载入。&lt;/li>
+&lt;/ol>
+&lt;p>​ &lt;!DOCTYPE HTML>
+&lt;html lang="en">
+&lt;head>
+&lt;style type="text/css">
+.bilibili_shortcodes {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 66%;
+margin: auto;
+overflow: hidden;
+text-align: center;
+}
+.bilibili_shortcodes iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;div class="bilibili_shortcodes">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1iDzWYeEBd&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html>&lt;/p>
+&lt;p>&lt;strong>案例二 制作剪纸风海报&lt;/strong>&lt;/p>
+&lt;p>知识要点：&lt;/p>
+&lt;ol>
+&lt;li>【选择】|【修改】|【平滑】命令，在打开的【平滑选区】对话框中，输入【取样半径】：20像素，使选区边缘更光滑。&lt;/li>
+&lt;li>添加【图层样式】&lt;img src="https://mooc1.chaoxing.com/ananas/new-editor/ueditor/themes/default/images/spacer.gif" alt="img"> ，在打开的“图层样式”对话框中，设置样式为投影，透明度为60%，角度为122度，距离为2像素，大小为12，其他参数不变&lt;/li>
+&lt;li>填充颜色RGB(1，163，243) RGB(37，190，253) RGB(93，206，252) RGB(182，233，254)&lt;/li>
+&lt;/ol>
+&lt;!DOCTYPE HTML>
+&lt;html lang="en">
+&lt;head>
+&lt;style type="text/css">
+.bilibili_shortcodes {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 66%;
+margin: auto;
+overflow: hidden;
+text-align: center;
+}
+.bilibili_shortcodes iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;div class="bilibili_shortcodes">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1iDzWYeEy1&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务五-图像的变换">任务五 图像的变换&lt;/h3>
+&lt;p>&lt;strong>案例一：制作立体书籍&lt;/strong>&lt;/p>
+&lt;p>知识要点：&lt;/p>
+&lt;ol>
+&lt;li>【图层样式】：正片叠底，透明度为20%，角度为51度，距离为46像素，扩展为33%，大小为250像素。&lt;/li>
+&lt;li>【Ctrl+T】变换：【缩放】，【旋转】，【斜切】，【扭曲】，【透视】，【翻转】&lt;/li>
+&lt;/ol>
+&lt;!DOCTYPE HTML>
+&lt;html lang="en">
+&lt;head>
+&lt;style type="text/css">
+.bilibili_shortcodes {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 66%;
+margin: auto;
+overflow: hidden;
+text-align: center;
+}
+.bilibili_shortcodes iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;div class="bilibili_shortcodes">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1iXzWYAExH&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html>
+&lt;p>案例二：利用变换为罐子贴图&lt;/p>
+&lt;ol>
+&lt;li>【变换】/【自由变换】&lt;/li>
+&lt;li>【蜂蜜贴图】图层，调整该图层的不透明度为100%。再将【图层混合模式】由【正常】调整为【正片叠底】（此模式能使贴图与罐子色调一致，效果更自然真实）&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务六-对齐与分布">任务六 对齐与分布&lt;/h3>
+&lt;p>&lt;strong>案例一：制作波点图案&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>对齐：按住Ctrl键并单击需要对齐的所有图层，将它们选中。执行【图层】|【对齐】命令，即可进行对齐操作&lt;/li>
+&lt;li>选中除【背景】图层外的所有图层，使用【Ctrl+G】组合键会自动创建【组1】&lt;/li>
+&lt;li>单击【组1】，选择【移动工具】，在其属性工具栏中选择【组】。按住【Alt】键拖动一排“波点”，复制多组，可适当错位&lt;/li>
+&lt;li>为【图层1】添加【外发光】图层样式，不透明度为36%，杂色为60%，颜色为RGB（17，190，247），扩展为13%，大小为38像素，范围为40%&lt;/li>
+&lt;/ol>
+&lt;!DOCTYPE HTML>
+&lt;html lang="en">
+&lt;head>
+&lt;style type="text/css">
+.bilibili_shortcodes {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 66%;
+margin: auto;
+overflow: hidden;
+text-align: center;
+}
+.bilibili_shortcodes iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;div class="bilibili_shortcodes">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1jDzWYeELb&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html>
+&lt;p>&lt;strong>案例二：制作信纸&lt;/strong>&lt;/p>
+&lt;p>据考证，我国西汉时已开始了纸的制作，&lt;a href="https://baike.baidu.com/item/%E9%AD%8F%E6%99%8B%E5%8D%97%E5%8C%97%E6%9C%9D%E6%97%B6%E6%9C%9F?fromModule=lemma_inlink">魏晋南北朝时期&lt;/a>纸广泛流传。信纸颜色丰富多彩，五彩缤纷的，而且还可以添加各种香味，十分适合情侣之间鸿雁传书。信纸还可以用来折叠纸鹤。&lt;/p>
+&lt;p>常见的信纸标准尺寸规格：&lt;/p>
+&lt;p>大16开 21×28.5厘米 正16开 19×26厘米&lt;/p>
+&lt;p>大32开 14.5×21厘米 正32开 13×19厘米&lt;/p>
+&lt;p>大48开 10.5×19厘米 正48开 9.5×17.5厘米&lt;/p>
+&lt;p>大64开 10.5×14.5厘米 正64开 9.5×13厘米&lt;/p>
+&lt;!DOCTYPE HTML>
+&lt;html lang="en">
+&lt;head>
+&lt;style type="text/css">
+.bilibili_shortcodes {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 66%;
+margin: auto;
+overflow: hidden;
+text-align: center;
+}
+.bilibili_shortcodes iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+&lt;/style>
+&lt;title>&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;div class="bilibili_shortcodes">
+&lt;iframe
+src="https://player.bilibili.com/player.html?bvid=BV1LXzWYAEoT&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;as_wide=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div>
+&lt;/body>
+&lt;/html>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务七-橡皮擦工具组">任务七 橡皮擦工具组&lt;/h3>
+&lt;p>&lt;strong>案例一：制作海市蜃楼效果&lt;/strong>&lt;/p>
+&lt;p>知识要点：&lt;/p>
+&lt;ol>
+&lt;li>【橡皮擦工具】，并在属性工具栏中单击【画笔预设选取器】，设置大小为259像素，硬度为17%。然后在“别墅”四周多次涂抹，使“别墅”与“大海”边界过渡自然。&lt;/li>
+&lt;li>【背景橡皮擦工具】可以快速擦除画面中相同的颜色，使用方法与【魔棒工具】非常相似。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>案例二：制作明信片&lt;/strong>&lt;/p>
+&lt;p>根据《万国邮政公约》原则性规定的明信片尺寸，国际标准化明信片标准为：“最大尺寸：105X148毫米，最小尺寸：90X140毫米”。&lt;/p>
+&lt;p>根据国际标准，我国规定的明信片标准为：“最大尺寸：&lt;strong>150X100&lt;/strong>毫米，最小尺寸：140X90毫米，纸质：每平方米250克以上”。&lt;/p>
+&lt;ol>
+&lt;li>【编辑】|【描边】命令（描绘白边，设置橡皮擦邮票描边效果）&lt;/li>
+&lt;li>复制：按住【Alt】键拖动“矩形”，再复制5个“矩形”&lt;/li>
+&lt;li>执行【编辑】|【选择性粘贴】|【贴入】命令，将“风景”素材粘贴到矩形选区内&lt;/li>
+&lt;li>【转换为智能对象】防止破坏性编辑 【栅格化图层】可以自由进行编辑&lt;/li>
+&lt;li>工作路径创建&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="项目三-图标设计">项目三 图标设计&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;h3 id="任务一-形状工具">任务一 形状工具&lt;/h3>
+&lt;/li>
+&lt;/ul>
+&lt;p>在制作图标或是UI中的某个组件时，要使用各个形状来进行绘制，有3种绘制模式，分别是形状、路径和像素&lt;/p>
+&lt;ol>
+&lt;li>使用“形状”模式绘制的矩形可以在属性栏中随意更改所有的参数，包含该形状的路径和形状图层。&lt;/li>
+&lt;li>使用“路径”模式绘制的矩形只包含路径，可以将其转换为选区、像素或形状(就是 “形状”模式绘制的矩形)。&lt;/li>
+&lt;li>使用“像素”模式绘制的矩形只包含位图图层，这种图层的特点与位图相同，将其缩放会影响质量。&lt;/li>
+&lt;/ol>
+&lt;p>知识要点：&lt;/p>
+&lt;ol>
+&lt;li>对齐：选中图层-&amp;gt;点击移动工具对齐。&lt;/li>
+&lt;li>创建剪贴蒙版：图层而在图层一的上面且图层相邻，右键图层二，创建剪贴蒙版，即可把超过图一的图层二部分裁去。&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>
+&lt;h3 id="任务二-布尔运算">任务二 布尔运算&lt;/h3>
+&lt;p>重难点：&lt;strong>布尔运算方法，运用&lt;/strong> &lt;strong>合并、减去、相交、排除的方式新的制作新图形。&lt;/strong>&lt;/p>
+&lt;p>注意：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>布尔运算的图形必须在一个图层当中，不同的图层是不能进行布尔运算的。（不同层的形状可以使用快捷键Ctrl+E合并形状，使他们在同一层）。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>在同一个图层当中绘制的形状路径是有先后之分的，后面的路径一定是在先画的路径上面的，类似于图层。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>技巧：运算时至少需要两个图形，如果图形是现成的，使用【路径选择工具】将它们选取便可;如果想在绘制路径时进行运算，可先绘制一个图形，然后单击工具属性栏栏中的 “路径操作”点击钮，打开下拉菜单选择运算方法。&lt;/p>
+&lt;p>案例一：制作书本图标&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务三-矢量工具与路径">任务三 矢量工具与路径&lt;/h3>
+&lt;p>掌握Ps中路径及钢笔工具组的使用方法。&lt;/p>
+&lt;p>案例一:日历图标&lt;/p>
+&lt;ol>
+&lt;li>【路径选择工具】在路径上单击，即可选择路径&lt;/li>
+&lt;li>【直接选择工具】，将鼠标放在路径上，单击择路径段并显示其两端的锚点，如果单击它，便可将其选取(选取的锚点为实心方块，未选取的锚点为空心方块)&lt;/li>
+&lt;li>【钢笔工具】ESC 结束绘制&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;h3 id="任务四-图层样式">任务四 图层样式&lt;/h3>
+&lt;p>绘制完图标的基础形状以后，可以为形状添加各种图层样式，使图标看起来更具质感。&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>“斜面和浮雕” 主要用于制作物体的高光和阴影效果，包括内斜面、外斜面、浮雕效果、 枕状浮雕和描边浮雕表现形式&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“描边”就是沿着对象边缘创建轮廓，“大小”是指描边粗细，“位置”是指描边的位置，“填充类型”有3种，分别是“颜色”、“渐变”、“图案”&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“内阴影”主要是给图层内容边缘内添加阴影，用于制作凹陷效果&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“内发光”给对象添向内添加发光效果&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“光泽”主要用于创建对象的光滑表面。它可以在对象上方添加一个波浪形，类似绸缎的效果，&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“颜色叠加”在图层对象上叠加一种颜色，从设置“叠加颜色”选项中，可以通过“选取叠加颜色”对话框选取任意颜色，&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“渐变叠加”在图层对象上叠加一种渐变颜色&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“图案叠加”在图层对象上叠加图案&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“外发光”可以增强对象外部边缘的光晕效果&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“投影”为对象添加阴影效果，可以增强对象的立体质感&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>总结：图层样式基本全部是一些参数的设置，具体参数具体效果（可增加一篇参数+效果图的参考文档）&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="项目四-网店美工">项目四 网店美工&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;h3 id="任务一-文字的输入和排版">任务一 文字的输入和排版&lt;/h3>
+&lt;/li>
+&lt;/ul>
+&lt;p>横排文字工具、直排文字工具、横排文字蒙版工具和直排文字蒙版工具,可以实现文字的输入以及对文字的排版。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;h3 id="任务二-文字沿路径输入和变形">任务二 文字沿路径输入和变形&lt;/h3>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;del>案例一：绘制花喜花店的LOGO&lt;/del>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;h3 id="任务三-图像的修复和修饰">任务三 图像的修复和修饰&lt;/h3>
+&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>. 修复画笔工具&lt;/li>
+&lt;li>仿制图章工具：使用该工具可以方便地将图像的一部分绘制到,图像的另一区域中或是绘制到打开的具有相同颜色模式的任何文档中。&lt;/li>
+&lt;li>.图案图章工具&lt;/li>
+&lt;li>红眼工具，可以轻松地去除眼睛内的红色区域,使眼睛回复原始状态。&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>
+&lt;h3 id="任务四-动作功能的使用">任务四 动作功能的使用&lt;/h3>
+&lt;/li>
+&lt;/ul>
+&lt;p>案例一:为 10 张图片添加 logo 图片&lt;/p>
+&lt;ol>
+&lt;li>Alt+F9 组合键,可以打开 动作 面板。&lt;/li>
+&lt;li>自定义批处理：文件 | 自动 | 批处理&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>
+&lt;h3 id="任务五-制作-gif-动图">任务五 制作 GIF 动图&lt;/h3>
+&lt;/li>
+&lt;/ul>
+&lt;p>案例一:制作淘宝美工中 gif 动图（按步骤来就行）&lt;/p>
+&lt;ol>
+&lt;li>载入文件：开文件———脚本———将文件载入堆栈命令&lt;/li>
+&lt;li>窗口-时间轴&lt;/li>
+&lt;li>创建帧动画&lt;/li>
+&lt;li>从图层建立帧-,设置每一张图片的延时时间为 0. 5 秒-无限循环。&lt;/li>
+&lt;li>文件———导出——— 存储为 Web 所用格式,选择 GIF输出格式&lt;/li>
+&lt;/ol>
+&lt;p>案例二:制作茶杯气泡动效&lt;/p>
+&lt;p>掌握：&lt;/p>
+&lt;ol>
+&lt;li>设置帧动画。&lt;/li>
+&lt;li>创建剪贴蒙版。&lt;/li>
+&lt;/ol>
+&lt;p>注意：&lt;/p>
+&lt;ol>
+&lt;li>对椭圆工具画出的气泡进行变换时需要把图层转换为智能对象。&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>
+&lt;h3 id="任务六-综合实例">任务六 综合实例&lt;/h3>
+&lt;/li>
+&lt;/ul>
+&lt;p>案例：根据所给素材，制作“恋上好物”梦幻美妆宣传海报&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>画笔工具可为双矩形框（相框）添加阴影（柔光）。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ctrl+M增加亮光。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>改变装饰图案颜色：图层样式，颜色叠加。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ctrl+G进行分组。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>装饰增加粉红投影。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>任务七 综合实例&amp;mdash;纸杯蛋糕甜品宣传海报&lt;/p>
+&lt;ol>
+&lt;li>栅格化图层， 滤镜-变形-波浪&lt;/li>
+&lt;li>内阴影&lt;/li>
+&lt;li>添 加图层蒙版,建立径向渐变&lt;/li>
+&lt;li>注意：矩形波浪在最上面。&lt;/li>
+&lt;li>用画笔工具,选择柔边缘画笔,颜色深红色,在蛋糕下方 涂抹,单击滤镜-模糊-高斯模糊&lt;/li>
+&lt;/ol>
+&lt;h2 id="项目五-影楼美工">项目五 影楼美工&lt;/h2>
+&lt;h3 id="任务一-内容识别填充--内容识别缩放照片的修饰">任务一 内容识别填充 / 内容识别缩放———照片的修饰&lt;/h3>
+&lt;p>案例一:内容识别填充———清明牧童图去杂物&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>内容识别填充&lt;/strong>是一种填充方式,可以根据整体的选择区域,自动识别颜色内容补充 到我们选择区域中。&lt;/li>
+&lt;li>注意：套索工具框选后，内容识别填充，会显示取样区域，把不需要取药的区域减去效果更好。&lt;/li>
+&lt;/ol>
+&lt;p>案例二:内容识别缩放———竖版照片变横板&lt;/p>
+&lt;ol>
+&lt;li>使用内容识别缩放时需要使用套索工具,将要 &lt;strong>保护&lt;/strong>的内容选取出来并单击右键存储为&lt;strong>选区&lt;/strong>&lt;/li>
+&lt;li>编辑-内容识别缩放,在属性栏中,保护选项选择刚存储选区。&lt;/li>
+&lt;/ol>
+&lt;h3 id="任务二-色彩初认识">任务二 色彩初认识&lt;/h3>
+&lt;p>人为赋予了生活更多更深的意义。不同的颜色联想到不同的寓意。&lt;/p>
+&lt;p>补充：学到这里发现教科书的文档说明太啰嗦了！或许不是啰嗦，只是局限。技术性文档应该精确明了，关键释义增加链接就行。&lt;/p>
+&lt;p>案例一:图片的明度调整&lt;/p>
+&lt;ol>
+&lt;li>色彩三要素：
+&lt;ul>
+&lt;li>色相：色相即各类色彩的相貌称呼。如红色、绿色、橙黄等。十二色相色环图。&lt;/li>
+&lt;li>饱和度：:即色彩的纯度。可以通俗的理解为颜色的鲜艳程度。&lt;/li>
+&lt;li>明度：即色彩的亮度。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>色阶的使用&lt;/li>
+&lt;li>只对背景 拷贝图层有效：鼠标指向色阶调整图层和背景 拷贝之间,按住 Alt 键，点击。（和创建剪贴蒙版有点像）。&lt;/li>
+&lt;li>色相/ 饱和度的使用&lt;/li>
+&lt;/ol>
+&lt;p>案例二:色彩的情感&lt;/p>
+&lt;ol>
+&lt;li>图像-调整-匹配颜色的使用。&lt;/li>
+&lt;/ol>
+&lt;h3 id="任务三-色彩的调整">任务三 色彩的调整&lt;/h3>
+&lt;p>案例一:颜色替换&lt;/p>
+&lt;ol>
+&lt;li>选区(注意：选择-修改-扩展量为1，覆盖掉边缘色)&lt;/li>
+&lt;li>调整 / 替换颜色（注意先择+的这个在图像上 选择）&lt;/li>
+&lt;/ol>
+&lt;p>案例二:偏色图像的纠正&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>色彩平衡&lt;/p>
+&lt;p>大多为数据参考！只能熟能生巧&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="任务四-快速蒙版的使用">任务四 快速蒙版的使用&lt;/h3>
+&lt;p>案例一:快速蒙版美化肌肤&lt;/p>
+&lt;ol>
+&lt;li>快捷键Q：以快速蒙版模式编辑&lt;/li>
+&lt;li>滤镜-锐化-USM 锐化&lt;/li>
+&lt;li>的图层混合模式设为滤色&lt;/li>
+&lt;/ol>
+&lt;p>案例二:快乐童年&lt;/p>
+&lt;p>注意：快速蒙版不透明度设置百分百，不然没有描边&lt;/p>
+&lt;h3 id="任务五-形状蒙版的使用">任务五 形状蒙版的使用&lt;/h3>
+&lt;p>形状蒙版可以实现:形状+图片=形状中显示图片。&lt;/p>
+&lt;p>案例:形e状蒙版的应用&lt;/p>
+&lt;p>俗语：类似文字笔画上面贴图片。超出笔画部分图片不展示，就达到笔画上有花纹的效果。或者是图片内嵌入第二张图，第二张图超出，添加蒙版就不显示&lt;/p>
+&lt;h3 id="任务六-图层蒙版使用技巧">任务六 图层蒙版使用技巧&lt;/h3>
+&lt;p>案例一:相册内页的合成shangehua&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>建立图层蒙版，画笔擦除嵌入图片边缘部分，达到两张图片融合。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>案例二:浪漫草原行&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="任务七-通道抠图">任务七 通道抠图&lt;/h3>
+&lt;p>案例一:通道抠出杂乱头发&lt;/p>
+&lt;p>通道 ：通道是指存储图像颜色和选区等不同类型信息的灰度图像,即用来制作和编辑选区 的灰度图像。主要利用图像的色相差别或者 明度差别,配合不同的方法给我们的图像建立选区&lt;/p>
+&lt;p>学习感悟：&lt;/p>
+&lt;ol>
+&lt;li>很容易产生一个错觉，我完成了这个案例，就代表我已经掌握了这个知识点！自己的学习好像一直是这样，只停留在第一个层次！从来没有深入研究！（或许 是喜欢陌生的事物，只有最开始）&lt;/li>
+&lt;li>学习ps的话还需要学习一些平面设计的东西！&lt;/li>
+&lt;/ol>
+&lt;h2 id="项目六-图像创意设计">项目六 图像创意设计&lt;/h2>
+&lt;h3 id="任务一-图层的操作制作旋转线条">任务一 图层的操作———制作旋转线条&lt;/h3>
+&lt;p>备注:学到这里开始懈怠了，一晃就是四五天！又到了最难的开始，什么都不想做！&lt;/p>
+&lt;ol>
+&lt;li>教程仅供参考，需要先栅格化矩形，再变换！最后新建图层填充渐变，创建剪贴蒙版。&lt;/li>
+&lt;li>按住alt是围绕中心点变化&lt;/li>
+&lt;/ol>
+&lt;h3 id="任务二-图层的应用制作冰淇淋海报">任务二 图层的应用———制作冰淇淋海报&lt;/h3>
+&lt;ol>
+&lt;li>注意：栅格化图层才能进行变化&lt;/li>
+&lt;/ol>
+&lt;h3 id="任务三-滤镜库冶-模糊滤镜冶的应用">任务三 “滤镜库冶 、“模糊滤镜冶的应用&lt;/h3>
+&lt;p>案例一:大雪纷飞&lt;/p>
+&lt;ol>
+&lt;li>按操作即可，学习滤镜的使用场景之一&lt;/li>
+&lt;/ol>
+&lt;p>案例二:制作拼贴画（同上）&lt;/p>
+&lt;h3 id="任务四-风格化滤镜冶-液化滤镜冶的应用">任务四 “风格化滤镜冶 、“液化滤镜冶的应用&lt;/h3>
+&lt;p>风格化滤镜通过置换像素,查找和增加图像的对比度,产生印象派以及 其它风格画派作品的效果,它是完全模拟真实艺术手法进行创作的。&lt;/p>
+&lt;p>案例一:制作水果招贴&lt;/p>
+&lt;p>案例二:油画乘风破浪&lt;/p>
+&lt;p>都是按步骤操作就行，关键是对这些工具的使用熟练度！还要深入练习，一个一个去看怎么使用，效果是什么，及使用技巧方法。&lt;/p>
+&lt;h3 id="任务五-像素化滤镜冶-渲染滤镜冶的应用">任务五 “像素化滤镜冶 、“渲染滤镜冶的应用&lt;/h3>
+&lt;p>案例一:瓷器开片效果&lt;/p>
+&lt;p>案例二:制作薄雾效果&lt;/p>
+&lt;h3 id="任务六-扭曲滤镜冶-杂色滤镜冶的应用">任务六 “扭曲滤镜冶 、“杂色滤镜冶的应用&lt;/h3>
+&lt;p>案例一:烟花&lt;/p>
+&lt;p>案例二:制作图片漫画效果&lt;/p>
+&lt;h3 id="任务七-3d-模型">任务七 3D 模型&lt;/h3>
+&lt;p>案例一:制作立体酒瓶&lt;/p>
+&lt;p>案例二:制作 3D 海报&lt;/p>
+&lt;p>从这个案例，到后面，暂未学习！&lt;/p>
+&lt;h3 id="任务八-画笔的应用">任务八 画笔的应用&lt;/h3>
+&lt;p>案例一:风景画绘制&lt;/p>
+&lt;p>案例二:梦幻泡泡&lt;/p>
+&lt;h2 id="项目七-综合实训">项目七 综合实训&lt;/h2>
+&lt;p>案例一:创意合成&lt;/p>
+&lt;p>案例二:坚果广告&lt;/p>
+&lt;p>案例三:汽车创意广告&lt;/p>
+&lt;p>案例四:公益海报&lt;/p>
+&lt;p>案例五:水彩装饰画&lt;/p>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>一、学习过程中 碰到的一些耽误进程的问题。&lt;/p>
+&lt;ol>
+&lt;li>因为业余，所有的案例只能按书上的步骤进行，有一步描写的不清楚，就会耽误大量的时间去研究，会很耗费精力，有参考视频可能三五分钟就跳过了，否则就会耽误一个小时左右甚至更多！越到后面的案例，个别步骤描述的越不清晰。&lt;/li>
+&lt;li>最基础的学习过后，因为是大量的操作流程及步骤，发现文档已不足以记录书上的知识点，遂录制视频会更好记录案例中的知识点！&lt;/li>
+&lt;li>工具的寻找与使用（录屏软件、剪辑软件），这个也耽误了不少时间，因为要寻找好用的录制软件，录制完不好的部分需要剪切，也要找到好用的剪切软件。寻找的过程就会打断学习的进度！&lt;/li>
+&lt;li>大意看错工具名称，使效果达不到预期（例如：横排文字蒙版工具，横排文字工具 这两个当初选错实验了不下十遍仍没有达到预期效果，后续弟弟回家请教弟弟才知道少看俩字！）&lt;/li>
+&lt;li>弟弟对提前学习的排斥（这点着实让自己很难过！或许也是自己的学习进度太慢（如果让考研的学生来学习的话，两星期，这本书就真正学完了。但对于中专学生，要学习一学期，耽误时间吗，很耽误！花一学期觉得很不值得，很不值得！））&lt;/li>
+&lt;li>自身的学习习惯（可以不相信学历，但不得不相信学历表现出的学习能力！）&lt;/li>
+&lt;/ol>
+&lt;p>二、学习结束后的心得体悟。&lt;/p>
+&lt;p>总体来说，就是教我们怎么去使用这个ps这个工具，回归本质，ps只是一个工具，我们只是在学习怎么使用这个工具。&lt;/p>
+&lt;ol>
+&lt;li>每一个案例的目的，都是为了更好的去使用这个工具！学生容易走入的一个误区：为了考试而注重这些案例，忽略了工具的灵活运用！可以说1+2=3他们知道，但2+1=？就不一定知道了！灵活运用也是一个方面！&lt;/li>
+&lt;li>书读百遍，其意自现！我现在只是粗略了一遍，你如果能粗略的学三遍，那哥哥真为你感到开心，因为你自己主动去做了一些改变。&lt;/li>
+&lt;li>文档的总结的方法：可以按照目录来总结，你可以从这个文档中看到我的总结渐渐契合书本的目录，分大章小节，及重要知识点，注意事项！&lt;/li>
+&lt;li>学的过程中发现细节、个人创意很重要！学习一些设计的课程会更好的来理解ps（例如：空间布局、颜色搭配等）！&lt;/li>
+&lt;li>录制案例视频，会很有帮助，特别是一些内向的学生，锻炼口才的同时形成了文档资料（上面的视频，自己每一个录制的都不下于三遍才完成，甚至更多！）&lt;/li>
+&lt;li>一个案例，可以由很多方式完成，书上的步骤只是其中一种！&lt;/li>
+&lt;li>如果一个中专学生，只按学校的进度来学习这些内容，三年后将平平无奇！（我是结合自身的情况，及按照你三年后毕业找工作来预测的）&lt;/li>
+&lt;li>对于弟弟，如果我是你，我会在我的专业课上这么做：&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>
+&lt;p>做好自己的博客，无论用来记录什么，这些都是自己努力的见证！（要相信到处跑了五六年的哥哥的眼光）。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>对自己的专业课录制成视频，总结成文档上传到自己的网站！（对于不会说话的人很好的一个锻炼方式）。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>学习一些网站知识（这个看你们专业的教学安排，也有这方面的内容！可以提前量化！）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>英语！（ &lt;em>&lt;strong>它有多重要，所有的技术都会更新换代，但这个技能在任何时间都不会过时，只需要你自己去学习一次！&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>而且所有最先进的技术及人才都在美国。特别在未来的发展上面，英语将是你的快车道。我这个学渣最值得回忆的一件事就是：高三一年，把高中三年的英语单词背了六遍）&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;/li>
+&lt;/ul>
+&lt;p>最后致弟弟：这篇文章也是因你而来的，希望你能认识到学习方式和效率的差距，咱家的家庭条件，只能靠自己来努力！&lt;/p>
+&lt;p>三、对本书评价：&lt;/p>
+&lt;p>缺少视频光盘，及素材下载地址（素材问弟弟要的，在学生的学习通上面）。只能算是入门级书籍！&lt;/p>
+&lt;p>小插曲：通过书籍上面的电话，联系到了出版社，出版社联系到了本书的总编辑，总编辑联系到了作者，作者说暂时还未上传素材！（总编辑真的挺有文学气息！）&lt;/p>
+&lt;p>想到了一件事：国家的教育录播系统已经很完善了，但自己很少在网上看到这些精品课程！（原因：思想其实很好，但落实有难度，因为上家公司有录播教室这个项目，自己接触过很多学校，录播教室一个学校只有一间，只能做检查用！）&lt;/p>
+&lt;hr>
+&lt;p>结语：本篇文章参考photoshop图形图像处理.pdf，陈述内容为个人观点，不足之处欢迎指正！好的观点欢迎留言！&lt;/p></description></item><item><title>node实现鼠标点击事件</title><link>https://think-crow.github.io/blog/zh/node%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6/</link><pubDate>Mon, 11 Nov 2024 21:04:07 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/node%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6/</guid><description>&lt;p>碰到一个网站，页面刷新浏览量自动加2，试一下看能否自动点击鼠标实现浏览量增加！&lt;/p>
+&lt;h4 id="一实现鼠标点击动作">&lt;strong>一、实现鼠标点击动作：&lt;/strong>&lt;/h4>
+&lt;p>1、node init初始化一个项目&lt;/p>
+&lt;p>2、新建文件index.js&lt;/p>
+&lt;p>3、复制下面代码进index.js文件，后运行node index.js&lt;/p>
+&lt;p>实现鼠标自动点击：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> { &lt;span style="color:#a6e22e">mouse&lt;/span> } &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">require&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;@nut-tree/nut-js&amp;#39;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>(&lt;span style="color:#66d9ef">async&lt;/span> () =&amp;gt; {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">try&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 设置屏幕分辨率（根据你的屏幕调整）
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">screenWidth&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">2560&lt;/span>; &lt;span style="color:#75715e">// 假设你的屏幕宽度是2560
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">screenHeight&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1440&lt;/span>; &lt;span style="color:#75715e">// 假设你的屏幕高度是1440
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 移动鼠标到屏幕中心
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">await&lt;/span> &lt;span style="color:#a6e22e">mouse&lt;/span>.&lt;span style="color:#a6e22e">move&lt;/span>({ &lt;span style="color:#a6e22e">x&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">screenWidth&lt;/span> &lt;span style="color:#f92672">/&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#a6e22e">y&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#a6e22e">screenHeight&lt;/span> &lt;span style="color:#f92672">/&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span> });
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 循环点击100次
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">let&lt;/span> &lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; &lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span> &lt;span style="color:#ae81ff">50&lt;/span>; &lt;span style="color:#a6e22e">i&lt;/span>&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">await&lt;/span> &lt;span style="color:#a6e22e">mouse&lt;/span>.&lt;span style="color:#a6e22e">leftClick&lt;/span>(); &lt;span style="color:#75715e">// 执行右键点击
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">// console.log(`Click #${i + 1}`);
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;Completed 100 right-clicks!&amp;#39;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } &lt;span style="color:#66d9ef">catch&lt;/span> (&lt;span style="color:#a6e22e">error&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">error&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;Error occurred:&amp;#39;&lt;/span>, &lt;span style="color:#a6e22e">error&lt;/span>); &lt;span style="color:#75715e">// 捕获并打印错误信息
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>})();
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>关于nut.js&lt;/strong>：&lt;/p>
+&lt;p>&lt;code>nut.js&lt;/code> 是一个用于自动化鼠标和键盘控制的 Node.js 库，它通过模拟鼠标移动、点击、键盘输入等操作来进行自动化任务。这个库特别适合做 GUI 自动化测试、自动化操作、脚本化的用户交互等任务。&lt;code>nut.js&lt;/code> 可以被广泛应用于自动化测试、自动化桌面任务等场景。&lt;/p>
+&lt;h4 id="二点击太慢了以下为并行访问经测试同时开20个浏览器运行最佳每秒能增加一百多的访问量">二、点击太慢了，以下为并行访问（经测试同时开20个浏览器运行最佳）每秒能增加一百多的访问量&lt;/h4>
+&lt;p>备注：&lt;/p>
+&lt;p>第一思路：只发送GET请求，来增加访问量！发现get请求数据成功但访问量不会增加，模拟请求头也不行，遂改为直接打开浏览器访问！（node还有个库专门识别图像进行自动化点击，这个库识别图片失败，就没再深入！）&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">puppeteer&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">require&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;puppeteer&amp;#39;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 请求的目标URL
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">url&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;https://xxx.xxx&amp;#39;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 最大并行浏览器数
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">maxConcurrency&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">20&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 每个浏览器运行的请求次数
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">totalRequests&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">200&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 每个请求之间的延迟（200毫秒）
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">delay&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">200&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">sleep&lt;/span> &lt;span style="color:#f92672">=&lt;/span> (&lt;span style="color:#a6e22e">ms&lt;/span>) =&amp;gt; &lt;span style="color:#66d9ef">new&lt;/span> Promise(&lt;span style="color:#a6e22e">resolve&lt;/span> =&amp;gt; &lt;span style="color:#a6e22e">setTimeout&lt;/span>(&lt;span style="color:#a6e22e">resolve&lt;/span>, &lt;span style="color:#a6e22e">ms&lt;/span>));
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">fetchWithPuppeteer&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">async&lt;/span> () =&amp;gt; {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 创建一个存储任务的队列
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">tasks&lt;/span> &lt;span style="color:#f92672">=&lt;/span> [];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 创建任务函数
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">task&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">async&lt;/span> (&lt;span style="color:#a6e22e">browserIndex&lt;/span>) =&amp;gt; {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">browser&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">await&lt;/span> &lt;span style="color:#a6e22e">puppeteer&lt;/span>.&lt;span style="color:#a6e22e">launch&lt;/span>({ &lt;span style="color:#a6e22e">headless&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span> });
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">page&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">await&lt;/span> &lt;span style="color:#a6e22e">browser&lt;/span>.&lt;span style="color:#a6e22e">newPage&lt;/span>();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">let&lt;/span> &lt;span style="color:#a6e22e">retries&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">let&lt;/span> &lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; &lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span> &lt;span style="color:#a6e22e">totalRequests&lt;/span>; &lt;span style="color:#a6e22e">i&lt;/span>&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">let&lt;/span> &lt;span style="color:#a6e22e">success&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span> (&lt;span style="color:#a6e22e">retries&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#f92672">!&lt;/span>&lt;span style="color:#a6e22e">success&lt;/span>) { &lt;span style="color:#75715e">// 最大重试次数为3次
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">try&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">await&lt;/span> &lt;span style="color:#a6e22e">sleep&lt;/span>(&lt;span style="color:#a6e22e">delay&lt;/span>); &lt;span style="color:#75715e">// 每个请求间隔200ms
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">await&lt;/span> &lt;span style="color:#a6e22e">page&lt;/span>.&lt;span style="color:#66d9ef">goto&lt;/span>(&lt;span style="color:#a6e22e">url&lt;/span>, { &lt;span style="color:#a6e22e">waitUntil&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#e6db74">&amp;#39;load&amp;#39;&lt;/span> });
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// console.log(`Browser ${browserIndex}: Request ${i + 1} - Page Loaded`);
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 模拟滚动页面
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">await&lt;/span> &lt;span style="color:#a6e22e">page&lt;/span>.&lt;span style="color:#a6e22e">evaluate&lt;/span>(() =&amp;gt; window.&lt;span style="color:#a6e22e">scrollBy&lt;/span>(&lt;span style="color:#ae81ff">0&lt;/span>, window.&lt;span style="color:#a6e22e">innerHeight&lt;/span>));
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">success&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span>; &lt;span style="color:#75715e">// 标记成功
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> } &lt;span style="color:#66d9ef">catch&lt;/span> (&lt;span style="color:#a6e22e">error&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">retries&lt;/span>&lt;span style="color:#f92672">++&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">error&lt;/span>(&lt;span style="color:#e6db74">`Browser &lt;/span>&lt;span style="color:#e6db74">${&lt;/span>&lt;span style="color:#a6e22e">browserIndex&lt;/span>&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">: Request &lt;/span>&lt;span style="color:#e6db74">${&lt;/span>&lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74"> failed - Retry &lt;/span>&lt;span style="color:#e6db74">${&lt;/span>&lt;span style="color:#a6e22e">retries&lt;/span>&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">/3`&lt;/span>, &lt;span style="color:#a6e22e">error&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (&lt;span style="color:#a6e22e">retries&lt;/span> &lt;span style="color:#f92672">&amp;gt;=&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">error&lt;/span>(&lt;span style="color:#e6db74">`Browser &lt;/span>&lt;span style="color:#e6db74">${&lt;/span>&lt;span style="color:#a6e22e">browserIndex&lt;/span>&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">: Request &lt;/span>&lt;span style="color:#e6db74">${&lt;/span>&lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74"> failed after 3 retries.`&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">await&lt;/span> &lt;span style="color:#a6e22e">browser&lt;/span>.&lt;span style="color:#a6e22e">close&lt;/span>(); &lt;span style="color:#75715e">// 完成任务后关闭浏览器
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#e6db74">`Browser &lt;/span>&lt;span style="color:#e6db74">${&lt;/span>&lt;span style="color:#a6e22e">browserIndex&lt;/span>&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">: All requests completed.`&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> };
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 启动最多5个浏览器实例并行处理200次请求
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">let&lt;/span> &lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; &lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span> &lt;span style="color:#a6e22e">maxConcurrency&lt;/span>; &lt;span style="color:#a6e22e">i&lt;/span>&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">tasks&lt;/span>.&lt;span style="color:#a6e22e">push&lt;/span>(&lt;span style="color:#a6e22e">task&lt;/span>(&lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>)); &lt;span style="color:#75715e">// 将任务推入任务队列
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 等待所有任务完成
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">await&lt;/span> Promise.&lt;span style="color:#a6e22e">all&lt;/span>(&lt;span style="color:#a6e22e">tasks&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;All requests have been completed.&amp;#39;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">fetchWithPuppeteer&lt;/span>().&lt;span style="color:#66d9ef">catch&lt;/span>((&lt;span style="color:#a6e22e">err&lt;/span>) =&amp;gt; &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">error&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;Error in fetchWithPuppeteer:&amp;#39;&lt;/span>, &lt;span style="color:#a6e22e">err&lt;/span>));
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Puppeteer&lt;/strong> 是一个由 &lt;strong>Google Chrome 团队&lt;/strong>开发的 Node.js 库，用于控制 &lt;strong>Headless Chrome&lt;/strong>（无头浏览器）或者全功能的 Chrome 浏览器。它为开发者提供了一个高级 API，用于自动化浏览器任务，如网页爬取、界面测试、截图、生成 PDF 等。Puppeteer 是一个非常强大的工具，尤其适用于需要与网页交互、执行 JavaScript 或模拟用户行为的场景。&lt;/p></description></item><item><title>kail安装报错 解决办法</title><link>https://think-crow.github.io/blog/zh/kail-install-summary/</link><pubDate>Fri, 01 Nov 2024 15:01:24 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/kail-install-summary/</guid><description>&lt;p>安装步骤网上现成的很多,这里只记录下碰到的问题！&lt;/p>
+&lt;h3 id="问题一安装进程卡着不动">问题一：安装进程卡着不动&lt;/h3>
 &lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail5.png" alt="这是图片" title="图片标题">&lt;/p>
 &lt;p>原因：网络问题&lt;/p>
 &lt;p>方法：关闭防火墙，外置usb网卡接入kail虚拟机再安装即可。&lt;/p>
-&lt;h3 id="问题2开机黑屏只有一个_">问题2：开机黑屏，只有一个_&lt;/h3>
+&lt;h3 id="问题二开机黑屏只有一个_">问题二：开机黑屏，只有一个_&lt;/h3>
 &lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail4.png" alt="这是图片" title="图片标题">&lt;/p>
 &lt;p>原因：核对一下安装过程碰到的GRUB启动引导器选项选择那里！(如下图就懒得截图，找了两张一样的！原地址：&lt;a href="https://blog.csdn.net/fingue/article/details/127559353">kail安装教程&lt;/a>【图片竟然还有防盗措施，那就截屏吧】)&lt;/p>
 &lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail2.png" alt="这是图片" title="图片标题">&lt;/p>
 &lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail3.png" alt="这是图片" title="图片标题">&lt;/p>
 &lt;p>方法：确定上述两项没问题后，系统安装完成重启时，虚拟机可能会弹出一个选项，选择连接到虚拟机一下（感觉应该是这个原因，第一次我点的拒绝！）&lt;/p>
-&lt;h3 id="安装完成后的效果">安装完成后的效果：&lt;/h3>
+&lt;hr>
+&lt;h4 id="安装完成后的效果">安装完成后的效果：&lt;/h4>
 &lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail1.png" alt="这是图片" title="图片标题">&lt;/p>
 &lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail.png" alt="这是图片" title="图片标题">&lt;/p></description></item><item><title>个人博客网站是什么</title><link>https://think-crow.github.io/blog/zh/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%98%AF%E4%BB%80%E4%B9%88/</link><pubDate>Sun, 27 Oct 2024 21:41:47 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%98%AF%E4%BB%80%E4%B9%88/</guid><description>&lt;p>同公司的网站一样，有一个域名，任何人都可以通过这个域名来访问你的网站！网站内容由你自己决定！&lt;/p>
 &lt;h2 id="视频参考">视频参考&lt;/h2>
