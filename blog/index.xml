@@ -932,8 +932,8 @@ src="https://player.bilibili.com/player.html?bvid=BV1LXzWYAEoT&amp;page=1&amp;hi
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>})();
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>关于nut.js&lt;/strong>：&lt;/p>
 &lt;p>&lt;code>nut.js&lt;/code> 是一个用于自动化鼠标和键盘控制的 Node.js 库，它通过模拟鼠标移动、点击、键盘输入等操作来进行自动化任务。这个库特别适合做 GUI 自动化测试、自动化操作、脚本化的用户交互等任务。&lt;code>nut.js&lt;/code> 可以被广泛应用于自动化测试、自动化桌面任务等场景。&lt;/p>
-&lt;h4 id="二点击太慢了以下为并行访问经测试同时开20个浏览器运行最佳每秒能增加一百多的访问量">二、点击太慢了，以下为并行访问（经测试同时开20个浏览器运行最佳）每秒能增加一百多的访问量&lt;/h4>
-&lt;p>备注：&lt;/p>
+&lt;hr>
+&lt;h4 id="二点击太慢了以下为并行访问">二、点击太慢了，以下为并行访问&lt;/h4>
 &lt;p>第一思路：只发送GET请求，来增加访问量！发现get请求数据成功但访问量不会增加，模拟请求头也不行，遂改为直接打开浏览器访问！（node还有个库专门识别图像进行自动化点击，这个库识别图片失败，就没再深入！）&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">puppeteer&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">require&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;puppeteer&amp;#39;&lt;/span>);
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
@@ -996,7 +996,8 @@ src="https://player.bilibili.com/player.html?bvid=BV1LXzWYAEoT&amp;page=1&amp;hi
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">fetchWithPuppeteer&lt;/span>().&lt;span style="color:#66d9ef">catch&lt;/span>((&lt;span style="color:#a6e22e">err&lt;/span>) =&amp;gt; &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">error&lt;/span>(&lt;span style="color:#e6db74">&amp;#39;Error in fetchWithPuppeteer:&amp;#39;&lt;/span>, &lt;span style="color:#a6e22e">err&lt;/span>));
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Puppeteer&lt;/strong> 是一个由 &lt;strong>Google Chrome 团队&lt;/strong>开发的 Node.js 库，用于控制 &lt;strong>Headless Chrome&lt;/strong>（无头浏览器）或者全功能的 Chrome 浏览器。它为开发者提供了一个高级 API，用于自动化浏览器任务，如网页爬取、界面测试、截图、生成 PDF 等。Puppeteer 是一个非常强大的工具，尤其适用于需要与网页交互、执行 JavaScript 或模拟用户行为的场景。&lt;/p></description></item><item><title>kail安装报错 解决办法</title><link>https://think-crow.github.io/blog/zh/kail-install-summary/</link><pubDate>Fri, 01 Nov 2024 15:01:24 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/kail-install-summary/</guid><description>&lt;p>安装步骤网上现成的很多,这里只记录下碰到的问题！&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>（经测试同时开20个浏览器运行最佳）每秒能增加一百多的访问量&lt;/p>
+&lt;p>引用库介绍：&lt;strong>Puppeteer&lt;/strong> 是一个由 &lt;strong>Google Chrome 团队&lt;/strong>开发的 Node.js 库，用于控制 &lt;strong>Headless Chrome&lt;/strong>（无头浏览器）或者全功能的 Chrome 浏览器。它为开发者提供了一个高级 API，用于自动化浏览器任务，如网页爬取、界面测试、截图、生成 PDF 等。Puppeteer 是一个非常强大的工具，尤其适用于需要与网页交互、执行 JavaScript 或模拟用户行为的场景。&lt;/p></description></item><item><title>kail安装报错 解决办法</title><link>https://think-crow.github.io/blog/zh/kail-install-summary/</link><pubDate>Fri, 01 Nov 2024 15:01:24 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/kail-install-summary/</guid><description>&lt;p>安装步骤网上现成的很多,这里只记录下碰到的问题！&lt;/p>
 &lt;h3 id="问题一安装进程卡着不动">问题一：安装进程卡着不动&lt;/h3>
 &lt;p>&lt;img src="https://think-crow.github.io/images/blog/kail5.png" alt="这是图片" title="图片标题">&lt;/p>
 &lt;p>原因：网络问题&lt;/p>
@@ -1043,48 +1044,10 @@ src="https://player.bilibili.com/player.html?bvid=BV1o41jYbE6k&amp;page=1&amp;hi
 &lt;/div>
 &lt;/body>
 &lt;/html>
-&lt;p>个人博客（网络日志）网站是什么！&lt;/p>
-&lt;p>日志是记录事件、活动、想法或观察的文档。它可以用于多种目的，具体包括：&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>个人反思&lt;/strong>：个人日志通常用于记录日常生活、情感和经历，帮助自我反思和成长。&lt;/li>
-&lt;li>&lt;strong>工作记录&lt;/strong>：在工作环境中，日志可以用来跟踪项目进度、会议纪要或工作任务。&lt;/li>
-&lt;li>&lt;strong>学习记录&lt;/strong>：学生可以使用日志来记录学习进展、课程笔记或对知识的理解。&lt;/li>
-&lt;li>&lt;strong>数据记录&lt;/strong>：在科学研究或技术领域，日志可以用于记录实验数据、观察结果或系统运行状态。&lt;/li>
-&lt;li>&lt;strong>时间管理&lt;/strong>：日志有助于管理时间和计划，提高个人效率。&lt;/li>
-&lt;/ol>
-&lt;p>总的来说，日志是一种工具，用于整理和反映经历和信息。&lt;/p>
+&lt;p>个人博客网站是什么，个人理解：&lt;/p>
+&lt;p>一个网址，每个人都能访问，且页面由你自己来定义，个性化十足！&lt;/p>
 &lt;h3 id="什么是个人网站">什么是个人网站&lt;/h3>
-&lt;p>个人网站通常是个人在网络上创建的独立页面或域名。它可以包括个人简历、作品集、博客、联系方式等，帮助个人建立在线形象或品牌。个人网站可以用于求职、展示创作、分享观点等，具有很强的个性化和自定义功能。&lt;/p>
-&lt;h3 id="特点">特点&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>自定义设计&lt;/strong>：用户可以根据个人喜好定制网站外观。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>独立性&lt;/strong>：拥有独立域名，增强专业形象。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>个人表达的平台&lt;/strong>：自由表达思想与创意。&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="个人网站的用途">个人网站的用途&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>展示个人作品&lt;/strong>: 个人网站是展示项目、设计和成就的理想平台，帮助潜在客户或雇主更好地了解您。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>品牌建设&lt;/strong>: 通过个人网站，您可以塑造自己的品牌形象，建立专业形象，吸引目标受众。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>分享知识与经验&lt;/strong>: 网站可以作为分享专业知识、技能和个人见解的渠道，提升您的影响力。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>职业发展&lt;/strong>: 个人网站在求职过程中尤为重要，它能展示您的能力，增加职业机会。&lt;/p>
-&lt;p>观念不一样：商用，非商用！&lt;/p>
-&lt;p>完全就是兴趣所在！&lt;/p>
-&lt;p>内容完全由自己所控！样式由自己设计，更加彰显个性！&lt;/p>
-&lt;/li>
-&lt;/ul>
+&lt;p>官方回答：个人网站通常是个人在网络上创建的独立页面或域名。它可以包括个人简历、作品集、博客、联系方式等，帮助个人建立在线形象或品牌。个人网站可以用于求职、展示创作、分享观点等，具有很强的个性化和自定义功能。&lt;/p>
 &lt;h2 id="发展历史">发展历史&lt;/h2>
 &lt;p>美国博客的发展经历了几个重要阶段，以下是大致的时间段和历史概述：&lt;/p>
 &lt;h3 id="1990年代初期博客的萌芽">1990年代初期：博客的萌芽&lt;/h3>
@@ -1111,14 +1074,13 @@ src="https://player.bilibili.com/player.html?bvid=BV1o41jYbE6k&amp;page=1&amp;hi
 &lt;ul>
 &lt;li>&lt;strong>2020至今&lt;/strong>：虽然短视频和社交媒体内容的兴起影响了传统博客，但长形式内容仍然在某些领域保持重要性。个人品牌、专业知识分享和内容营销仍然驱动着博客的发展。&lt;/li>
 &lt;/ul>
+&lt;h3 id="选择平台">选择平台&lt;/h3>
 &lt;ol>
 &lt;li>&lt;strong>Hugo&lt;/strong>：创建于 2013 年。&lt;/li>
 &lt;li>&lt;strong>Hexo&lt;/strong>：创建于 2012 年。&lt;/li>
 &lt;li>&lt;strong>Jekyll&lt;/strong>：创建于 2008 年。&lt;/li>
 &lt;li>WordPress 最初于 &lt;strong>2003 年&lt;/strong> 发布&lt;/li>
 &lt;/ol>
-&lt;h3 id="总结">总结&lt;/h3>
-&lt;p>美国博客的发展历程反映了互联网内容消费方式的变化，从早期的个人日志到如今的多元化平台，博客依然是个体和品牌表达的重要工具。&lt;/p>
 &lt;h3 id="个人网站的市场趋势">个人网站的市场趋势&lt;/h3>
 &lt;p>2024年，博客网站仍然非常重要。尽管社交媒体的兴起改变了内容传播的方式，但博客依然在多个方面发挥着关键作用：&lt;/p>
 &lt;ol>
@@ -1142,58 +1104,47 @@ src="https://player.bilibili.com/player.html?bvid=BV1o41jYbE6k&amp;page=1&amp;hi
 &lt;/li>
 &lt;/ol>
 &lt;p>总之，尽管社交媒体依然占据重要地位，但博客在内容的深度、品牌建设和SEO等方面仍然具有不可替代的价值。&lt;/p>
-&lt;h3 id="技术的发展">技术的发展&lt;/h3>
-&lt;p>无代码平台的兴起、SEO优化技术的普及，使得创建个人网站变得更加容易。&lt;/p>
-&lt;h2 id="创建个人网站">创建个人网站&lt;/h2>
-&lt;h3 id="选择平台">选择平台&lt;/h3>
+&lt;h2 id="heading">&lt;/h2>
+&lt;h3 id="heading-1">&lt;/h3>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>在长久地无意识地被碎片化信息裹挟后，越来越多的人渐渐觉醒，回到以长文形式记录日常思考沉淀下来的内容。&lt;/p>
+&lt;p>未来，个人网站将是新的趋势！&lt;/p></description></item><item><title>是否适合搭建个人网站</title><link>https://think-crow.github.io/blog/zh/%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link><pubDate>Wed, 09 Oct 2024 21:27:16 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid><description>&lt;p>毋庸置疑，一定要搭建一个个人网站，无论你用什么方式！&lt;/p>
+&lt;p>特别18到28岁，最应该建一个个人博客网站！&lt;/p>
+&lt;h2 id="一最适合人群">一、最适合人群&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>WordPress&lt;/strong>：灵活强大的内容管理系统。&lt;/li>
-&lt;li>&lt;strong>GitHub Pages&lt;/strong>：适合开发者的免费托管服务。&lt;/li>
-&lt;li>静态网站生成器
-&lt;ol>
-&lt;li>&lt;strong>Hugo&lt;/strong>：快速的静态网站生成器，支持多语言。&lt;/li>
-&lt;li>&lt;strong>Hexo&lt;/strong>：基于 Node.js 的静态博客框架。&lt;/li>
-&lt;li>&lt;strong>Jekyll&lt;/strong>：GitHub Pages 推荐的静态网站生成器。&lt;/li>
-&lt;/ol>
-&lt;/li>
+&lt;li>技术专业的人群，个人网站可以帮助你更好归档技术资料！是你成长的见证。&lt;/li>
+&lt;li>非技术专业但喜欢写作的人群，可以是日常生活的灵感，随笔！读书笔记等内容！&lt;/li>
+&lt;li>网站可以做个人简历界面。求职更有优势！&lt;/li>
 &lt;/ul>
-&lt;h2 id="总结-1">总结&lt;/h2>
-&lt;p>个人网站是展示个人才能、建立品牌和促进职业发展的多重工具。无论是作为创作者、求职者还是知识分享者，个人网站都能为您带来显著的价值。&lt;/p>
-&lt;h3 id="鼓励行动">鼓励行动&lt;/h3>
-&lt;p>考虑创建自己的个人网站，您可以通过网络上的丰富资源和工具，轻松启动您的个人网站之旅。&lt;/p></description></item><item><title>是否适合搭建个人网站</title><link>https://think-crow.github.io/blog/zh/%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link><pubDate>Wed, 09 Oct 2024 21:27:16 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E6%98%AF%E5%90%A6%E9%80%82%E5%90%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid><description>&lt;p>18到28岁，最应该建一个个人博客网站！&lt;/p>
-&lt;p>对看书或写作很感兴趣，也挺适合！&lt;/p>
-&lt;p>当你看到这篇文章时，证明你还是感兴趣的，不妨搭建一个.&lt;/p>
-&lt;h2 id="判断方法">判断方法：&lt;/h2>
-&lt;h3 id="1对写博客文章是否感兴趣也可以是生活技术随摘总结一类">1、对写博客文章是否感兴趣！也可以是生活、技术随摘、总结一类。&lt;/h3>
-&lt;h3 id="2是否喜欢阅读">2、是否喜欢阅读！&lt;/h3>
-&lt;h3 id="3对敲命令是否排斥">3、对敲命令是否排斥！&lt;/h3>
-&lt;h3 id="4对技术是否喜欢研究亦或是有兴趣去研究它">4、对技术是否喜欢研究，亦或是有兴趣去研究它。&lt;/h3>
+&lt;h2 id="二它有多重要">二、它有多重要&lt;/h2>
+&lt;p>每一个公司都有官网，官网对公司多重要！个人网站就对个人有多&lt;strong>重要&lt;/strong>！&lt;/p>
+&lt;p>自己已了然二十八，才认识到个人博客网站的重要性，在这里希望你们不要错过这个很重要的工具，在你们未来工作的五年里，将发挥很重要的作用！&lt;/p>
 &lt;p>最后：最关键的就是兴趣，不管你拿来做什么，这只是你的起点，或者是起步！&lt;/p></description></item><item><title>Markdown文档语法</title><link>https://think-crow.github.io/blog/zh/markdown%E6%96%87%E6%A1%A3%E8%AF%AD%E6%B3%95/</link><pubDate>Wed, 09 Oct 2024 21:26:06 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/markdown%E6%96%87%E6%A1%A3%E8%AF%AD%E6%B3%95/</guid><description>&lt;p>把Markdown文档比作word的话，这篇文章就是教你怎么使用word.&lt;/p>
-&lt;p>什么是Markdown文档：技术人眼中超word几百条街的写作工具！&lt;/p>
+&lt;p>什么是Markdown文档：技术人眼中很方便的写作工具！&lt;/p>
 &lt;p>&lt;strong>官方解释&lt;/strong>：Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia、简书等。&lt;/p>
-&lt;h1 id="1标题语法">1、标题语法&lt;/h1>
+&lt;h2 id="1标题语法">1、标题语法&lt;/h2>
 &lt;p>要创建标题，请在单词或短语前面添加井号 (&lt;code>#&lt;/code>) 。&lt;code>#&lt;/code> 的数量代表了标题的级别。例如，添加三个 &lt;code>#&lt;/code> 表示创建一个三级标题 (&lt;code>&amp;lt;h3&amp;gt;&lt;/code>) (例如：&lt;code>### My Header&lt;/code>)。&lt;/p>
 &lt;h1 id="--文字-一级标题"># +文字 ：一级标题&lt;/h1>
 &lt;h2 id="-文字二级标题">## +文字：二级标题&lt;/h2>
 &lt;h3 id="-文字三级标题">### +文字：三级标题&lt;/h3>
-&lt;h1 id="2引用语法">2、引用语法&lt;/h1>
+&lt;h2 id="2引用语法">2、引用语法&lt;/h2>
 &lt;p>要创建块引用，请在段落前添加一个 &lt;code>&amp;gt;&lt;/code> 符号。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>&amp;gt; Dorothy followed her through many of the beautiful rooms in her castle.
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>展示效果：&lt;/p>
 &lt;blockquote>
 &lt;p>Dorothy followed her through many of the beautiful rooms in her castle.&lt;/p>
 &lt;/blockquote>
-&lt;h1 id="3markdown-代码语法">3、Markdown 代码语法&lt;/h1>
+&lt;h2 id="3markdown-代码语法">3、Markdown 代码语法&lt;/h2>
 &lt;p>要将单词或短语表示为代码，请将其包裹在反引号 (```) 中。&lt;/p>
 &lt;p>展示效果（红字部分）：&lt;/p>
 &lt;p>At the command prompt, type &lt;code>nano&lt;/code>.&lt;/p>
-&lt;h1 id="4markdown-分隔线语法">4、Markdown 分隔线语法&lt;/h1>
+&lt;h2 id="4markdown-分隔线语法">4、Markdown 分隔线语法&lt;/h2>
 &lt;p>要创建分隔线，请在单独一行上使用三个或多个星号 (&lt;code>***&lt;/code>)、破折号 (&lt;code>---&lt;/code>) 或下划线 (&lt;code>___&lt;/code>) ，并且不能包含其他内容。&lt;/p>
 &lt;p>展示效果（从上到下依次：***、&amp;mdash;、___）：&lt;/p>
 &lt;hr>
 &lt;hr>
 &lt;hr>
-&lt;h1 id="5markdown-链接语法">5、Markdown 链接语法&lt;/h1>
+&lt;h2 id="5markdown-链接语法">5、Markdown 链接语法&lt;/h2>
 &lt;p>链接文本放在中括号内，链接地址放在后面的括号中，链接title可选。&lt;/p>
 &lt;p>超链接Markdown语法代码：&lt;code>[超链接显示名](超链接地址 &amp;quot;超链接title&amp;quot;)&lt;/code>&lt;/p>
 &lt;p>对应的HTML代码：&lt;code>&amp;lt;a href=&amp;quot;超链接地址&amp;quot; title=&amp;quot;超链接title&amp;quot;&amp;gt;超链接显示名&amp;lt;/a&amp;gt;&lt;/code>&lt;/p>
@@ -1211,6 +1162,9 @@ src="https://player.bilibili.com/player.html?bvid=BV1o41jYbE6k&amp;page=1&amp;hi
 &lt;p>最后：上述只是部分Markdown文档语法，完全够新手使用，后续可以自己学习更多的语法来编写自己的文章！&lt;/p></description></item><item><title>git命令教程</title><link>https://think-crow.github.io/blog/zh/git%E6%95%99%E7%A8%8B/</link><pubDate>Wed, 09 Oct 2024 21:00:43 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/git%E6%95%99%E7%A8%8B/</guid><description>&lt;p>网站文档更新到网站的必要学习步骤，参考 标题1 即可！.&lt;/p>
 &lt;h1 id="git上传操作步骤图解">git上传操作步骤图解：&lt;/h1>
 &lt;p>&lt;img src="https://think-crow.github.io/images/blog/git%E6%80%BB%E7%BB%93.png" alt="git总结">&lt;/p>
+&lt;p>备注：git是一个开源的分布式版本管理系统，可以随时切换你提交的版本。&lt;/p>
+&lt;p>上述工作区，暂存区，本地仓库，远程仓库是git提交的一整个过程！&lt;/p>
+&lt;p>工作区也就是你的代码文件夹，暂存区就是你将要提交的内容，本地仓库就是已经提交了内容但没有上传远端，最后就是上传远端（上传远端之后，若有不妥可版本回退！即回退到之前任意一次提交的的内容）。&lt;/p>
 &lt;h1 id="1git顺序上传步骤">1、git顺序上传步骤：&lt;/h1>
 &lt;p>1、git init: 在当前目录初始化一个新的 Git 仓库。&lt;/p>
 &lt;p>2、git add &lt;!-- raw HTML omitted -->: 将文件添加到暂存区。&lt;/p>
@@ -1235,20 +1189,23 @@ src="https://player.bilibili.com/player.html?bvid=BV1o41jYbE6k&amp;page=1&amp;hi
 &lt;/ul>
 &lt;p>4、参考文档是个好东西，要看细致了，漏看东西很致命！&lt;/p>
 &lt;p>&lt;strong>一分耕耘，一分收获， 加油！&lt;/strong>&lt;/p>
-&lt;p>​&lt;/p></description></item><item><title>为什么要建博客</title><link>https://think-crow.github.io/blog/zh/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link><pubDate>Sat, 21 Sep 2024 00:39:14 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>在这个信息爆炸的时代，每个人的声音都值得被听见。个人博客不仅是分享生活和观点的平台，更是一个展示自我的舞台。无论你来自哪里，经历过什么，文字都能让你与世界建立连接。通过记录自己的故事、分享经验，个人博客能帮助你建立个人品牌，提升自信，甚至创造新的机会。&lt;/p>
+&lt;p>​&lt;/p></description></item><item><title>为什么要建博客</title><link>https://think-crow.github.io/blog/zh/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link><pubDate>Sat, 21 Sep 2024 00:39:14 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>一些人是因为热爱，一些人是因为被告知很重要，而一些人真真正正看到了它的价值！&lt;/p>
 &lt;h3 id="原因一认识到了博客的重要性之后希望更多的人也能有博客网站">原因一：认识到了博客的重要性之后，希望更多的人也能有博客网站！&lt;/h3>
 &lt;p>毕业七年后，才发现博客对青年时期的人生发展帮助如此之大！&lt;/p>
 &lt;ul>
-&lt;li>使你一只脚踏入技术的大门。&lt;/li>
-&lt;li>一些工作经验问题，以文档形式总结下来，而且或许会从中发现规律。&lt;/li>
-&lt;li>文字可以让人思考，亦可记录生活！&lt;/li>
-&lt;li>可以打造专属的个人品牌！&lt;/li>
+&lt;li>如果你是技术专业的，对你受益最大，做好技术性文档，将是你个人品牌及实力的见证！&lt;/li>
+&lt;li>如果你喜欢看书或写作，也很适合搭建个人博客。&lt;/li>
+&lt;li>如果你不太会讲话，个人网站无疑最佳选择，让我们通过文字来表达自己！&lt;/li>
+&lt;li>如果你感觉最近无所事事，焦虑无常，可以先搭建个网站试一下！&lt;/li>
+&lt;li>总归，个人网站对所有大学生适用，可以不相信我的眼光，但你要相信中国籍统计学家和数据科学家谢大的眼光：“在跟在校学生交流的时候，我通常会提一个观点，叫 “我网故我在”，意思是如果你没有一个个人网站，你就不存在。”！&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>个人观点或许有些武断，参照其他文字：&lt;/strong>&lt;/p>
 &lt;h3 id="原因二书面材料的系统性持久性备忘性和可查性">原因二：书面材料的系统性、持久性、备忘性和可查性&lt;/h3>
 &lt;p>主流认同模式一旦成型，无论是否合理，也不管有多少不足，我们只有去适应它，而不要幻想它因你而改变，对于能量极其有限的普罗大众而言，更是这样。在现有注重标签、经验和成功案例社会认同模式下，一个人要想出人头地，成为职场达人，必须想方设法构筑丰富而且结构合理的经验体系，甚至将其用书面材料的形式梳理出来。&lt;strong>&lt;code>与口头描述相比，书面材料在系统性、持久性、备忘性和可查性方面，毕竟有着非常突出和难以替代的优势&lt;/code>&lt;/strong>。在激烈的社会竞争中，很多时候即使对方没有要求我们提供这些东西，但只要你能拿出来，成功的天平也肯定会向你倾斜。&lt;/p>
 &lt;h3 id="原因三分享即价值">原因三：分享即价值&lt;/h3>
 &lt;p>&lt;a href="https://yanlinlin.cn/2022/01/17/%E5%88%86%E4%BA%AB%E5%8D%B3%E4%BB%B7%E5%80%BC%E5%86%99%E7%BB%99%E5%8D%B3%E5%B0%86%E6%AD%A5%E5%85%A5%E6%B1%9F%E6%B9%96%E7%9A%84%E5%B0%8F%E6%9C%8B%E5%8F%8B%E4%BB%AC/">分享即价值！&lt;/a>“真的强烈建议即将步入江湖的小朋友们，趁着自己还有大把的富余时间，多在公开平台上进行分享，而且最好是不带功利性地进行分享。**互联网是有记忆的，这些都会成为自己将来的品牌资本。你越认真对待它，它给你的回馈就越丰厚。**更何况，要把一项技术理解清楚，再讲出来，这本身就是一个高效率的学习过程，而且这种学习所得，是很难被遗忘的。”&lt;/p>
+&lt;h4 id="原因四让别人在最短时间内了解一个立体的你">原因四：让别人在最短时间内了解一个立体的你&lt;/h4>
+&lt;p>&lt;a href="https://hongtaoh.com/cn/2021/06/17/homepage/">我为什么强烈建议你有一个个人网站&lt;/a>：让别人在最短时间内了解一个立体的你（网站上有你的自我介绍，有你做过的所有项目，有你经年累月写的博客。你觉得哪个效果好？），捕捉瞬间的想法与灵感 ，激励你不断进步和积累，分享经验，记录生活点滴&lt;/p>
 &lt;hr>
 &lt;h2 id="关于这个被问到的问题">关于这个被问到的问题&lt;/h2>
 &lt;p>1、建这个有什么用？&lt;/p>
@@ -1257,13 +1214,9 @@ src="https://player.bilibili.com/player.html?bvid=BV1o41jYbE6k&amp;page=1&amp;hi
 &lt;hr>
 &lt;h2 id="个人网站官方介绍">个人网站官方介绍：&lt;/h2>
 &lt;h3 id="维基百科描述">维基百科描述&lt;/h3>
-&lt;p>&lt;strong>个人网站&lt;/strong>是指由个人或团体、工作室（一般不超过3人）根据自己的兴趣爱好或价值取向，为了展示自我、与人交流，以非盈利为目的（有的个人网站会植入广告）而在&lt;a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C">网络&lt;/a>上建立的供其他人浏览的&lt;a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%AB%99">网站&lt;/a>。在 &lt;a href="https://zh.wikipedia.org/wiki/WWW">WWW&lt;/a> 刚开始流行的时候，这些个人网站的版面编排与设计构思，多出自架站者本身。也正因为如此，这些小网站之间的设计风格差异相当明显。&lt;/p>
+&lt;p>&lt;strong>个人网站&lt;/strong>是指由个人或团体、工作室（一般不超过3人）根据自己的兴趣爱好或价值取向，为了展示自我、与人交流，以非盈利为目的（有的个人网站会植入广告）而在&lt;a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C">网络&lt;/a>上建立的供其他人浏览的&lt;a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%AB%99">网站&lt;/a>。&lt;/p>
 &lt;h3 id="百度百科描述">百度百科描述&lt;/h3>
 &lt;p>个人网站，是指&lt;a href="https://baike.baidu.com/item/%E5%9B%A0%E7%89%B9%E7%BD%91/114119?fromModule=lemma_inlink">因特网&lt;/a>上一块固定的面向全世界发布消息的地方。&lt;/p>
-&lt;p>个人网站由&lt;a href="https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D/86062?fromModule=lemma_inlink">域名&lt;/a>（也就是网站地址）、程序和&lt;a href="https://baike.baidu.com/item/%E7%BD%91%E7%AB%99%E7%A9%BA%E9%97%B4/751372?fromModule=lemma_inlink">网站空间&lt;/a>构成，通常包括&lt;a href="https://baike.baidu.com/item/%E4%B8%BB%E9%A1%B5/528139?fromModule=lemma_inlink">主页&lt;/a>和其他具有&lt;a href="https://baike.baidu.com/item/%E8%B6%85%E9%93%BE%E6%8E%A5/97857?fromModule=lemma_inlink">超链接&lt;/a>文件的页面。网站是一种通讯工具，就像布告栏一样，人们可以通过网站来发布自己想要公开的资讯，或者利用网站来提供相关的&lt;a href="https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1/9498645?fromModule=lemma_inlink">网络服务&lt;/a>。&lt;/p>
-&lt;p>个人网站是指个人或团体因某种兴趣、拥有某种专业技术、提供某种服务或把自己的作品、商品展示销售而制作的具有独立&lt;a href="https://baike.baidu.com/item/%E7%A9%BA%E9%97%B4%E5%9F%9F%E5%90%8D/0?fromModule=lemma_inlink">空间域名&lt;/a>的网站。&lt;/p>
-&lt;p>个人网站是&lt;a href="https://baike.baidu.com/item/%E4%B8%87%E7%BB%B4%E7%BD%91/215515?fromModule=lemma_inlink">万维网&lt;/a>由个人创建的网页包含的内容，而不是个人性质的公司，组织或机构的代表。&lt;/p>
-&lt;p>个人网站=&lt;a href="https://baike.baidu.com/item/%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D/2152551?fromModule=lemma_inlink">顶级域名&lt;/a>+&lt;a href="https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/208420?fromModule=lemma_inlink">虚拟主机&lt;/a>+&lt;a href="https://baike.baidu.com/item/%E7%BD%91%E9%A1%B5/99347?fromModule=lemma_inlink">网页&lt;/a> [1]&lt;/p>
 &lt;hr>
 &lt;p>目的：让家乡的人们都能有这样的网站，都能和大城市的人站在一个起点上！&lt;/p>
 &lt;p>是否适合建站：&lt;/p>
@@ -1272,14 +1225,16 @@ src="https://player.bilibili.com/player.html?bvid=BV1o41jYbE6k&amp;page=1&amp;hi
 &lt;p>3、假设你是一个女生、技术性的东西或许会有一些难度！&lt;/p>
 &lt;p>4、要是碰见年轻时的自己，死皮赖脸也要让他建个网站！&lt;/p>
 &lt;h1 id="好东西都是不流通的恭喜你现在碰到了其一">好东西都是不流通的！恭喜你，现在碰到了其一！&lt;/h1>
-&lt;p>缘起缘灭，缘聚缘散！见到就是缘分！&lt;/p></description></item><item><title>快速带你了解建站知识</title><link>https://think-crow.github.io/blog/zh/%E5%BF%AB%E9%80%9F%E5%B8%A6%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%BB%BA%E7%AB%99%E7%9F%A5%E8%AF%86/</link><pubDate>Fri, 20 Sep 2024 00:39:14 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E5%BF%AB%E9%80%9F%E5%B8%A6%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%BB%BA%E7%AB%99%E7%9F%A5%E8%AF%86/</guid><description>&lt;p>采用开源hugo框架建站，github pages托管，git更新博客文章！（会生成一个&lt;code>用户名+github.io&lt;/code>的域名，供全球人访问）！&lt;/p>
+&lt;p>缘起缘灭，缘聚缘散！见到就是缘分！&lt;/p></description></item><item><title>快速带你了解hugo建站知识</title><link>https://think-crow.github.io/blog/zh/%E5%BF%AB%E9%80%9F%E5%B8%A6%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%BB%BA%E7%AB%99%E7%9F%A5%E8%AF%86/</link><pubDate>Fri, 20 Sep 2024 00:39:14 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E5%BF%AB%E9%80%9F%E5%B8%A6%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%BB%BA%E7%AB%99%E7%9F%A5%E8%AF%86/</guid><description>&lt;p>采常用的建站方式有hugo、hexo、jekyll、wordpress，这里为大家介绍hugo建站。&lt;/p>
 &lt;h3 id="1-什么是-hugo">1. 什么是 Hugo&lt;/h3>
 &lt;p>Hugo 是一个快速、灵活的静态网站生成器，适用于博客、文档和个人网站等。官网地址：&lt;a href="https://gohugo.io">gohugo.io&lt;/a>&lt;/p>
-&lt;p>通俗的说：hugo可以把Markdown文档（普通人眼中的word）生成静态网页！&lt;/p>
+&lt;p>通俗的说：hugo可以把Markdown文档（大众眼中的word）生成静态网页！&lt;/p>
 &lt;h3 id="2-为什么用-hugo">2. 为什么用 Hugo&lt;/h3>
-&lt;p>Hugo 的速度快，支持Markdown，易于使用且拥有丰富的主题选择。它允许开发者轻松地管理内容，并能快速生成静态网站，适合任何技术水平的人。&lt;/p>
-&lt;h3 id="3-为什么要建一个个人网站">3. 为什么要建一个个人网站&lt;/h3>
-&lt;p>个人网站是展示自我、分享知识和建立个人品牌的重要工具。它可以帮助你吸引潜在雇主、建立社交网络，并分享你的兴趣和专业技能。&lt;/p>
+&lt;p>兜兜转转，发现找的就是它，可自己花了五年时间&lt;/p>
+&lt;p>另看到的一些科研学者普遍都用的hugo建站，来写文章，且文章很有说服力！尝试过后，确实方便，就大力推崇！&lt;/p>
+&lt;h3 id="3-是否需要服务器域名">3. 是否需要服务器域名？&lt;/h3>
+&lt;p>不需要域名服务器（当然，如果你想，也可以自己配置）&lt;/p>
+&lt;p>配置好主题之后，上传完仓库，GitHub pages会自动编译文章生成网页（每次更新后大概需要20s左右即可重新访问）&lt;/p>
 &lt;h3 id="4-需要的技术知识">4. 需要的技术知识&lt;/h3>
 &lt;ul>
 &lt;li>基本的 Markdown 语法&lt;/li>
@@ -1297,16 +1252,25 @@ src="https://player.bilibili.com/player.html?bvid=BV1o41jYbE6k&amp;page=1&amp;hi
 &lt;ul>
 &lt;li>初始设置可能有些复杂&lt;/li>
 &lt;li>更新内容需要使用 Git 命令行&lt;/li>
+&lt;li>使用的是开源的主题。&lt;/li>
 &lt;/ul>
 &lt;h3 id="6-具体操作流程">6. 具体操作流程&lt;/h3>
 &lt;ol>
-&lt;li>选择hugo主题（我来配置好！并按要求修改部分样式！删除不必要内容）。（选学）&lt;/li>
-&lt;li>注册github账户（注意：取用户名慎重，默认生成链接地址为:用户名.github.io）。&lt;/li>
-&lt;li>协助安装运行环境，并上传到github并启用 GitHub Pages。(选学)&lt;/li>
-&lt;li>教学git基础及markdown基本语法。(必学)。&lt;/li>
-&lt;li>实操指导（增删改查）！&lt;/li>
-&lt;li>结束，出师！&lt;/li>
+&lt;li>
+&lt;p>注册github账户&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>学习git基础及markdown基本语法。(必学)。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>选择hugo主题，并做部分修改。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>安装运行环境，并上传到github并启用 GitHub Pages。&lt;/p>
+&lt;p>简单的四步，你就有了一个个人博客！&lt;/p>
+&lt;/li>
 &lt;/ol>
+&lt;p>当然，你可以选择此篇博主为你搭建，只收取技术支持的劳动费用，价廉实惠。微信：net-rwany！&lt;/p>
 &lt;h3 id="7-注意事项">7. 注意事项&lt;/h3>
 &lt;ul>
 &lt;li>
