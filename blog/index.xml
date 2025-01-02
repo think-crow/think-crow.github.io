@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on HaoshuangRen</title><link>https://think-crow.github.io/blog/</link><description>Recent content in Blogs on HaoshuangRen</description><generator>Hugo -- gohugo.io</generator><copyright>2024 HaoshuangRen All rights reserved</copyright><lastBuildDate>Wed, 27 Nov 2024 12:02:05 +0800</lastBuildDate><atom:link href="https://think-crow.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>社会人多长时间学完中职教材：ps2020图形图像处理教程</title><link>https://think-crow.github.io/blog/zh/2024-11-27-ps2020/</link><pubDate>Wed, 27 Nov 2024 12:02:05 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/2024-11-27-ps2020/</guid><description>&lt;p>弟弟中职，觉得他花一年时间就进度就学了个这些东西，很没有效率，出这个文档让他看一下社会末流人士的学习能力！希望他能好好反思，积极并认真学习课程之外的本专业知识！&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on HaoshuangRen</title><link>https://think-crow.github.io/blog/</link><description>Recent content in Blogs on HaoshuangRen</description><generator>Hugo -- gohugo.io</generator><copyright>2024 HaoshuangRen All rights reserved</copyright><lastBuildDate>Fri, 03 Jan 2025 01:10:21 +0800</lastBuildDate><atom:link href="https://think-crow.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>域名配置</title><link>https://think-crow.github.io/blog/zh/%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/</link><pubDate>Fri, 03 Jan 2025 01:10:21 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/</guid><description>&lt;p>关于域名使用的一些经历！&lt;/p>
+&lt;h2 id="1选取域名">1、选取域名&lt;/h2>
+&lt;p>最好选用国外域名服务器注册，比国内好点：&lt;/p>
+&lt;blockquote>
+&lt;p>国内一些域名注册商通常以这一点为手段，卡住用户，比如限制你只能使用它的域名服务器，然后再限制你最多只能设置 10 项 A 记录或 MX 记录等，多了要另外收费，这种规矩实在是很扯淡；&lt;a href="https://yihui.org/cn/2009/06/how-to-build-a-website-as-a-dummy/">原文&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>（主要是九月份，要给github上托管的hugo网站设置另一个域名，发现备案没服务器还不行，也没有其它方案，给自己气的真想骂爹！）&lt;/p>
+&lt;p>且，国内域名注册只能设置两个A记录，配置github pages时需要设置4个！（&lt;a href="https://www.godaddy.com/">godaddy&lt;/a>注册的域名已测试过，最少可设置4个。但还没正式投入使用，具体使用效果见下回分析，但仅这点就给自己印象加分不少。）&lt;/p>
+&lt;p>关于国内域名只能设置两个A记录的解决方案：&lt;/p>
+&lt;p>我采用的是配置子域名的方式，相当于重定向&lt;/p>
+&lt;ul>
+&lt;li>添加两个CNAME的@和www记录，指向GitHub pages生成的域名。（设置完不会立即生效，这点你要注意，说的是一天，但可能是三四天！）&lt;/li>
+&lt;/ul>
+&lt;p>没有服务器，域名使用的两个解决方案：&lt;/p>
+&lt;ul>
+&lt;li>在国外网站注册，无需备案（我用的是&lt;a href="https://www.godaddy.com/">godaddy&lt;/a>）。&lt;/li>
+&lt;li>已有服务器的话，可以分配备案码（叫啥给忘了，暂时就叫它吧），拿着这个备案码也可以备案。&lt;/li>
+&lt;/ul>
+&lt;h2 id="2github-pages域名配置">2、GitHub pages域名配置&lt;/h2>
+&lt;p>详情：&lt;a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">参考本文&lt;/a>&lt;/p>
+&lt;p>配置子域名：&lt;/p>
+&lt;ol>
+&lt;li>网站根目录添加一个CNAME文件，文件里面写上你的域名，例如：2029.today&lt;/li>
+&lt;li>到域名注册商的控制台添加两个CNAME的@和www记录，指向GitHub pages生成的域名。&lt;/li>
+&lt;/ol>
+&lt;p>配置顶级域：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>网站根目录添加一个CNAME文件，文件里面写上你的域名，例如：2029.today&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>创建&lt;code>A&lt;/code>记录，请将您的顶级域指向 GitHub Pages 的 IP 地址。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>185.199.108.153
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>185.199.109.153
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>185.199.110.153
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>185.199.111.153
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;h2 id="3个人网站域名配置">3、个人网站域名配置&lt;/h2>
+&lt;p>假如你有服务器，可参考以下配置：&lt;/p>
+&lt;ol>
+&lt;li>到域名注册商的控制台添加两个A记录（@和www记录）指向服务器的IP地址。（现在的服务器IP地址想要直接ping通需要设置一下）&lt;/li>
+&lt;li>设置https（证书在域名注册商（腾讯）申请的，时效三个月。使用nginx代理（很简单，包含命令指向证书文件即可））&lt;/li>
+&lt;/ol>
+&lt;h3 id="知识点补充">知识点补充&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>什么是顶级域名、二级域名、子域名！&lt;/p>
+&lt;p>例如：blog.haoshuang.org&lt;/p>
+&lt;p>最后一个点右边的部分.org属于顶级域名，点左边的haoshuang属于二级域名，再左边的blog属于三级域名，依次类推。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>设置DNS解析记录（把域名和服务器链接起来的一个操作）。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>记录类型&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>功能&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>示例&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>A记录&lt;/strong>&lt;/td>
+&lt;td>将域名解析到 IPv4 地址&lt;/td>
+&lt;td>就是域名指向服务器的ip地址&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>www记录&lt;/strong>&lt;/td>
+&lt;td>将域名指向子域名&lt;/td>
+&lt;td>常见主机记录，将域名解析为 &lt;a href="https://www.2029.today">www.2029.today&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>@记录&lt;/strong>&lt;/td>
+&lt;td>指向当前域的根域名&lt;/td>
+&lt;td>直接解析主域名 2029.today&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>AAAA记录&lt;/strong>&lt;/td>
+&lt;td>将域名解析到 IPv6 地址&lt;/td>
+&lt;td>&lt;code>example.com -&amp;gt; 2001:db8::1&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>CNAME记录&lt;/strong>&lt;/td>
+&lt;td>将域名指向另一个域名&lt;/td>
+&lt;td>&lt;code>blog.example.com -&amp;gt; www.example.com&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>TXT记录&lt;/strong>&lt;/td>
+&lt;td>添加文本信息，用于验证或其他附加用途&lt;/td>
+&lt;td>&lt;code>v=spf1 include:secureserver.net -all&lt;/code>（例如这个是启用ren@haoshuang.org邮箱所需要添加的记录。）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/li>
+&lt;/ol></description></item><item><title>社会人多长时间学完中职教材：ps2020图形图像处理教程</title><link>https://think-crow.github.io/blog/zh/2024-11-27-ps2020/</link><pubDate>Wed, 27 Nov 2024 12:02:05 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/2024-11-27-ps2020/</guid><description>&lt;p>弟弟中职，觉得他花一年时间就进度就学了个这些东西，很没有效率，出这个文档让他看一下社会末流人士的学习能力！希望他能好好反思，积极并认真学习课程之外的本专业知识！&lt;/p>
 &lt;p>作技术文档的本质：&lt;/p>
 &lt;p>遗忘是学习的本质，文档是我们的工具库，当我们用这个功能时能想起曾经使用过，找到这个文档就足够了！&lt;/p>
 &lt;p>达到效果：任何人都能一眼看懂！&lt;/p>
