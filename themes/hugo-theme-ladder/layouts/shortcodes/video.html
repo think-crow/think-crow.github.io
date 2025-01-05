@@ -1,5 +1,5 @@
-<video class="video-shortcode" preload="{{ .Get "preload" }}" controls>
-    <source src="{{ .Get "src" }}" type="{{ .Get "type" }}">
-    There should have been a video here but your browser does not seem
-    to support it.
-</video>
+<!DOCTYPE html>
+<video width="100%" height="auto" controls preload="metadata" poster="{{ .Get 1 }}">
+    <source src="{{ .Get 0 }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
