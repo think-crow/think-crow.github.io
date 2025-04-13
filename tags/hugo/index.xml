@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo on HaoshuangRen</title><link>https://think-crow.github.io/tags/hugo/</link><description>Recent content in hugo on HaoshuangRen</description><generator>Hugo -- gohugo.io</generator><copyright>2024 HaoshuangRen All rights reserved</copyright><lastBuildDate>Wed, 09 Oct 2024 21:26:06 +0800</lastBuildDate><atom:link href="https://think-crow.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown文档语法</title><link>https://think-crow.github.io/blog/zh/markdown%E6%96%87%E6%A1%A3%E8%AF%AD%E6%B3%95/</link><pubDate>Wed, 09 Oct 2024 21:26:06 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/markdown%E6%96%87%E6%A1%A3%E8%AF%AD%E6%B3%95/</guid><description>&lt;p>把Markdown文档比作word的话，这篇文章就是教你怎么使用word.&lt;/p>
+&lt;p>什么是Markdown文档：技术人眼中很方便的写作工具！&lt;/p>
+&lt;p>&lt;strong>官方解释&lt;/strong>：Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia、简书等。&lt;/p>
+&lt;h2 id="1标题语法">1、标题语法&lt;/h2>
+&lt;p>要创建标题，请在单词或短语前面添加井号 (&lt;code>#&lt;/code>) 。&lt;code>#&lt;/code> 的数量代表了标题的级别。例如，添加三个 &lt;code>#&lt;/code> 表示创建一个三级标题 (&lt;code>&amp;lt;h3&amp;gt;&lt;/code>) (例如：&lt;code>### My Header&lt;/code>)。&lt;/p>
+&lt;h1 id="--文字-一级标题"># +文字 ：一级标题&lt;/h1>
+&lt;h2 id="-文字二级标题">## +文字：二级标题&lt;/h2>
+&lt;h3 id="-文字三级标题">### +文字：三级标题&lt;/h3>
+&lt;h2 id="2引用语法">2、引用语法&lt;/h2>
+&lt;p>要创建块引用，请在段落前添加一个 &lt;code>&amp;gt;&lt;/code> 符号。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>&amp;gt; Dorothy followed her through many of the beautiful rooms in her castle.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>展示效果：&lt;/p>
+&lt;blockquote>
+&lt;p>Dorothy followed her through many of the beautiful rooms in her castle.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="3markdown-代码语法">3、Markdown 代码语法&lt;/h2>
+&lt;p>要将单词或短语表示为代码，请将其包裹在反引号 (```) 中。&lt;/p>
+&lt;p>展示效果（红字部分）：&lt;/p>
+&lt;p>At the command prompt, type &lt;code>nano&lt;/code>.&lt;/p>
+&lt;h2 id="4markdown-分隔线语法">4、Markdown 分隔线语法&lt;/h2>
+&lt;p>要创建分隔线，请在单独一行上使用三个或多个星号 (&lt;code>***&lt;/code>)、破折号 (&lt;code>---&lt;/code>) 或下划线 (&lt;code>___&lt;/code>) ，并且不能包含其他内容。&lt;/p>
+&lt;p>展示效果（从上到下依次：***、&amp;mdash;、___）：&lt;/p>
+&lt;hr>
+&lt;hr>
+&lt;hr>
+&lt;h2 id="5markdown-链接语法">5、Markdown 链接语法&lt;/h2>
+&lt;p>链接文本放在中括号内，链接地址放在后面的括号中，链接title可选。&lt;/p>
+&lt;p>超链接Markdown语法代码：&lt;code>[超链接显示名](超链接地址 &amp;quot;超链接title&amp;quot;)&lt;/code>&lt;/p>
+&lt;p>对应的HTML代码：&lt;code>&amp;lt;a href=&amp;quot;超链接地址&amp;quot; title=&amp;quot;超链接title&amp;quot;&amp;gt;超链接显示名&amp;lt;/a&amp;gt;&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>这是一个链接 [Markdown参考网站](https://markdown.com.cn/basic-syntax/)。
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>展示效果：&lt;/p>
+&lt;p>这是一个链接 &lt;a href="https://markdown.com.cn/basic-syntax/">Markdown参考网站&lt;/a>&lt;/p>
+&lt;h1 id="6markdown-图片语法">6、Markdown 图片语法&lt;/h1>
+&lt;p>要添加图像，请使用感叹号 (&lt;code>!&lt;/code>), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。&lt;/p>
+&lt;p>插入图片Markdown语法代码：&lt;code>![图片alt](图片链接 &amp;quot;图片title&amp;quot;)&lt;/code>。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>![这是图片](/images/blog/1.png &amp;#34;图片标题&amp;#34;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://think-crow.github.io/images/blog/1.jpg" alt="这是图片" title="图片标题">&lt;/p>
+&lt;p>图片链接地址也可以为外链地址，像这样：https://www.rwany.net/uploads/money/weixin.jpg（浏览器里面输入这个地址能直接访问到！）&lt;/p>
+&lt;p>外链地址的优势：博客搬家时，大量引用的图片地址仍然有效！不会占用服务器资源，增加访问速度！&lt;/p>
+&lt;hr>
+&lt;p>最后：上述只是部分Markdown文档语法，完全够新手使用，后续可以自己学习更多的语法来编写自己的文章！&lt;/p></description></item><item><title>git基础及怎么PR</title><link>https://think-crow.github.io/blog/zh/git%E6%95%99%E7%A8%8B/</link><pubDate>Wed, 09 Oct 2024 21:00:43 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/git%E6%95%99%E7%A8%8B/</guid><description>&lt;p>网站文档更新到网站的必要学习步骤，参考 标题1 即可！.&lt;/p>
+&lt;h2 id="git上传操作步骤图解">git上传操作步骤图解：&lt;/h2>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/git%E6%80%BB%E7%BB%93.png" alt="git总结">&lt;/p>
+&lt;p>备注：git是一个开源的分布式版本管理系统，可以随时切换你提交的版本。&lt;/p>
+&lt;p>上述工作区，暂存区，本地仓库，远程仓库是git提交的一整个过程！&lt;/p>
+&lt;p>工作区也就是你的代码文件夹，暂存区就是你将要提交的内容，本地仓库就是已经提交了内容但没有上传远端，最后就是上传远端（上传远端之后，若有不妥可版本回退！即回退到之前任意一次提交的的内容）。&lt;/p>
+&lt;h2 id="1git顺序上传步骤">1、git顺序上传步骤：&lt;/h2>
+&lt;p>1、git init: 在当前目录初始化一个新的 Git 仓库。&lt;/p>
+&lt;p>2、git add &lt;!-- raw HTML omitted -->: 将文件添加到暂存区。&lt;/p>
+&lt;p>3、git commit -m &amp;ldquo;Commit message&amp;rdquo;: 将暂存区的文件提交到本地仓库。&lt;/p>
+&lt;p>4、git remote add &amp;lt;仓库名&amp;gt; &amp;lt;远程仓库地址&amp;gt;: 添加一个新的远程仓库。&lt;/p>
+&lt;p>5、git push -u &amp;lt;仓库名&amp;gt; &amp;lt;分支名&amp;gt;: 将本地提交推送到远程仓库。&lt;/p>
+&lt;p>&lt;strong>备注：上述5个步骤只是首次执行的命令，后续只执行2、3、5即可！&lt;/strong>&lt;/p>
+&lt;h2 id="2git常用查看命令">2、git常用查看命令：&lt;/h2>
+&lt;p>1、git status 查看暂存区与缓存区的状态。&lt;/p>
+&lt;p>2、git remote -v 显示远程仓库地址的详细信息。&lt;/p>
+&lt;p>3、git branch &amp;lt;分支名&amp;gt; 列出本地分支。&lt;/p>
+&lt;p>4、git branch -m &amp;lt;分支名&amp;gt; 重命名当前分支。&lt;/p>
+&lt;p>5、git checkout &amp;lt;分支名&amp;gt; 切换到指定分支。&lt;/p>
+&lt;p>6、git checkout -b &amp;lt;分支名&amp;gt; 创建并切换到指定分支。&lt;/p>
+&lt;p>7、git branch -d &amp;lt;分支名&amp;gt; 删除分支&lt;/p>
+&lt;p>8、git remote rename &amp;lt;旧仓库名称&amp;gt; &amp;lt;新仓库名称&amp;gt; 重命名本地 Git 仓库中的远程仓库名称&lt;/p>
+&lt;h2 id="3注意事项">3、注意事项&lt;/h2>
+&lt;p>1、命令不要敲错和漏敲了，一个字母敲错就error，很难发现的！&lt;/p>
+&lt;p>2、报错看error，根据error找问题（百度和gpt很香的）。&lt;/p>
+&lt;p>3、git push会经常碰到网络问题，可以设置ssh密钥（简略步骤）！&lt;/p>
+&lt;ul>
+&lt;li>ssh-keygen -t rsa -b 4096 -C &amp;ldquo;邮箱地址xxx@xxx.com&amp;rdquo; (密钥保存在 ~家目录/.ssh的文件夹)&lt;/li>
+&lt;li>id_rsa.pub里面的内容复制到GitHub的settings的SSH and GPG keys里面即可&lt;/li>
+&lt;/ul>
+&lt;p>4、参考文档是个好东西，要看细致了，漏看东西很致命！&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h2 id="4怎么pr参考文档httpsdtstackgithubiochunjun-webdocschunjundocscontribute-pr">4、怎么PR（&lt;a href="https://dtstack.github.io/chunjun-web/docs/chunjunDocs/contribute-pr/">参考文档&lt;/a>）&lt;/h2>
+&lt;h3 id="第一步fork仓库到自己仓库">第一步：fork仓库到自己仓库。&lt;/h3>
+&lt;h3 id="第二步clone到本地">第二步：clone到本地。&lt;/h3>
+&lt;h3 id="第三步添加源仓库地址链接upstream代表远程源仓库">第三步：添加源仓库地址链接。（upstream代表远程源仓库）&lt;/h3>
+&lt;pre tabindex="0">&lt;code> # add upstream
+git remote add upstream https://github.com/DTStack/chunjun.git
+# 查看远程仓库设置
+$ git remote -v
+origin https://github.com/your_name/chunjun.git (fetch)
+origin https://github.com/your_name/chunjun.git (push)
+upstream https://github.com/DTStack/chunjun.git (fetch)
+upstream https://github.com/DTStack/chunjun.git (push)
+&lt;/code>&lt;/pre>&lt;h3 id="第四步提交代码">第四步：提交代码&lt;/h3>
+&lt;p>任何一个提交都要基于最新的分支 &lt;strong>切换分支&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code># 从源仓库（upstream）拉取所有分支信息和更新。
+$ git remote update upstream -p
+# 创建一个新的分支 branch_name，并切换到该分支。
+$ git checkout -b branch_name
+# 从源仓库 upstream 的 master 分支拉取最新代码，并合并到当前本地分支。
+$ git pull upstream master:branch_name
+Already up to date.
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>本地修改代码后，提交commit&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code># 提交commit前先进行代码格式化
+$ mvn spotless:apply
+git commit -a -m &amp;#34;&amp;lt;you_commit_message&amp;gt;&amp;#34;
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>rebase远程分支&lt;/strong>&lt;/p>
+&lt;p>这一步很重要，因为我们仓库中的chunjun代码很有可能已经落后于社区，所以我们 push commit前需要rebase，保证我们的commit是基于社区最新的代码，很多小伙伴没有这一步导致提交的pr当中包含了其他人的commit&lt;/p>
+&lt;pre tabindex="0">&lt;code># 先从远程仓库拉取最新代码，确保本地了解远程分支的状态：
+$ git fetch upstream
+$ git rebase upstream/main
+假设你正在一个名为 feature/branch_name 的分支上，远程主分支是 upstream/main。
+运行后会发生以下情况：
+Git 会将 feature/branch_name 分支上的提交临时保存起来。
+将 upstream/main 的最新提交拉到本地。
+重新将 feature/branch_name 的提交逐一应用到 upstream/main 的最新代码之上。
+&lt;/code>&lt;/pre>&lt;p>*rebase后有可能出现代码冲突，一般是由于多人编辑同一个文件引起的，只需要根据提示打开冲突文件对冲突部分进行修改，将提示的冲突文件的冲突都解决后，执行&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ git add .
+$ git rebase --continue
+&lt;/code>&lt;/pre>&lt;p>依此往复，直至屏幕出现类似rebase successful字样即可&lt;/p>
+&lt;p>*rebase之后代码可能无法正常推送，需要&lt;code>git push -f&lt;/code> 强制推送，强制推送是一个有风险的操作，操作前请仔细检查以避免出现无关代码被强制覆盖的问题&lt;/p>
+&lt;h2 id="第五步">第五步：&lt;/h2>
+&lt;p>&lt;strong>push到github仓库&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ git push origin branch_name
+&lt;/code>&lt;/pre>&lt;h2 id="第六步提交pr">第六步：提交pr&lt;/h2>
+&lt;h3 id="方法-3-在作者没有合并前删除所有本地提交并清理远程-pr">方法 3: 在作者没有合并前，删除所有本地提交并清理远程 PR&lt;/h3>
+&lt;p>1、删除所有提交（硬重置到远程分支）&lt;/p>
+&lt;pre tabindex="0">&lt;code>git reset --hard origin/main
+&lt;/code>&lt;/pre>&lt;p>2、强制推送删除更改到远程仓库&lt;/p>
+&lt;pre tabindex="0">&lt;code>git push origin music --force
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>一分耕耘，一分收获， 加油！&lt;/strong>&lt;/p>
+&lt;p>​&lt;/p></description></item><item><title>为什么要建博客</title><link>https://think-crow.github.io/blog/zh/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link><pubDate>Sat, 21 Sep 2024 00:39:14 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p>一些人是因为热爱，一些人是因为被告知很重要，而一些人真真正正看到了它的价值！&lt;/p>
+&lt;h3 id="原因一认识到了博客的重要性之后希望更多的人也能有博客网站">原因一：认识到了博客的重要性之后，希望更多的人也能有博客网站！&lt;/h3>
+&lt;p>毕业七年后，才发现博客对青年时期的人生发展帮助如此之大！&lt;/p>
+&lt;ul>
+&lt;li>如果你是技术专业的，对你受益最大，做好技术性文档，将是你个人品牌及实力的见证！&lt;/li>
+&lt;li>如果你喜欢看书或写作，也很适合搭建个人博客。&lt;/li>
+&lt;li>如果你不太会讲话，个人网站无疑最佳选择，让我们通过文字来表达自己！&lt;/li>
+&lt;li>如果你感觉最近无所事事，焦虑无常，可以先搭建个网站试一下！&lt;/li>
+&lt;li>总归，个人网站对所有大学生适用，可以不相信我的眼光，但你要相信中国籍统计学家和数据科学家谢大的眼光：“在跟在校学生交流的时候，我通常会提一个观点，叫 “我网故我在”，意思是如果你没有一个个人网站，你就不存在。”！&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>个人观点或许有些武断，参照其他文字：&lt;/strong>&lt;/p>
+&lt;h3 id="原因二书面材料的系统性持久性备忘性和可查性">原因二：书面材料的系统性、持久性、备忘性和可查性&lt;/h3>
+&lt;p>主流认同模式一旦成型，无论是否合理，也不管有多少不足，我们只有去适应它，而不要幻想它因你而改变，对于能量极其有限的普罗大众而言，更是这样。在现有注重标签、经验和成功案例社会认同模式下，一个人要想出人头地，成为职场达人，必须想方设法构筑丰富而且结构合理的经验体系，甚至将其用书面材料的形式梳理出来。&lt;strong>&lt;code>与口头描述相比，书面材料在系统性、持久性、备忘性和可查性方面，毕竟有着非常突出和难以替代的优势&lt;/code>&lt;/strong>。在激烈的社会竞争中，很多时候即使对方没有要求我们提供这些东西，但只要你能拿出来，成功的天平也肯定会向你倾斜。&lt;/p>
+&lt;h3 id="原因三分享即价值">原因三：分享即价值&lt;/h3>
+&lt;p>&lt;a href="https://yanlinlin.cn/2022/01/17/%E5%88%86%E4%BA%AB%E5%8D%B3%E4%BB%B7%E5%80%BC%E5%86%99%E7%BB%99%E5%8D%B3%E5%B0%86%E6%AD%A5%E5%85%A5%E6%B1%9F%E6%B9%96%E7%9A%84%E5%B0%8F%E6%9C%8B%E5%8F%8B%E4%BB%AC/">分享即价值！&lt;/a>“真的强烈建议即将步入江湖的小朋友们，趁着自己还有大把的富余时间，多在公开平台上进行分享，而且最好是不带功利性地进行分享。**互联网是有记忆的，这些都会成为自己将来的品牌资本。你越认真对待它，它给你的回馈就越丰厚。**更何况，要把一项技术理解清楚，再讲出来，这本身就是一个高效率的学习过程，而且这种学习所得，是很难被遗忘的。”&lt;/p>
+&lt;h4 id="原因四让别人在最短时间内了解一个立体的你">原因四：让别人在最短时间内了解一个立体的你&lt;/h4>
+&lt;p>&lt;a href="https://hongtaoh.com/cn/2021/06/17/homepage/">我为什么强烈建议你有一个个人网站&lt;/a>：让别人在最短时间内了解一个立体的你（网站上有你的自我介绍，有你做过的所有项目，有你经年累月写的博客。你觉得哪个效果好？），捕捉瞬间的想法与灵感 ，激励你不断进步和积累，分享经验，记录生活点滴&lt;/p>
+&lt;hr>
+&lt;h2 id="关于这个被问到的问题">关于这个被问到的问题&lt;/h2>
+&lt;p>1、建这个有什么用？&lt;/p>
+&lt;p>仍然有这么多人都未意识到博客的重要性！如同曾经的自己一样！&lt;/p>
+&lt;p>或许可以先自己了解一下！&lt;/p>
+&lt;hr>
+&lt;h2 id="个人网站官方介绍">个人网站官方介绍：&lt;/h2>
+&lt;h3 id="维基百科描述">维基百科描述&lt;/h3>
+&lt;p>&lt;strong>个人网站&lt;/strong>是指由个人或团体、工作室（一般不超过3人）根据自己的兴趣爱好或价值取向，为了展示自我、与人交流，以非盈利为目的（有的个人网站会植入广告）而在&lt;a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C">网络&lt;/a>上建立的供其他人浏览的&lt;a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%AB%99">网站&lt;/a>。&lt;/p>
+&lt;h3 id="百度百科描述">百度百科描述&lt;/h3>
+&lt;p>个人网站，是指&lt;a href="https://baike.baidu.com/item/%E5%9B%A0%E7%89%B9%E7%BD%91/114119?fromModule=lemma_inlink">因特网&lt;/a>上一块固定的面向全世界发布消息的地方。&lt;/p>
+&lt;hr>
+&lt;p>目的：让家乡的人们都能有这样的网站，都能和大城市的人站在一个起点上！&lt;/p>
+&lt;p>是否适合建站：&lt;/p>
+&lt;p>1、假设你28岁之前，那毋庸置疑！无论如何都要建一个，并好好维护！&lt;/p>
+&lt;p>2、假设你28岁之后，可根据自身情况，来决定是否建站！&lt;/p>
+&lt;p>3、假设你是一个女生、技术性的东西或许会有一些难度！&lt;/p>
+&lt;p>4、要是碰见年轻时的自己，死皮赖脸也要让他建个网站！&lt;/p>
+&lt;h1 id="好东西都是不流通的恭喜你现在碰到了其一">好东西都是不流通的！恭喜你，现在碰到了其一！&lt;/h1>
+&lt;p>缘起缘灭，缘聚缘散！见到就是缘分！&lt;/p></description></item><item><title>快速带你了解hugo建站知识</title><link>https://think-crow.github.io/blog/zh/%E5%BF%AB%E9%80%9F%E5%B8%A6%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%BB%BA%E7%AB%99%E7%9F%A5%E8%AF%86/</link><pubDate>Fri, 20 Sep 2024 00:39:14 +0800</pubDate><guid>https://think-crow.github.io/blog/zh/%E5%BF%AB%E9%80%9F%E5%B8%A6%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%BB%BA%E7%AB%99%E7%9F%A5%E8%AF%86/</guid><description>&lt;p>常用的建站方式有hugo、hexo、jekyll、wordpress，这里为大家介绍hugo建站。&lt;/p>
+&lt;h3 id="1-什么是-hugo">1. 什么是 Hugo&lt;/h3>
+&lt;p>&lt;a href="gohugo.io">Hugo&lt;/a> 是一个快速、灵活的静态网站生成器，适用于博客、文档和个人网站等。官网地址：&lt;a href="https://gohugo.io">gohugo.io&lt;/a>&lt;/p>
+&lt;p>通俗的说：hugo可以把Markdown文档（大众眼中的word）生成静态网页！&lt;/p>
+&lt;h3 id="2-为什么用-hugo">2. 为什么用 Hugo&lt;/h3>
+&lt;p>兜兜转转，发现找的就是它，可自己花了五年时间&lt;/p>
+&lt;p>另看到的一些科研学者普遍都用的hugo建站，来写文章，且文章很有说服力！尝试过后，确实方便，就大力推崇！&lt;/p>
+&lt;p>特点：简洁、速度快！&lt;/p>
+&lt;h3 id="3-是否需要服务器域名">3. 是否需要服务器域名？&lt;/h3>
+&lt;p>不需要域名服务器（当然，如果你想，也可以自己配置）&lt;/p>
+&lt;p>配置好主题之后，上传完仓库，GitHub pages会自动编译文章生成网页（每次更新后大概需要20s左右即可重新访问）&lt;/p>
+&lt;p>本地编译预览效果时间不到1s，文章越多和不同网站对比的效果越明显！&lt;/p>
+&lt;h3 id="4-需要的技术知识">4. 需要的技术知识&lt;/h3>
+&lt;ul>
+&lt;li>基本的 Markdown 语法&lt;/li>
+&lt;li>Git 和 GitHub 使用&lt;/li>
+&lt;li>HTML 和 CSS 的基础知识（可选）&lt;/li>
+&lt;/ul>
+&lt;h3 id="5-优缺点">5. 优缺点&lt;/h3>
+&lt;p>&lt;strong>优点：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>自由度高，可以完全自定义&lt;/li>
+&lt;li>开源且免费&lt;/li>
+&lt;li>维护和托管成本低&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>缺点：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>初始设置可能有些复杂&lt;/li>
+&lt;li>更新内容需要使用 Git 命令行&lt;/li>
+&lt;li>使用的是开源的主题。&lt;/li>
+&lt;/ul>
+&lt;h3 id="6-具体操作流程">6. 具体操作流程&lt;/h3>
+&lt;ol>
+&lt;li>注册&lt;a href="https://github.com/">Github&lt;/a>账户（建议用名字命名：例如：haoshuang ；三个字的名字取后两个拼音，两个字取全名拼音。因为Github默认生成的域名为：账户名.github.io)。&lt;/li>
+&lt;li>学习&lt;a href="https://2029.today/blog/zh/git%E6%95%99%E7%A8%8B/">git基础&lt;/a>及&lt;a href="https://2029.today/blog/zh/markdown%E6%96%87%E6%A1%A3%E8%AF%AD%E6%B3%95/">markdown基本语法&lt;/a>。(必学)。&lt;/li>
+&lt;li>&lt;a href="https://2029.today/blog/zh/%E6%80%8E%E4%B9%88%E9%80%89hugo%E4%B8%BB%E9%A2%98/">选择hugo主题&lt;/a>，并做部分修改。&lt;/li>
+&lt;li>安装运行环境，并上传到github并启用 GitHub Pages。&lt;/li>
+&lt;/ol>
+&lt;p>简单的四步，你就有了一个个人博客！&lt;/p>
+&lt;p>当然，你可以选择此篇博主为你搭建，只收取技术支持的劳动费用，价廉实惠。微信：net-rwany！&lt;/p>
+&lt;h3 id="7-注意事项">7. 注意事项&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>不要暴漏自己身边人的信息！&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>访客多时注意自己的言论！&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>网站采用的是开源的博客框架！&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="8拓展">8、拓展&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://2029.today/blog/zh/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%BB%BA%E5%8D%9A%E5%AE%A2/">为什么要建博客&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://2029.today/blog/zh/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%98%AF%E4%BB%80%E4%B9%88/">个人博客网站是什么&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://d.cosx.org/d/421538">大家贴一下自己的博客地址吧&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr></description></item><item><title>如何选择选hugo主题</title><link>https://think-crow.github.io/blog/zh/%E6%80%8E%E4%B9%88%E9%80%89hugo%E4%B8%BB%E9%A2%98/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://think-crow.github.io/blog/zh/%E6%80%8E%E4%B9%88%E9%80%89hugo%E4%B8%BB%E9%A2%98/</guid><description>&lt;p>hugo官网：https://gohugo.io&lt;/p>
+&lt;h1 id="选择主题">选择主题：&lt;/h1>
+&lt;h2 id="1进入hugo官网选择导航栏的themes也可右键翻译为中文">1、进入hugo官网，选择导航栏的themes（也可右键翻译为中文）&lt;/h2>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/how-hugo-themes/1.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;h2 id="2挑选合适的主题">2、挑选合适的主题&lt;/h2>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/how-hugo-themes/2.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;h2 id="预览">预览：&lt;/h2>
+&lt;h2 id="1点击下载或donwload进入github仓库页面">1、点击下载或donwload，进入github仓库页面&lt;/h2>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/how-hugo-themes/3.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;h2 id="2进入仓库页面后右边这个蓝色的一串便是预览地址右边没有的话或许是放在了仓库下面的文档说明里面">2、进入仓库页面后，右边这个蓝色的一串便是预览地址（右边没有的话或许是放在了仓库下面的文档说明里面）&lt;/h2>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/how-hugo-themes/4.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;h1 id="预览效果">预览效果&lt;/h1>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/how-hugo-themes/5.png" alt="这是图片" title="图片标题">&lt;/p>
+&lt;p>&lt;img src="https://think-crow.github.io/images/blog/how-hugo-themes/6.png" alt="这是图片" title="图片标题">&lt;/p></description></item></channel></rss>
