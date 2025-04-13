@@ -182,3 +182,8 @@ weight = 4
 [taxonomies]
 series = "series"
 tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
