@@ -70,10 +70,10 @@ params:
   comments:
     giscus:
       enable: true
-      repo: think-crow/giscus_2029.today
-      repo_id: R_kgDOM4DNHg
-      category: 2029.today
-      category_id: DIC_kwDOM4DNHs4Ci2MD
+      repo: think-crow/think-crow.github.io
+      repo_id: R_kgDOMgeLsw
+      category: Announcements
+      category_id: DIC_kwDOMgeLs84CtPac
       mapping: pathname
       position: top
       lang: zh-CN # pick a language from https://github.com/giscus/giscus/tree/main/locales
