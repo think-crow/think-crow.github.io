@@ -6,3 +6,4 @@ exampleSite/resources/
 *.lock
 resources/
 hugo.exe
+public
