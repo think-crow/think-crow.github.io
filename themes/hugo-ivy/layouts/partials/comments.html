@@ -1,6 +1,7 @@
 
 
-{{ if (ne .Params.comment false) }}
+{{ if and (eq .Kind "page") (not .Params.disable_comments) }}
+
 <section class="comments">
 <script {{ if $.Site.BuildDrafts }}data-{{ end }}src="https://giscus.app/client.js"
 data-repo="think-crow/think-crow.github.io"
